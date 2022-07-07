@@ -16,6 +16,7 @@ public class Mining : ModuleRules {
             "OnlineSubsystem",
             "OnlineSubsystemUtils",
             "SteamCore",
+            "RenderCore",
         });
     }
 }
