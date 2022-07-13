@@ -21,30 +21,30 @@ UVoxelProceduralMeshComponent::UVoxelProceduralMeshComponent(const FObjectInitia
 
 void UVoxelProceduralMeshComponent::AddReferencedObjects(UObject* InThis, FReferenceCollector& Collector)
 {
-	UVoxelProceduralMeshComponent* This = CastChecked<UVoxelProceduralMeshComponent>(InThis);
+	/*UVoxelProceduralMeshComponent* This = CastChecked<UVoxelProceduralMeshComponent>(InThis);
 	Collector.AddReferencedObject( This->StaticMeshComponent, This );
-	AddReferencedObjects( This, Collector );
+	AddReferencedObjects( This, Collector );*/
 }
 
 
 
 void UVoxelProceduralMeshComponent::Serialize(FArchive& Ar)
 {
-	Serialize(Ar);
+	/*Serialize(Ar);
 	
-	Ar << StaticMeshComponent;
+	Ar << StaticMeshComponent;*/
 }
 
 void UVoxelProceduralMeshComponent::PostLoad()
 {
-	PostLoad();
+	/*PostLoad();
 
 	// Fix for old StaticMeshComponent components which weren't created with transactional flag.
 	SetFlags( RF_Transactional );
 
 	// BuildRenderData relies on the StaticMeshComponent having been post-loaded, so we ensure this by calling ConditionalPostLoad.
 	check(StaticMeshComponent);
-	StaticMeshComponent->ConditionalPostLoad();
+	StaticMeshComponent->ConditionalPostLoad();*/
 	
 }
 
@@ -82,22 +82,23 @@ UMaterialInterface* UVoxelProceduralMeshComponent::GetMaterialFromCollisionFaceI
 
 bool UVoxelProceduralMeshComponent::IsPrecomputedLightingValid() const
 {
-		return false;
+	return false;
 }
 
 
 void UVoxelProceduralMeshComponent::GetStreamingRenderAssetInfo(FStreamingTextureLevelContext& LevelContext, TArray<FStreamingRenderAssetPrimitiveInfo>& OutStreamingRenderAssets) const
 {
+	
 }
 
 void UVoxelProceduralMeshComponent::CreateRenderState_Concurrent(FRegisterComponentContext* Context)
 {
-	return;
+
 }
 
 void UVoxelProceduralMeshComponent::DestroyRenderState_Concurrent()
 {
-	return;
+	
 }
 
 FPrimitiveSceneProxy* UVoxelProceduralMeshComponent::CreateSceneProxy()
@@ -127,38 +128,40 @@ void UVoxelProceduralMeshComponent::PropagateLightingScenarioChange()
 
 bool UVoxelProceduralMeshComponent::GetLightMapResolution( int32& Width, int32& Height ) const
 {
-		return false;
+	return false;
 }
 
 
 int32 UVoxelProceduralMeshComponent::GetStaticLightMapResolution() const
 {
-	int32 Width;
+	/*int32 Width;
 	int32 Height;
 	GetLightMapResolution(Width, Height);
 
-	return FMath::Max<int32>(Width, Height);
+	return FMath::Max<int32>(Width, Height);*/
+	return NULL;
 }
 
 
 void UVoxelProceduralMeshComponent::GetLightAndShadowMapMemoryUsage( int32& LightMapMemoryUsage, int32& ShadowMapMemoryUsage ) const
 {
-	return;
+	/*return;*/
 }
 
 void UVoxelProceduralMeshComponent::GetStaticLightingInfo(FStaticLightingPrimitiveInfo& OutPrimitiveInfo,const TArray<ULightComponent*>& InRelevantLights,const FLightingBuildOptions& Options)
 {
-	check(0);
+	/*check(0);*/
 }
 
 void UVoxelProceduralMeshComponent::AddMapBuildDataGUIDs(TSet<FGuid>& InGUIDs) const
 {
+	
 }
 
 #if WITH_EDITOR
 void UVoxelProceduralMeshComponent::PostEditUndo()
 {
-	PostEditUndo();
+	/*PostEditUndo();*/
 }
 #endif // WITH_EDITOR
 
@@ -169,7 +172,7 @@ bool UVoxelProceduralMeshComponent::GetPhysicsTriMeshData(struct FTriMeshCollisi
 
 bool UVoxelProceduralMeshComponent::ContainsPhysicsTriMeshData(bool InUseAllTriData) const
 {
-	return 0;
+	return false;
 }
 
 bool UVoxelProceduralMeshComponent::GenerateElements(bool bBuildRenderData)

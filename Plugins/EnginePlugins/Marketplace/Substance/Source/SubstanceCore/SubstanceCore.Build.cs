@@ -10,7 +10,7 @@ public class SubstanceCore : ModuleRules {
             "Core",
             "CoreUObject",
             "Engine",
-            "RenderCore",
+            "RenderCore"
         });
     }
 }
