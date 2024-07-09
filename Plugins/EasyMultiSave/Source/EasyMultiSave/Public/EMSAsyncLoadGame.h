@@ -15,7 +15,8 @@ public:
     FAsyncLoadOutputPin OnCompleted;
     
     UEMSAsyncLoadGame();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UEMSAsyncLoadGame* AsyncLoadActors(UObject* WorldContextObject, int32 Data, bool bFullReload);
     
 };

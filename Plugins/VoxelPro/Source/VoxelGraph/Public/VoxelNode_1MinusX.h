@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_1MinusX : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_1MinusX();
+
 };
 

@@ -19,5 +19,6 @@ public:
     int32 Seed;
     
     UVoxelExample_LayeredWorld();
+
 };
 

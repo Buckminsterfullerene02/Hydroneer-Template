@@ -1,31 +1,31 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "VoxelRuntimeActor.h"
-#include "VoxelCompressedWorldSave.h"
-#include "Engine/EngineTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "VoxelWorldCreateInfo.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Engine/EngineTypes.h"
 #include "Engine/EngineTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "VoxelIntBox.h"
-#include "UObject/NoExportTypes.h"
+#include "Engine/EngineTypes.h"
 #include "EVoxelWorldCoordinatesRounding.h"
+#include "Templates/SubclassOf.h"
+#include "VoxelCompressedWorldSave.h"
 #include "VoxelGeneratorInit.h"
+#include "VoxelIntBox.h"
+#include "VoxelRuntimeActor.h"
+#include "VoxelWorldCreateInfo.h"
 #include "VoxelWorld.generated.h"
 
-class UVoxelGenerator;
-class UVoxelWorldRootComponent;
-class UVoxelLineBatchComponent;
-class UVoxelWorldSaveObject;
+class AVoxelWorld;
+class UObject;
 class UStaticMesh;
 class UStaticMeshComponent;
-class UObject;
-class UVoxelMultiplayerInterface;
+class UVoxelGenerator;
 class UVoxelGeneratorCache;
+class UVoxelLineBatchComponent;
+class UVoxelMultiplayerInterface;
 class UVoxelPlaceableItemActorHelper;
-class AVoxelWorld;
+class UVoxelWorldRootComponent;
+class UVoxelWorldSaveObject;
 
 UCLASS(Blueprintable)
 class VOXEL_API AVoxelWorld : public AVoxelRuntimeActor {
@@ -49,10 +49,10 @@ public:
     FOnMaxFoliageInstancesReached OnMaxFoliageInstancesReached;
     
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UVoxelWorldRootComponent* WorldRoot;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UVoxelLineBatchComponent* LineBatchComponent;
     
 public:
@@ -115,7 +115,8 @@ private:
     bool bIsToggled;
     
 public:
-    AVoxelWorld();
+    AVoxelWorld(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetWorldSize(int32 NewWorldSizeInVoxel);
     

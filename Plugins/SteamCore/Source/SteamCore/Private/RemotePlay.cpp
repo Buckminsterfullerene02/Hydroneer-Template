@@ -1,5 +1,8 @@
 #include "RemotePlay.h"
 
+URemotePlay::URemotePlay() {
+}
+
 FSteamID URemotePlay::GetSessionSteamID(int32 SessionID) {
     return FSteamID{};
 }
@@ -28,6 +31,4 @@ bool URemotePlay::BGetSessionClientResolution(int32 SessionID, int32& Resolution
     return false;
 }
 
-URemotePlay::URemotePlay() {
-}
 

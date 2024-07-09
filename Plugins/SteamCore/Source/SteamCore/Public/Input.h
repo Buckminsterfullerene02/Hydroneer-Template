@@ -1,18 +1,18 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "InputHandle.h"
-#include "ESteamCoreInputLEDFlag.h"
-#include "ESteamCoreInputType.h"
 #include "ESteamCoreControllerPad.h"
 #include "ESteamCoreInputActionOrigin.h"
-#include "InputDigitalActionHandle.h"
-#include "InputAnalogActionHandle.h"
+#include "ESteamCoreInputLEDFlag.h"
+#include "ESteamCoreInputType.h"
 #include "ESteamCoreXboxOrigin.h"
-#include "InputDigitalActionData.h"
-#include "InputMotionData.h"
 #include "InputActionSetHandle.h"
 #include "InputAnalogActionData.h"
+#include "InputAnalogActionHandle.h"
+#include "InputDigitalActionData.h"
+#include "InputDigitalActionHandle.h"
+#include "InputHandle.h"
+#include "InputMotionData.h"
+#include "SteamCoreSubsystem.h"
 #include "Input.generated.h"
 
 UCLASS(Blueprintable)
@@ -20,6 +20,7 @@ class STEAMCORE_API UInput : public USteamCoreSubsystem {
     GENERATED_BODY()
 public:
     UInput();
+
     UFUNCTION(BlueprintCallable)
     void TriggerVibration(FInputHandle Handle, uint8 LeftSpeed, uint8 RightSpeed);
     

@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionDeleteLeaderboard : public USteam
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionDeleteLeaderboard();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionDeleteLeaderboard* DeleteLeaderboardAsync(UObject* WorldContextObject, const FString& Key, int32 AppID, const FString& Name);
     
 };

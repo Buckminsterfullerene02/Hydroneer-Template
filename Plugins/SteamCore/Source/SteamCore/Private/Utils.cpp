@@ -1,5 +1,8 @@
 #include "Utils.h"
 
+UUtils::UUtils() {
+}
+
 void UUtils::StartVRDashboard() {
 }
 
@@ -100,6 +103,4 @@ bool UUtils::BOverlayNeedsPresent() {
     return false;
 }
 
-UUtils::UUtils() {
-}
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_IMax : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_IMax();
+
 };
 

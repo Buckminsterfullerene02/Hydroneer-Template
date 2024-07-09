@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_Sinh : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_Sinh();
+
 };
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_2DWhiteNoise : public UVoxelNodeHelper {
     GENERATED_BODY()
 public:
     UVoxelNode_2DWhiteNoise();
+
 };
 

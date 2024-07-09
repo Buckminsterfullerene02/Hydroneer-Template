@@ -8,5 +8,6 @@ class VOXEL_API UVoxelGenerator : public UObject {
     GENERATED_BODY()
 public:
     UVoxelGenerator();
+
 };
 

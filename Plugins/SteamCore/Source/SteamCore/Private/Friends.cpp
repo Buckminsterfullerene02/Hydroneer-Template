@@ -1,6 +1,7 @@
 #include "Friends.h"
 
-class UTexture2D;
+UFriends::UFriends() {
+}
 
 bool UFriends::SetRichPresence(const FString& Key, const FString& Value) {
     return false;
@@ -292,6 +293,4 @@ void UFriends::ActivateGameOverlayInvitedialog(FSteamID SteamIDLobby) {
 void UFriends::ActivateGameOverlay(const FString& Dialog) {
 }
 
-UFriends::UFriends() {
-}
 

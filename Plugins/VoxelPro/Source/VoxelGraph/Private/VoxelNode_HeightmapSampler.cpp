@@ -8,3 +8,4 @@ UVoxelNode_HeightmapSampler::UVoxelNode_HeightmapSampler() {
     this->bCenter = false;
 }
 
+

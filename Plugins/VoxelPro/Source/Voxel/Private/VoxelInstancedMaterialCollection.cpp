@@ -7,3 +7,4 @@ UVoxelInstancedMaterialCollection::UVoxelInstancedMaterialCollection() {
     this->Templates = NULL;
 }
 
+

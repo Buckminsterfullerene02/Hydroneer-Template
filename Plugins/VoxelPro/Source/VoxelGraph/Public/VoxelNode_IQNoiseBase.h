@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_IQNoiseBase : public UVoxelNode_NoiseNodeWithDer
     GENERATED_BODY()
 public:
     UVoxelNode_IQNoiseBase();
+
 };
 

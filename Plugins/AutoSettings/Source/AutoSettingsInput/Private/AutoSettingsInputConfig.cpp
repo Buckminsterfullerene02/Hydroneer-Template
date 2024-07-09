@@ -12,3 +12,4 @@ UAutoSettingsInputConfig::UAutoSettingsInputConfig() {
     this->AxisAssociations.AddDefaulted(6);
 }
 
+

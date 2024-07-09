@@ -1,30 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
+#include "ESteamLeaderboardDataRequest.h"
+#include "ESteamLeaderboardDisplayType.h"
+#include "ESteamLeaderboardSortMethod.h"
+#include "ESteamLeaderboardUploadScoreMethod.h"
+#include "OnAttachLeaderboardUGCDelegate.h"
+#include "OnDownloadLeaderboardEntriesDelegate.h"
+#include "OnDownloadLeaderboardEntriesForUsersDelegate.h"
+#include "OnFindLeaderboardDelegate.h"
+#include "OnFindOrCreateLeaderboardDelegate.h"
+#include "OnGetNumberOfCurrentPlayersDelegate.h"
+#include "OnRequestGlobalAchievementPercentagesDelegate.h"
+#include "OnRequestGlobalStatsDelegate.h"
+#include "OnRequestUserStatsDelegate.h"
+#include "OnUploadLeaderboardScoreDelegate.h"
 #include "OnUserAchievementIconFetchedDelegate.h"
 #include "OnUserAchievementStoredDelegate.h"
-#include "OnUserStatsStoredDelegate.h"
 #include "OnUserStatsReceivedDelegate.h"
+#include "OnUserStatsStoredDelegate.h"
 #include "OnUserStatsUnloadedDelegate.h"
-#include "OnUploadLeaderboardScoreDelegate.h"
-#include "SteamLeaderboard.h"
-#include "ESteamLeaderboardUploadScoreMethod.h"
-#include "OnRequestUserStatsDelegate.h"
+#include "SteamCoreSubsystem.h"
 #include "SteamID.h"
-#include "OnRequestGlobalStatsDelegate.h"
-#include "OnRequestGlobalAchievementPercentagesDelegate.h"
-#include "OnGetNumberOfCurrentPlayersDelegate.h"
-#include "ESteamLeaderboardSortMethod.h"
-#include "ESteamLeaderboardDisplayType.h"
+#include "SteamLeaderboard.h"
 #include "SteamLeaderboardEntries.h"
 #include "SteamLeaderboardEntry.h"
 #include "SteamUGCHandle.h"
-#include "OnFindOrCreateLeaderboardDelegate.h"
-#include "OnFindLeaderboardDelegate.h"
-#include "OnDownloadLeaderboardEntriesForUsersDelegate.h"
-#include "OnDownloadLeaderboardEntriesDelegate.h"
-#include "ESteamLeaderboardDataRequest.h"
-#include "OnAttachLeaderboardUGCDelegate.h"
 #include "UserStats.generated.h"
 
 class UTexture2D;
@@ -49,6 +49,7 @@ public:
     FOnUserStatsUnloaded UserStatsUnloaded;
     
     UUserStats();
+
     UFUNCTION(BlueprintCallable)
     void UploadLeaderboardScore(const FOnUploadLeaderboardScore& Callback, FSteamLeaderboard SteamLeaderboard, ESteamLeaderboardUploadScoreMethod UploadScoreMethod, int32 Score, TArray<int32> ScoreDetails);
     

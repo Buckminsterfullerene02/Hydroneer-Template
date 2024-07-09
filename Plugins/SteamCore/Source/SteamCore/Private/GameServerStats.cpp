@@ -1,5 +1,8 @@
 #include "GameServerStats.h"
 
+UGameServerStats::UGameServerStats() {
+}
+
 bool UGameServerStats::UpdateUserAvgRateStat(FSteamID SteamIDUser, const FString& Name, float CountThisSession, float SessionLength) {
     return false;
 }
@@ -38,6 +41,4 @@ bool UGameServerStats::ClearUserAchievement(FSteamID SteamIDUser, const FString&
     return false;
 }
 
-UGameServerStats::UGameServerStats() {
-}
 

@@ -12,3 +12,4 @@ UVoxelFoliage::UVoxelFoliage() {
     this->bDoNotDespawn = false;
 }
 
+

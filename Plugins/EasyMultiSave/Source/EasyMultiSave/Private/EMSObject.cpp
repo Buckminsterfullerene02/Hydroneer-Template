@@ -1,14 +1,14 @@
 #include "EMSObject.h"
 
-class AActor;
-
-void UEMSObject::OuterActorEndPlay(AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason) {
-}
-
 UEMSObject::UEMSObject() {
     this->World = NULL;
+    this->CurrentSaveGameName = TEXT("                             d");
     this->CachedSlotInfoSave = NULL;
     this->CachedPersistentSave = NULL;
     this->CachedProfileSave = NULL;
 }
+
+void UEMSObject::OuterActorEndPlay(AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason) {
+}
+
 

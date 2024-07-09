@@ -1,5 +1,8 @@
 #include "WebGameNotificationsService.h"
 
+UWebGameNotificationsService::UWebGameNotificationsService() {
+}
+
 void UWebGameNotificationsService::UpdateSession(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SessionID, int32 AppID, const FString& Title, const FString& Users, const FString& SteamID) {
 }
 
@@ -21,6 +24,4 @@ void UWebGameNotificationsService::DeleteSession(const FOnSteamCoreWebCallback& 
 void UWebGameNotificationsService::CreateSession(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& Context, const FString& Title, const FString& Users, const FString& SteamID) {
 }
 
-UWebGameNotificationsService::UWebGameNotificationsService() {
-}
 

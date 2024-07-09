@@ -35,5 +35,6 @@ public:
     UVoxelGraphMacroOutputNode* OutputNode;
     
     UVoxelGraphMacro();
+
 };
 

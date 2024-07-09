@@ -1,5 +1,6 @@
 #include "VoxelCharacter.h"
 
-AVoxelCharacter::AVoxelCharacter() {
+AVoxelCharacter::AVoxelCharacter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

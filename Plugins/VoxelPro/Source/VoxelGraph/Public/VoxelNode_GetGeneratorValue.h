@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GetGeneratorValue : public UVoxelNode_SingleGene
     GENERATED_BODY()
 public:
     UVoxelNode_GetGeneratorValue();
+
 };
 

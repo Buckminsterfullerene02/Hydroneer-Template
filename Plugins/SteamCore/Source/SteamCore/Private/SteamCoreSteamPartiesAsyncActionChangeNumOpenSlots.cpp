@@ -1,7 +1,7 @@
 #include "SteamCoreSteamPartiesAsyncActionChangeNumOpenSlots.h"
 
-class UObject;
-class USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots;
+USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots::USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots() {
+}
 
 void USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots::HandleCallback(const FChangeNumOpenSlotsData& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots* USteamCoreSteamPartiesAsync
     return NULL;
 }
 
-USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots::USteamCoreSteamPartiesAsyncActionChangeNumOpenSlots() {
-}
 

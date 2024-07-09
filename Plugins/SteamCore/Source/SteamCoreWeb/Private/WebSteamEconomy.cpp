@@ -1,5 +1,8 @@
 #include "WebSteamEconomy.h"
 
+UWebSteamEconomy::UWebSteamEconomy() {
+}
+
 void UWebSteamEconomy::StartTrade(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& SteamIDd, const FString& SteamId2) {
 }
 
@@ -24,6 +27,4 @@ void UWebSteamEconomy::FinalizeAssetTransaction(const FOnSteamCoreWebCallback& C
 void UWebSteamEconomy::CanTrade(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& SteamID, const FString& TargetId) {
 }
 
-UWebSteamEconomy::UWebSteamEconomy() {
-}
 

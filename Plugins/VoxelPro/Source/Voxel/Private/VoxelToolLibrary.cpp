@@ -1,11 +1,9 @@
 #include "VoxelToolLibrary.h"
 
-class UMaterialInstanceDynamic;
-class UVoxelToolBase;
+UVoxelToolLibrary::UVoxelToolLibrary() {
+}
 
 void UVoxelToolLibrary::UpdateSphereOverlayMaterial(UVoxelToolBase* Tool, UMaterialInstanceDynamic* OverlayMaterialInstance, EVoxelFalloff FalloffType, float Falloff) {
 }
 
-UVoxelToolLibrary::UVoxelToolLibrary() {
-}
 

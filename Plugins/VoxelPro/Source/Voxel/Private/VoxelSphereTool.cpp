@@ -1,6 +1,8 @@
 #include "VoxelSphereTool.h"
 
 UVoxelSphereTool::UVoxelSphereTool() {
+    this->ToolName = TEXT("Sphere");
+    this->bShowPaintMaterial = true;
     this->bSculpt = true;
     this->bEnableIndexInterval = false;
     this->bPaint = false;
@@ -8,4 +10,5 @@ UVoxelSphereTool::UVoxelSphereTool() {
     this->FalloffType = EVoxelFalloff::Smooth;
     this->Falloff = 0.50f;
 }
+
 

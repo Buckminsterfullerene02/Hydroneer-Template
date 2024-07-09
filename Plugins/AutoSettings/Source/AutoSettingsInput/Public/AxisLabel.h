@@ -16,10 +16,11 @@ public:
     float Scale;
     
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UKeyLabel* KeyLabel;
     
 public:
     UAxisLabel();
+
 };
 

@@ -1,12 +1,6 @@
 #include "VoxelNoClippingComponent.h"
 
-class AVoxelWorld;
-
-bool UVoxelNoClippingComponent::ShouldUseVoxelWorld_Implementation(AVoxelWorld* VoxelWorld) {
-    return false;
-}
-
-UVoxelNoClippingComponent::UVoxelNoClippingComponent() {
+UVoxelNoClippingComponent::UVoxelNoClippingComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->TickRate = 0.10f;
     this->SearchRange = 5;
     this->bEnableDefaultBehavior = true;
@@ -14,4 +8,9 @@ UVoxelNoClippingComponent::UVoxelNoClippingComponent() {
     this->bIsPlanet = false;
     this->bIsInsideSurface = false;
 }
+
+bool UVoxelNoClippingComponent::ShouldUseVoxelWorld_Implementation(AVoxelWorld* VoxelWorld) {
+    return false;
+}
+
 

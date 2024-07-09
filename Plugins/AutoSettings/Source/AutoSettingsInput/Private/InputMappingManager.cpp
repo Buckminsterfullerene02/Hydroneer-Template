@@ -1,7 +1,8 @@
 #include "InputMappingManager.h"
 
-class APlayerController;
-class AActor;
+UInputMappingManager::UInputMappingManager() {
+    this->PlayerInputOverrides.AddDefaulted(1);
+}
 
 void UInputMappingManager::SetPlayerKeyGroupStatic(APlayerController* Player, FGameplayTag KeyGroup) {
 }
@@ -66,7 +67,4 @@ void UInputMappingManager::AddPlayerActionOverrideStatic(APlayerController* Play
 void UInputMappingManager::AddPlayerActionOverride(APlayerController* Player, const FInputActionKeyMapping& NewMapping, int32 MappingGroup, bool bAnyKeyGroup) {
 }
 
-UInputMappingManager::UInputMappingManager() {
-    this->PlayerInputOverrides.AddDefaulted(1);
-}
 

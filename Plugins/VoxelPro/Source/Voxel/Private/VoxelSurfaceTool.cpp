@@ -1,6 +1,8 @@
 #include "VoxelSurfaceTool.h"
 
 UVoxelSurfaceTool::UVoxelSurfaceTool() {
+    this->ToolName = TEXT("Surface");
+    this->bShowPaintMaterial = true;
     this->bSculpt = true;
     this->SculptStrength = 0.50f;
     this->bPropagateMaterials = true;
@@ -17,4 +19,5 @@ UVoxelSurfaceTool::UVoxelSurfaceTool() {
     this->bUseMask = false;
     this->MaskGeneratorCache_RenderTexture = NULL;
 }
+
 

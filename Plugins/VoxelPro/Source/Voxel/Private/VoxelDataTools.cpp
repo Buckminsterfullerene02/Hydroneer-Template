@@ -1,8 +1,7 @@
 #include "VoxelDataTools.h"
 
-class UObject;
-class AVoxelWorld;
-class UVoxelHeightmapAsset;
+UVoxelDataTools::UVoxelDataTools() {
+}
 
 void UVoxelDataTools::SetValueAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, AVoxelWorld* World, FIntVector Position, float Value, bool bHideLatentWarnings) {
 }
@@ -136,6 +135,4 @@ void UVoxelDataTools::CacheMaterialsAsync(UObject* WorldContextObject, FLatentAc
 void UVoxelDataTools::CacheMaterials(AVoxelWorld* World, FVoxelIntBox Bounds, bool bMultiThreaded) {
 }
 
-UVoxelDataTools::UVoxelDataTools() {
-}
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AutoSettingsInputConfig.h"
+#include "GameplayTagContainer.h"
+#include "GameplayTagContainer.h"
 #include "InputCoreTypes.h"
-#include "GameplayTagContainer.h"
-#include "GameplayTagContainer.h"
+#include "AutoSettingsInputConfig.h"
 #include "AutoSettingsInputProjectConfig.generated.h"
 
 class UTexture;
@@ -13,6 +13,7 @@ class AUTOSETTINGSINPUT_API UAutoSettingsInputProjectConfig : public UAutoSettin
     GENERATED_BODY()
 public:
     UAutoSettingsInputProjectConfig();
+
     UFUNCTION(BlueprintCallable)
     static TArray<UTexture*> LoadKeyIcons(FGameplayTagContainer KeyIconTags);
     

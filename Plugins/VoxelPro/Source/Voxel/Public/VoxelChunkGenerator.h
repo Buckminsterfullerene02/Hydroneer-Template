@@ -8,5 +8,6 @@ class VOXEL_API UVoxelChunkGenerator : public UVoxelGenerator {
     GENERATED_BODY()
 public:
     UVoxelChunkGenerator();
+
 };
 

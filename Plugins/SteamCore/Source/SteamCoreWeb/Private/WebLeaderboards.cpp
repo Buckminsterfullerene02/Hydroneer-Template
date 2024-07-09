@@ -1,5 +1,8 @@
 #include "WebLeaderboards.h"
 
+UWebLeaderboards::UWebLeaderboards() {
+}
+
 void UWebLeaderboards::SetLeaderboardScore(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, int32 LeaderbordId, const FString& SteamID, int32 Score, TArray<uint8> Details, const FString& ScoreMethod) {
 }
 
@@ -18,6 +21,4 @@ void UWebLeaderboards::FindOrCreateLeaderboard(const FOnSteamCoreWebCallback& Ca
 void UWebLeaderboards::DeleteLeaderboard(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& Name) {
 }
 
-UWebLeaderboards::UWebLeaderboards() {
-}
 

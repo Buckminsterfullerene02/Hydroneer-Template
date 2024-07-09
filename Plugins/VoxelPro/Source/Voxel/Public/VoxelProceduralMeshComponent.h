@@ -78,7 +78,7 @@ public:
 	virtual bool WantsNegXTriMesh() override { return false; }
 	//~ End Interface_CollisionDataProvider Interface
 
-	#if WITH_EDITOR
+#if WITH_EDITOR
 	/**
 	 *	Generate the Elements array.
 	 *

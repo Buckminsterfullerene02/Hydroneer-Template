@@ -10,7 +10,7 @@ class AUTOSETTINGS_API UNativeSliderSetting : public USliderSetting {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USlider* Slider;
     
 private:
@@ -19,6 +19,7 @@ private:
     
 public:
     UNativeSliderSetting();
+
 private:
     UFUNCTION(BlueprintCallable)
     void SliderValueChanged(float NewValue);

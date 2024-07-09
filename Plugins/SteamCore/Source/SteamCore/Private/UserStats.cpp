@@ -1,6 +1,7 @@
 #include "UserStats.h"
 
-class UTexture2D;
+UUserStats::UUserStats() {
+}
 
 void UUserStats::UploadLeaderboardScore(const FOnUploadLeaderboardScore& Callback, FSteamLeaderboard SteamLeaderboard, ESteamLeaderboardUploadScoreMethod UploadScoreMethod, int32 Score, TArray<int32> ScoreDetails) {
 }
@@ -172,6 +173,4 @@ bool UUserStats::ClearAchievement(const FString& Name) {
 void UUserStats::AttachLeaderboardUGC(const FOnAttachLeaderboardUGC& Callback, FSteamLeaderboard SteamLeaderboard, FSteamUGCHandle Handle) {
 }
 
-UUserStats::UUserStats() {
-}
 

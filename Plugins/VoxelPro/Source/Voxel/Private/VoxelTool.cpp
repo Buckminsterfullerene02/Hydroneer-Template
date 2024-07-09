@@ -1,10 +1,12 @@
 #include "VoxelTool.h"
 #include "Templates/SubclassOf.h"
 
-class APlayerController;
-class UVoxelTool;
-class UObject;
-class AVoxelWorld;
+UVoxelTool::UVoxelTool() {
+    this->bShowInDropdown = true;
+    this->bShowPaintMaterial = false;
+    this->SharedConfig = NULL;
+    this->bEnabled = false;
+}
 
 FVoxelToolTickData UVoxelTool::MakeVoxelToolTickData(APlayerController* PlayerController, bool bEdit, const TMap<FName, bool>& Keys, const TMap<FName, float>& Axes, FVector2D MousePosition, FVector CameraDirection, TEnumAsByte<ECollisionChannel> CollisionChannel) {
     return FVoxelToolTickData{};
@@ -69,10 +71,4 @@ bool UVoxelTool::Deproject(FVoxelToolTickData TickData, FVector2D ScreenPosition
 void UVoxelTool::Apply(AVoxelWorld* World, FVector Position, FVector Normal, const TMap<FName, bool>& Keys, const TMap<FName, float>& Axes) {
 }
 
-UVoxelTool::UVoxelTool() {
-    this->bShowInDropdown = true;
-    this->bShowPaintMaterial = false;
-    this->SharedConfig = NULL;
-    this->bEnabled = false;
-}
 

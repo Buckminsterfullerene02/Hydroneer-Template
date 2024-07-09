@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamInventoryEligiblePromoItemDefIDs.h"
+#include "OnRequestEligiblePromoItemDefinitionsIDsAsyncDelegateDelegate.h"
 #include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
-#include "OnRequestEligiblePromoItemDefinitionsIDsAsyncDelegateDelegate.h"
+#include "SteamInventoryEligiblePromoItemDefIDs.h"
 #include "SteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs.generated.h"
 
 class UObject;
@@ -17,7 +17,8 @@ public:
     FOnRequestEligiblePromoItemDefinitionsIDsAsyncDelegate OnCallback;
     
     USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs* RequestEligiblePromoItemDefinitionsIDsAsync(UObject* WorldContextObject, FSteamID SteamID, float Timeout);
     
     UFUNCTION(BlueprintCallable)

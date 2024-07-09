@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_Round : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_Round();
+
 };
 

@@ -1,6 +1,7 @@
 #include "VoxelMaterialCollectionBase.h"
 
-class UMaterialInterface;
+UVoxelMaterialCollectionBase::UVoxelMaterialCollectionBase() {
+}
 
 TArray<FVoxelMaterialCollectionMaterialInfo> UVoxelMaterialCollectionBase::GetMaterials() const {
     return TArray<FVoxelMaterialCollectionMaterialInfo>();
@@ -14,6 +15,4 @@ UMaterialInterface* UVoxelMaterialCollectionBase::GetIndexMaterial(uint8 Index) 
     return NULL;
 }
 
-UVoxelMaterialCollectionBase::UVoxelMaterialCollectionBase() {
-}
 

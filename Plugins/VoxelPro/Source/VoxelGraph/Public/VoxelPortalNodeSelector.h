@@ -8,7 +8,7 @@ USTRUCT(BlueprintType)
 struct VOXELGRAPH_API FVoxelPortalNodeSelector {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UVoxelLocalVariableDeclaration> Input;
     
     FVoxelPortalNodeSelector();

@@ -14,5 +14,6 @@ public:
     bool bSetV;
     
     UVoxelNode_SetUVs();
+
 };
 

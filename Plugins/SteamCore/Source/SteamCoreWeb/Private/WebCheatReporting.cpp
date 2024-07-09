@@ -1,5 +1,8 @@
 #include "WebCheatReporting.h"
 
+UWebCheatReporting::UWebCheatReporting() {
+}
+
 void UWebCheatReporting::StartSecureMultiplayerSession(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID) {
 }
 
@@ -24,6 +27,4 @@ void UWebCheatReporting::GetCheatingReports(const FOnSteamCoreWebCallback& Callb
 void UWebCheatReporting::EndSecureMultiplayerSession(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID, const FString& SessionID) {
 }
 
-UWebCheatReporting::UWebCheatReporting() {
-}
 

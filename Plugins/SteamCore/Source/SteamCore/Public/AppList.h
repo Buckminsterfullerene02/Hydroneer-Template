@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "OnSteamAppInstalledDelegate.h"
 #include "OnSteamAppUninstalledDelegate.h"
 #include "SteamCoreSubsystem.h"
-#include "OnSteamAppInstalledDelegate.h"
 #include "AppList.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FOnSteamAppUninstalled SteamAppUninstalled;
     
     UAppList();
+
     UFUNCTION(BlueprintCallable)
     int32 GetNumInstalledApps();
     

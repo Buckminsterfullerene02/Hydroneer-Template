@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "EVoxelFoliageRandomGenerator.h"
-#include "EVoxelFoliageSpawnType.h"
 #include "VoxelDistance.h"
 #include "VoxelGeneratorOutputPicker.h"
+#include "EVoxelFoliageRandomGenerator.h"
+#include "EVoxelFoliageSpawnType.h"
 #include "VoxelFoliageSpawnSettings.generated.h"
 
 USTRUCT(BlueprintType)
 struct FVoxelFoliageSpawnSettings {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     EVoxelFoliageSpawnType SpawnType;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

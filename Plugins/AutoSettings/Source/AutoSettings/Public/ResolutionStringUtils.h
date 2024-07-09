@@ -8,5 +8,6 @@ class AUTOSETTINGS_API UResolutionStringUtils : public UBlueprintFunctionLibrary
     GENERATED_BODY()
 public:
     UResolutionStringUtils();
+
 };
 

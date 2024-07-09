@@ -8,5 +8,6 @@ class VOXEL_API UVoxelDefaultRendererSubsystemProxy : public UVoxelRendererSubsy
     GENERATED_BODY()
 public:
     UVoxelDefaultRendererSubsystemProxy();
+
 };
 

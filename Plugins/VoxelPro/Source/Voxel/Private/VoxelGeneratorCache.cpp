@@ -1,7 +1,7 @@
 #include "VoxelGeneratorCache.h"
 
-class UVoxelTransformableGeneratorInstanceWrapper;
-class UVoxelGeneratorInstanceWrapper;
+UVoxelGeneratorCache::UVoxelGeneratorCache() {
+}
 
 UVoxelTransformableGeneratorInstanceWrapper* UVoxelGeneratorCache::MakeTransformableGeneratorInstance(FVoxelTransformableGeneratorPicker Picker) const {
     return NULL;
@@ -11,6 +11,4 @@ UVoxelGeneratorInstanceWrapper* UVoxelGeneratorCache::MakeGeneratorInstance(FVox
     return NULL;
 }
 
-UVoxelGeneratorCache::UVoxelGeneratorCache() {
-}
 

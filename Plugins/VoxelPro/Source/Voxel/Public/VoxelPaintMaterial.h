@@ -2,12 +2,12 @@
 #include "CoreMinimal.h"
 #include "EVoxelPaintMaterialType.h"
 #include "VoxelPaintMaterialColor.h"
-#include "VoxelPaintMaterialMultiIndex.h"
-#include "VoxelPaintMaterialSingleIndex.h"
-#include "VoxelPaintMaterialMultiIndexWetness.h"
-#include "VoxelPaintMaterialUV.h"
-#include "VoxelPaintMaterialMultiIndexRaw.h"
 #include "VoxelPaintMaterialFiveWayBlend.h"
+#include "VoxelPaintMaterialMultiIndex.h"
+#include "VoxelPaintMaterialMultiIndexRaw.h"
+#include "VoxelPaintMaterialMultiIndexWetness.h"
+#include "VoxelPaintMaterialSingleIndex.h"
+#include "VoxelPaintMaterialUV.h"
 #include "VoxelPaintMaterial.generated.h"
 
 USTRUCT(BlueprintType)

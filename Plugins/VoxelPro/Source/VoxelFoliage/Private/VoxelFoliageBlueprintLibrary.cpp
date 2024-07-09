@@ -1,8 +1,7 @@
 #include "VoxelFoliageBlueprintLibrary.h"
 
-class AVoxelWorld;
-class AVoxelFoliageActor;
-class UVoxelHierarchicalInstancedStaticMeshComponent;
+UVoxelFoliageBlueprintLibrary::UVoxelFoliageBlueprintLibrary() {
+}
 
 void UVoxelFoliageBlueprintLibrary::SpawnVoxelSpawnerActorsInArea(TArray<AVoxelFoliageActor*>& OutActors, AVoxelWorld* World, FVoxelIntBox Bounds, EVoxelSpawnerActorSpawnType SpawnType) {
 }
@@ -21,6 +20,4 @@ FVoxelFoliageSave UVoxelFoliageBlueprintLibrary::GetSpawnersSave(AVoxelWorld* Wo
 void UVoxelFoliageBlueprintLibrary::AddInstances(AVoxelWorld* World, const TArray<FTransform>& Transforms, const TArray<float>& CustomData, FVoxelInstancedMeshKey MeshKey, FVector FloatingDetectionOffset) {
 }
 
-UVoxelFoliageBlueprintLibrary::UVoxelFoliageBlueprintLibrary() {
-}
 

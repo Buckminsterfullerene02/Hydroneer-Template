@@ -1,7 +1,7 @@
 #include "SteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers.h"
 
-class UObject;
-class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers;
+USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers::USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers() {
+}
 
 void USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers::HandleCallback(const FNumberOfCurrentPlayers& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers* USteamCoreUserStatsAsyn
     return NULL;
 }
 
-USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers::USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers() {
-}
 

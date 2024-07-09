@@ -7,3 +7,4 @@ UVoxelGraphMacro::UVoxelGraphMacro() {
     this->OutputNode = NULL;
 }
 
+

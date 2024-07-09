@@ -1,5 +1,8 @@
 #include "WebRemoteStorage.h"
 
+UWebRemoteStorage::UWebRemoteStorage() {
+}
+
 void UWebRemoteStorage::UnsubscribePublishedFile(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID, const FString& PublishedFileIDs) {
 }
 
@@ -24,6 +27,4 @@ void UWebRemoteStorage::EnumerateUserSubscribedFiles(const FOnSteamCoreWebCallba
 void UWebRemoteStorage::EnumerateUserPublishedFiles(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID) {
 }
 
-UWebRemoteStorage::UWebRemoteStorage() {
-}
 

@@ -1,5 +1,8 @@
 #include "Video.h"
 
+UVideo::UVideo() {
+}
+
 bool UVideo::IsBroadcasting(int32& NumViewers) {
     return false;
 }
@@ -14,6 +17,4 @@ bool UVideo::GetOPFStringForApp(int32 VideoAppID, FString& OutBuffer) {
 void UVideo::GetOPFSettings(int32 VideoAppID) {
 }
 
-UVideo::UVideo() {
-}
 

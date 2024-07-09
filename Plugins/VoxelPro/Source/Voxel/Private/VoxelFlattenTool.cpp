@@ -1,6 +1,7 @@
 #include "VoxelFlattenTool.h"
 
 UVoxelFlattenTool::UVoxelFlattenTool() {
+    this->ToolName = TEXT("Flatten");
     this->Strength = 0.10f;
     this->bFreezeOnClick = false;
     this->bUseAverage = true;
@@ -10,4 +11,5 @@ UVoxelFlattenTool::UVoxelFlattenTool() {
     this->FalloffType = EVoxelFalloff::Smooth;
     this->Falloff = 0.50f;
 }
+
 

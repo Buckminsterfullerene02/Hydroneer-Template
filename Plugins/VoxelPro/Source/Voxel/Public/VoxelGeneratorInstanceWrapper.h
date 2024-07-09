@@ -8,6 +8,7 @@ class VOXEL_API UVoxelGeneratorInstanceWrapper : public UObject {
     GENERATED_BODY()
 public:
     UVoxelGeneratorInstanceWrapper();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsValid() const;
     

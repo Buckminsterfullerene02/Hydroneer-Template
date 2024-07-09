@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnUnsubscribeItemAsyncDelegateDelegate.h"
-#include "RemoteStorageSubscribePublishedFileResult.h"
 #include "PublishedFileID.h"
+#include "RemoteStorageSubscribePublishedFileResult.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionUnsubscribeItem.generated.h"
 
-class USteamCoreUGCAsyncActionUnsubscribeItem;
 class UObject;
+class USteamCoreUGCAsyncActionUnsubscribeItem;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionUnsubscribeItem : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnUnsubscribeItemAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionUnsubscribeItem();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionUnsubscribeItem* UnsubscribeItemAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileIDs, float Timeout);
     
     UFUNCTION(BlueprintCallable)

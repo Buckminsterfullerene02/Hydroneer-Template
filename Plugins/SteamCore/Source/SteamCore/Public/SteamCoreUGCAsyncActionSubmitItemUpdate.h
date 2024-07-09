@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "OnSubmitItemUpdateAsyncDelegateDelegate.h"
 #include "SteamCoreAsyncAction.h"
 #include "SubmitItemUpdateResult.h"
-#include "OnSubmitItemUpdateAsyncDelegateDelegate.h"
 #include "UGCUpdateHandle.h"
 #include "SteamCoreUGCAsyncActionSubmitItemUpdate.generated.h"
 
@@ -17,7 +17,8 @@ public:
     FOnSubmitItemUpdateAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionSubmitItemUpdate();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionSubmitItemUpdate* SubmitItemUpdateAsync(UObject* WorldContextObject, FUGCUpdateHandle Handle, const FString& ChangeNote, float Timeout);
     
     UFUNCTION(BlueprintCallable)

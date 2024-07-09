@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "SteamCoreJson.h"
 #include "ESteamJsonResult.h"
+#include "SteamCoreJson.h"
 #include "SteamWebUtilities.generated.h"
 
 UCLASS(Abstract, Blueprintable)
@@ -10,6 +10,7 @@ class STEAMCOREWEB_API USteamWebUtilities : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     USteamWebUtilities();
+
     UFUNCTION(BlueprintCallable)
     static bool ParseJson(const FString& JsonString, TArray<FSteamCoreJson>& Data);
     

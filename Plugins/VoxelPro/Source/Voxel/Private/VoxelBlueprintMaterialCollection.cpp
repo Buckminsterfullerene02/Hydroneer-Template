@@ -4,3 +4,4 @@ UVoxelBlueprintMaterialCollection::UVoxelBlueprintMaterialCollection() {
     this->Instance = NULL;
 }
 
+

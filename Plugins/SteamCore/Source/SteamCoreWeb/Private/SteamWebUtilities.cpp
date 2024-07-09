@@ -1,5 +1,8 @@
 #include "SteamWebUtilities.h"
 
+USteamWebUtilities::USteamWebUtilities() {
+}
+
 bool USteamWebUtilities::ParseJson(const FString& JsonString, TArray<FSteamCoreJson>& Data) {
     return false;
 }
@@ -34,6 +37,4 @@ void USteamWebUtilities::FindJsonBools(const FString& JsonString, const FString&
 void USteamWebUtilities::FindJsonBool(const FString& JsonString, const FString& Key, bool& bValue, ESteamJsonResult& Result) {
 }
 
-USteamWebUtilities::USteamWebUtilities() {
-}
 

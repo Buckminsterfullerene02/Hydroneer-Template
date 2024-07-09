@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Engine/DeveloperSettings.h"
-#include "AutoSettingsInputConfigInterface.h"
-#include "MappingGroupLink.h"
-#include "KeyGroup.h"
-#include "InputMappingPreset.h"
-#include "KeyIconSet.h"
-#include "KeyFriendlyName.h"
 #include "InputCoreTypes.h"
+#include "AutoSettingsInputConfigInterface.h"
 #include "AxisAssociation.h"
+#include "InputMappingPreset.h"
+#include "KeyFriendlyName.h"
+#include "KeyGroup.h"
+#include "KeyIconSet.h"
+#include "MappingGroupLink.h"
 #include "AutoSettingsInputConfig.generated.h"
 
 UCLASS(Blueprintable, DefaultConfig, Config=Game)
@@ -81,7 +81,8 @@ protected:
     
 public:
     UAutoSettingsInputConfig();
-    
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

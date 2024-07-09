@@ -5,3 +5,4 @@ UVoxelLandscapeMaterialCollection::UVoxelLandscapeMaterialCollection() {
     this->Material = NULL;
 }
 
+

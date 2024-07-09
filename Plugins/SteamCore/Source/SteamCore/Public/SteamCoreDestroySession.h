@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreDestroySession.generated.h"
 
-class USteamCoreDestroySession;
 class UObject;
+class USteamCoreDestroySession;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreDestroySession : public USteamCoreAsyncAction {
@@ -18,10 +18,11 @@ public:
     FEmptyOnlineDelegate OnFailure;
     
     USteamCoreDestroySession();
+
     UFUNCTION(BlueprintCallable)
     void OnCompleted(FName SessionName, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreDestroySession* DestroySteamCoreSession(UObject* WorldContextObject, float Timeout);
     
 };

@@ -11,5 +11,6 @@ public:
     UVoxelInstancedMaterialCollection* LayersSource;
     
     UVoxelInstancedMaterialCollectionInstance();
+
 };
 

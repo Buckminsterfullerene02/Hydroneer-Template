@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelGraphMacroInputNode : public UVoxelGraphMacroInputOut
     GENERATED_BODY()
 public:
     UVoxelGraphMacroInputNode();
+
 };
 

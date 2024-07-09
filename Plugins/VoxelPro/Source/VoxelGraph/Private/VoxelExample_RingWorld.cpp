@@ -17,3 +17,4 @@ UVoxelExample_RingWorld::UVoxelExample_RingWorld() {
     this->BaseHeight = 1000.00f;
 }
 
+

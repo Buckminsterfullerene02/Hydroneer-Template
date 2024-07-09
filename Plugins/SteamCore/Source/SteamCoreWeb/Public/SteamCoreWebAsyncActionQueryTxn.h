@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionQueryTxn : public USteamCoreWebAs
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionQueryTxn();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionQueryTxn* QueryTxnAsync(UObject* WorldContextObject, const FString& Key, int32 AppID, const FString& OrderId, const FString& TransId);
     
 };

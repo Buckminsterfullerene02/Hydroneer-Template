@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelToolBaseConfig.h"
-#include "VoxelTool.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
-#include "VoxelIntBoxWithValidity.h"
 #include "UObject/NoExportTypes.h"
-#include "VoxelToolTickData.h"
 #include "VoxelIntBox.h"
+#include "VoxelIntBoxWithValidity.h"
+#include "VoxelTool.h"
+#include "VoxelToolBaseConfig.h"
+#include "VoxelToolTickData.h"
 #include "VoxelToolBase.generated.h"
 
 class AVoxelWorld;
@@ -34,6 +34,7 @@ private:
     
 public:
     UVoxelToolBase();
+
     UFUNCTION(BlueprintCallable)
     void UpdateToolMesh(UStaticMesh* Mesh, UMaterialInterface* Material, const FTransform& Transform, FName ID);
     

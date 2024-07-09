@@ -8,5 +8,6 @@ class VOXEL_API UVoxelMeshImporterInputData : public UObject {
     GENERATED_BODY()
 public:
     UVoxelMeshImporterInputData();
+
 };
 

@@ -1,7 +1,7 @@
 #include "VoxelBoxTools.h"
 
-class UObject;
-class AVoxelWorld;
+UVoxelBoxTools::UVoxelBoxTools() {
+}
 
 void UVoxelBoxTools::SetValueBoxAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, TArray<FModifiedVoxelValue>& ModifiedValues, FVoxelIntBox& EditedBounds, AVoxelWorld* VoxelWorld, const FVoxelIntBox& Bounds, float Value, bool bMultiThreaded, bool bRecordModifiedValues, bool bUpdateRender, bool bHideLatentWarnings) {
 }
@@ -27,6 +27,4 @@ void UVoxelBoxTools::AddBoxAsync(UObject* WorldContextObject, FLatentActionInfo 
 void UVoxelBoxTools::AddBox(TArray<FModifiedVoxelValue>& ModifiedValues, FVoxelIntBox& EditedBounds, AVoxelWorld* VoxelWorld, const FVoxelIntBox& Bounds, bool bMultiThreaded, bool bRecordModifiedValues, bool bUpdateRender) {
 }
 
-UVoxelBoxTools::UVoxelBoxTools() {
-}
 

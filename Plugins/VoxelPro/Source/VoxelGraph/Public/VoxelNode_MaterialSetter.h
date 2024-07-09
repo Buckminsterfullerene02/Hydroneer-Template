@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_MaterialSetter : public UVoxelSetterNode {
     GENERATED_BODY()
 public:
     UVoxelNode_MaterialSetter();
+
 };
 

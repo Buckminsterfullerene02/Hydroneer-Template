@@ -13,6 +13,7 @@ class VOXEL_API UVoxelCookingLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelCookingLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelCookingSettings MakeVoxelCookingSettingsFromVoxelWorld(AVoxelWorld* World);
     

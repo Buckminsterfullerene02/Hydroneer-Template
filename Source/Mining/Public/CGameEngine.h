@@ -8,5 +8,6 @@ class MINING_API UCGameEngine : public UGameEngine {
     GENERATED_BODY()
 public:
     UCGameEngine();
+
 };
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnGetAppDependenciesResultAsyncDelegateDelegate.h"
 #include "GetAppDependenciesResult.h"
+#include "OnGetAppDependenciesResultAsyncDelegateDelegate.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionGetAppDependencies.generated.h"
 
 class UObject;
@@ -17,10 +17,11 @@ public:
     FOnGetAppDependenciesResultAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionGetAppDependencies();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FGetAppDependenciesResult& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionGetAppDependencies* GetAppDependenciesAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileID, float Timeout);
     
 };

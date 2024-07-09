@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ESteamLeaderboardDisplayType.h"
 #include "ESteamLeaderboardSortMethod.h"
 #include "FindOrCreateLeaderboardData.h"
 #include "OnFindOrCreateLeaderboardAsyncDelegateDelegate.h"
 #include "SteamCoreAsyncAction.h"
-#include "ESteamLeaderboardDisplayType.h"
 #include "SteamCoreUserStatsAsyncActionFindOrCreateLeaderboard.generated.h"
 
-class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard;
 class UObject;
+class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard : public USteamCoreAsyncAction {
@@ -18,10 +18,11 @@ public:
     FOnFindOrCreateLeaderboardAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FFindOrCreateLeaderboardData& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard* FindOrCreateLeaderboardAsync(UObject* WorldContextObject, const FString& LeaderboardName, ESteamLeaderboardSortMethod SortMethod, ESteamLeaderboardDisplayType DisplayType, float Timeout);
     
 };

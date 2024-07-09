@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamSessionSetting.h"
 #include "SteamCoreCreateSession.generated.h"
 
-class USteamCoreCreateSession;
 class UObject;
+class USteamCoreCreateSession;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreCreateSession : public USteamCoreAsyncAction {
@@ -19,7 +19,8 @@ public:
     FEmptyOnlineDelegate OnFailure;
     
     USteamCoreCreateSession();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreCreateSession* CreateSteamCoreSession(UObject* WorldContextObject, TMap<FString, FSteamSessionSetting> SessionSettings, const FString& SessionName, int32 MaxPlayers, bool bUseLAN, bool bAllowInvites, bool bUsesPresence, bool bAllowJoinViaPresence, bool bAllowJoinViaPresenceFriendsOnly, bool bAntiCheatProtected, bool bUsesStats, bool bShouldAdvertise, bool bUseLobbiesVoiceChatIfAvailable, float Timeout);
     
 };

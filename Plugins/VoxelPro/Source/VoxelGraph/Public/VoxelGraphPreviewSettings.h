@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
-#include "VoxelIntBox.h"
-#include "EVoxelGraphPreviewAxes.h"
 #include "UObject/NoExportTypes.h"
-#include "EVoxelGraphPreviewShowValue.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/Object.h"
+#include "UObject/NoExportTypes.h"
 #include "EVoxelMaterialConfig.h"
 #include "EVoxelRenderType.h"
-#include "EVoxelGraphPreviewType.h"
+#include "VoxelIntBox.h"
 #include "EVoxelGraphMaterialPreviewType.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "EVoxelGraphPreviewAxes.h"
+#include "EVoxelGraphPreviewShowValue.h"
+#include "EVoxelGraphPreviewType.h"
 #include "VoxelGraphPreviewSettings.generated.h"
 
-class UVoxelPlaceableItemManager;
-class UVoxelMaterialCollectionBase;
-class UStaticMesh;
 class UMaterialInterface;
+class UStaticMesh;
+class UVoxelMaterialCollectionBase;
+class UVoxelPlaceableItemManager;
 
 UCLASS(Blueprintable, Within=VoxelGraphGenerator)
 class VOXELGRAPH_API UVoxelGraphPreviewSettings : public UObject {
@@ -146,5 +146,6 @@ public:
     int32 LODToPreview;
     
     UVoxelGraphPreviewSettings();
+
 };
 

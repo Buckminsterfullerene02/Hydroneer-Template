@@ -14,5 +14,6 @@ public:
     int32 Dimension;
     
     UVoxelNode_VoronoiNoiseBase();
+
 };
 

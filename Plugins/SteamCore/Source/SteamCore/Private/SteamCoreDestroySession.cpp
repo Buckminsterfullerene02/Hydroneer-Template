@@ -1,7 +1,7 @@
 #include "SteamCoreDestroySession.h"
 
-class UObject;
-class USteamCoreDestroySession;
+USteamCoreDestroySession::USteamCoreDestroySession() {
+}
 
 void USteamCoreDestroySession::OnCompleted(FName SessionName, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreDestroySession* USteamCoreDestroySession::DestroySteamCoreSession(UObj
     return NULL;
 }
 
-USteamCoreDestroySession::USteamCoreDestroySession() {
-}
 

@@ -9,7 +9,8 @@ class VOXEL_API UVoxelPhysicsPartSpawner_GetVoxels : public UObject, public IVox
     GENERATED_BODY()
 public:
     UVoxelPhysicsPartSpawner_GetVoxels();
-    
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

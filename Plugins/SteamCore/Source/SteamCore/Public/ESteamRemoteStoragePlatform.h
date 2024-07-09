@@ -7,9 +7,9 @@ enum class ESteamRemoteStoragePlatform : uint8 {
     None,
     Windows,
     OSX,
-    PS3 = 0x4,
-    Linux = 0x8,
-    Reserved2 = 0x10,
-    All = 0xFE,
+    PS3 = 4,
+    Linux = 8,
+    Reserved2 = 16,
+    All = 254,
 };
 

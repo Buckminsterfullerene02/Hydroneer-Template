@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebGameInventory.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebGameInventory : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebGameInventory();
+
     UFUNCTION(BlueprintCallable)
     void UpdateItemDefs();
     

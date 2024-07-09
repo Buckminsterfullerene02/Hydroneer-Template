@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnGetUserItemVoteAsyncDelegateDelegate.h"
 #include "GetUserItemVoteResult.h"
+#include "OnGetUserItemVoteAsyncDelegateDelegate.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionGetUserItemVote.generated.h"
 
-class USteamCoreUGCAsyncActionGetUserItemVote;
 class UObject;
+class USteamCoreUGCAsyncActionGetUserItemVote;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionGetUserItemVote : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FOnGetUserItemVoteAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionGetUserItemVote();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FGetUserItemVoteResult& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionGetUserItemVote* GetUserItemVoteAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileID, float Timeout);
     
 };

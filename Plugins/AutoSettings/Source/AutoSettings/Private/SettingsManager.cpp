@@ -1,5 +1,9 @@
 #include "SettingsManager.h"
 
+USettingsManager::USettingsManager() {
+    this->IniFilename = TEXT("C:/Users/Bobby/AppData/Local/Mining/Saved/Config/WindowsNoEditor/Settings.ini");
+}
+
 void USettingsManager::SaveSettingStatic(FAutoSettingData SettingData) {
 }
 
@@ -37,7 +41,4 @@ void USettingsManager::AutoDetectSettingsStatic(int32 WorkScale, float CPUMultip
 void USettingsManager::ApplySettingStatic(FAutoSettingData SettingData) {
 }
 
-USettingsManager::USettingsManager() {
-    this->IniFilename = TEXT("C:/Users/Bobby/AppData/Local/Mining/Saved/Config/WindowsNoEditor/Settings.ini");
-}
 

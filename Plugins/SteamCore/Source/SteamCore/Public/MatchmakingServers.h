@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "OnServerPingDelegate.h"
+#include "OnServerRulesDelegate.h"
 #include "OnServerUpdatedDelegate.h"
 #include "SteamCoreSubsystem.h"
-#include "OnServerRulesDelegate.h"
 #include "MatchmakingServers.generated.h"
 
 class UServerFilter;
@@ -13,6 +13,7 @@ class STEAMCORE_API UMatchmakingServers : public USteamCoreSubsystem {
     GENERATED_BODY()
 public:
     UMatchmakingServers();
+
     UFUNCTION(BlueprintCallable)
     void ServerRules(const FOnServerRules& Callback, const FString& IP, int32 QueryPort);
     

@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
-#include "EBindingCaptureMode.h"
-#include "GameplayTagContainer.h"
-#include "ChordCapturedEventDelegate.h"
-#include "InputCoreTypes.h"
-#include "ChordRejectedEventDelegate.h"
-#include "CapturePromptClosedEventDelegate.h"
 #include "UObject/NoExportTypes.h"
+#include "GameplayTagContainer.h"
+#include "InputCoreTypes.h"
+#include "Blueprint/UserWidget.h"
+#include "CapturePromptClosedEventDelegate.h"
+#include "ChordCapturedEventDelegate.h"
+#include "ChordRejectedEventDelegate.h"
+#include "EBindingCaptureMode.h"
 #include "BindCapturePrompt.generated.h"
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
@@ -48,6 +48,7 @@ private:
     
 public:
     UBindCapturePrompt();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool IsKeyAllowed(FKey PrimaryKey);

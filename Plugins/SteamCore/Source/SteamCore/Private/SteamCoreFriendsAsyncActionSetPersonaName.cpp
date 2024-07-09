@@ -1,7 +1,7 @@
 #include "SteamCoreFriendsAsyncActionSetPersonaName.h"
 
-class UObject;
-class USteamCoreFriendsAsyncActionSetPersonaName;
+USteamCoreFriendsAsyncActionSetPersonaName::USteamCoreFriendsAsyncActionSetPersonaName() {
+}
 
 USteamCoreFriendsAsyncActionSetPersonaName* USteamCoreFriendsAsyncActionSetPersonaName::SetPersonaNameAsync(UObject* WorldContextObject, const FString& Name, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreFriendsAsyncActionSetPersonaName* USteamCoreFriendsAsyncActionSetPerso
 void USteamCoreFriendsAsyncActionSetPersonaName::HandleCallback(const FSetPersonaNameResponse& Data, bool bWasSuccessful) {
 }
 
-USteamCoreFriendsAsyncActionSetPersonaName::USteamCoreFriendsAsyncActionSetPersonaName() {
-}
 

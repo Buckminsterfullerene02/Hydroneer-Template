@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebEconMarketService.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebEconMarketService : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebEconMarketService();
+
     UFUNCTION(BlueprintCallable)
     void GetPopular(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& Language, int32 Rows, int32 Start, int32 FilterAppId, int32 ECurrency);
     

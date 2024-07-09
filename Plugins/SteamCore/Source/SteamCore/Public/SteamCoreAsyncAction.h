@@ -10,10 +10,11 @@ class STEAMCORE_API USteamCoreAsyncAction : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UObject> m_WorldContextObject;
     
 public:
     USteamCoreAsyncAction();
+
 };
 

@@ -42,6 +42,7 @@ public:
     FVoxelFloatTexture HeightmapInit;
     
     UVoxelErosion();
+
     UFUNCTION(BlueprintCallable)
     void Step(int32 Count);
     

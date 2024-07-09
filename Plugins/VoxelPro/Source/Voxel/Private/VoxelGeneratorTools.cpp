@@ -1,11 +1,8 @@
 #include "VoxelGeneratorTools.h"
 #include "Templates/SubclassOf.h"
 
-class UVoxelGenerator;
-class UObject;
-class UVoxelTransformableGenerator;
-class UVoxelTransformableGeneratorInstanceWrapper;
-class UVoxelGeneratorInstanceWrapper;
+UVoxelGeneratorTools::UVoxelGeneratorTools() {
+}
 
 bool UVoxelGeneratorTools::SetTransformableGeneratorParameter(const FVoxelTransformableGeneratorPicker& Picker, FName UniqueName, int32 Value) {
     return false;
@@ -59,6 +56,4 @@ void UVoxelGeneratorTools::CreateColorTextureFromGeneratorAsync(UObject* WorldCo
 void UVoxelGeneratorTools::CreateColorTextureFromGenerator(FVoxelColorTexture& OutTexture, UVoxelGeneratorInstanceWrapper* Generator, FName OutputName, int32 SizeX, int32 SizeY, float Scale, int32 StartX, int32 StartY) {
 }
 
-UVoxelGeneratorTools::UVoxelGeneratorTools() {
-}
 

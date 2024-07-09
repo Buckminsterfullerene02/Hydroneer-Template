@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnPingServerAsyncDelegateDelegate.h"
 #include "GameServerItem.h"
+#include "OnPingServerAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreMatchmakingServersAsyncActionPingServer.generated.h"
 
-class USteamCoreMatchmakingServersAsyncActionPingServer;
 class UObject;
+class USteamCoreMatchmakingServersAsyncActionPingServer;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreMatchmakingServersAsyncActionPingServer : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnPingServerAsyncDelegate OnCallback;
     
     USteamCoreMatchmakingServersAsyncActionPingServer();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreMatchmakingServersAsyncActionPingServer* PingServerAsync(UObject* WorldContextObject, const FString& IP, int32 Port, float Timeout);
     
     UFUNCTION(BlueprintCallable)

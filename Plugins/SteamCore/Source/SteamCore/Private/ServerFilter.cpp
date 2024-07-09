@@ -1,5 +1,8 @@
 #include "ServerFilter.h"
 
+UServerFilter::UServerFilter() {
+}
+
 TMap<FString, FString> UServerFilter::GetFilters() {
     return TMap<FString, FString>();
 }
@@ -73,6 +76,4 @@ void UServerFilter::AddFilterDedicated() {
 void UServerFilter::AddFilterAnd(const FString& Value) {
 }
 
-UServerFilter::UServerFilter() {
-}
 

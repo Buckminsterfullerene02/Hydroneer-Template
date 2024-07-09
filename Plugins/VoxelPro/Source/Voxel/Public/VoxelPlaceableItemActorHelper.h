@@ -8,5 +8,6 @@ class VOXEL_API UVoxelPlaceableItemActorHelper : public UObject {
     GENERATED_BODY()
 public:
     UVoxelPlaceableItemActorHelper();
+
 };
 

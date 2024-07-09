@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnCreateLobbyAsyncDelegateDelegate.h"
-#include "SteamCoreAsyncAction.h"
 #include "CreateLobbyData.h"
 #include "ESteamLobbyType.h"
+#include "OnCreateLobbyAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreMatchmakingAsyncActionCreateLobby.generated.h"
 
-class USteamCoreMatchmakingAsyncActionCreateLobby;
 class UObject;
+class USteamCoreMatchmakingAsyncActionCreateLobby;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreMatchmakingAsyncActionCreateLobby : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FOnCreateLobbyAsyncDelegate OnCallback;
     
     USteamCoreMatchmakingAsyncActionCreateLobby();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FCreateLobbyData& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreMatchmakingAsyncActionCreateLobby* CreateLobbyAsync(UObject* WorldContextObject, ESteamLobbyType LobbyType, int32 MaxMembers, float Timeout);
     
 };

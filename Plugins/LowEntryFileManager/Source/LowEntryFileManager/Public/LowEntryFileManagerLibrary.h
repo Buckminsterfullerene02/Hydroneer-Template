@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
 #include "UObject/NoExportTypes.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "ELowEntryFileManagerYesNo.h"
 #include "LowEntryFileManagerLibrary.generated.h"
 
@@ -12,6 +12,7 @@ class LOWENTRYFILEMANAGER_API ULowEntryFileManagerLibrary : public UBlueprintFun
     GENERATED_BODY()
 public:
     ULowEntryFileManagerLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void SplitPath(const FString& Path, FString& PathPart, FString& NamePart);
     
@@ -108,7 +109,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<FString> GetFileNames(const FString& Directory);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<uint8> GetFileData(const FString& File);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

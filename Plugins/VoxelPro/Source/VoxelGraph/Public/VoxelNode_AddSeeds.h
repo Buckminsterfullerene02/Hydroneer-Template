@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_AddSeeds : public UVoxelSeedNode {
     GENERATED_BODY()
 public:
     UVoxelNode_AddSeeds();
+
 };
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_PlaneSDF : public UVoxelSDFNode {
     GENERATED_BODY()
 public:
     UVoxelNode_PlaneSDF();
+
 };
 

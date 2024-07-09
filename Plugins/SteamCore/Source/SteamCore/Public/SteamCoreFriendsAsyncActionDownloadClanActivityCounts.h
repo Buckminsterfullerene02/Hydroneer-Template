@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnDownloadClanActivityCountsAsyncDelegateDelegate.h"
 #include "DownloadClanActivityCountsResult.h"
+#include "OnDownloadClanActivityCountsAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
 #include "SteamCoreFriendsAsyncActionDownloadClanActivityCounts.generated.h"
 
-class USteamCoreFriendsAsyncActionDownloadClanActivityCounts;
 class UObject;
+class USteamCoreFriendsAsyncActionDownloadClanActivityCounts;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFriendsAsyncActionDownloadClanActivityCounts : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FOnDownloadClanActivityCountsAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionDownloadClanActivityCounts();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FDownloadClanActivityCountsResult& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionDownloadClanActivityCounts* DownloadClanActivityCountsAsync(UObject* WorldContextObject, TArray<FSteamID> SteamIDClans, float Timeout);
     
 };

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_LOD : public UVoxelNodeWithContext {
     GENERATED_BODY()
 public:
     UVoxelNode_LOD();
+
 };
 

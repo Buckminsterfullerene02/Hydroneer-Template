@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PublishedFileID.h"
 #include "ESteamResult.h"
+#include "PublishedFileID.h"
 #include "AddAppDependencyResult.generated.h"
 
 USTRUCT(BlueprintType)

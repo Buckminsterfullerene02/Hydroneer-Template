@@ -1,6 +1,10 @@
 #include "VoxelPlaceableItemManager.h"
 
-class UVoxelGeneratorCache;
+UVoxelPlaceableItemManager::UVoxelPlaceableItemManager() {
+    this->bEnableDebug = true;
+    this->bDebugBounds = false;
+    this->GeneratorCache = NULL;
+}
 
 void UVoxelPlaceableItemManager::OnGenerate_Implementation() {
 }
@@ -21,9 +25,4 @@ void UVoxelPlaceableItemManager::DrawDebugLine(FVector Start, FVector End, FLine
 void UVoxelPlaceableItemManager::AddDataItem(FVoxelDataItemConstructionInfo Info) {
 }
 
-UVoxelPlaceableItemManager::UVoxelPlaceableItemManager() {
-    this->bEnableDebug = true;
-    this->bDebugBounds = false;
-    this->GeneratorCache = NULL;
-}
 

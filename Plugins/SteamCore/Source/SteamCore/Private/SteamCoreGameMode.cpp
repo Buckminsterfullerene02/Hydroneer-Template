@@ -1,5 +1,6 @@
 #include "SteamCoreGameMode.h"
 
-ASteamCoreGameMode::ASteamCoreGameMode() {
+ASteamCoreGameMode::ASteamCoreGameMode(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

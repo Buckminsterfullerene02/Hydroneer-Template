@@ -6,6 +6,5 @@ UENUM(BlueprintType)
 enum class EFileSaveMethod : uint8 {
     FM_Legacy,
     FM_Optimized,
-    FM_MAX UMETA(Hidden),
 };
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_IfWithDefaultToTrue : public UVoxelNode_If {
     GENERATED_BODY()
 public:
     UVoxelNode_IfWithDefaultToTrue();
+
 };
 

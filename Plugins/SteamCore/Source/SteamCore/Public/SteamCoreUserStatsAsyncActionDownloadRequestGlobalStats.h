@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnRequestGlobalStatsAsyncDelegateDelegate.h"
 #include "GlobalStatsReceived.h"
+#include "OnRequestGlobalStatsAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUserStatsAsyncActionDownloadRequestGlobalStats.generated.h"
 
 class UObject;
@@ -16,7 +16,8 @@ public:
     FOnRequestGlobalStatsAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionDownloadRequestGlobalStats* RequestGlobalStatsAsync(UObject* WorldContextObject, int32 HistoryDays, float Timeout);
     
     UFUNCTION(BlueprintCallable)

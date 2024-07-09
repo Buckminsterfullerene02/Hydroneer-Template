@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
+#include "GameplayTagContainer.h"
 #include "Blueprint/UserWidget.h"
-#include "GameplayTagContainer.h"
-#include "GameplayTagContainer.h"
 #include "CapturedInput.h"
 #include "InputMapping.generated.h"
 
@@ -22,11 +22,12 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer IconTags;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBindCaptureButton* BindCaptureButton;
     
 public:
     UInputMapping();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateMapping();
     

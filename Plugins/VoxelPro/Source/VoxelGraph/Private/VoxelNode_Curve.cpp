@@ -4,3 +4,4 @@ UVoxelNode_Curve::UVoxelNode_Curve() {
     this->Curve = NULL;
 }
 
+

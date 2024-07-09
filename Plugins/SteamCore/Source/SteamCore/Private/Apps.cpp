@@ -1,5 +1,8 @@
 #include "Apps.h"
 
+UApps::UApps() {
+}
+
 void UApps::UninstallDLC(int32 AppID) {
 }
 
@@ -105,6 +108,4 @@ bool UApps::BGetDLCDataByIndex(int32 DLC, int32& AppID, bool& bAvailable, FStrin
     return false;
 }
 
-UApps::UApps() {
-}
 

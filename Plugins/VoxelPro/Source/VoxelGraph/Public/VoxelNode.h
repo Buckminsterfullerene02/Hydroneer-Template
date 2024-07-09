@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelPin.h"
 #include "UObject/Object.h"
+#include "VoxelPin.h"
 #include "VoxelNode.generated.h"
 
 class UVoxelGraphGenerator;
@@ -23,5 +23,6 @@ public:
     int32 InputPinCount;
     
     UVoxelNode();
+
 };
 

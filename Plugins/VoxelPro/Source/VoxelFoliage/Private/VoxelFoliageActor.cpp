@@ -2,9 +2,11 @@
 #include "Components/StaticMeshComponent.h"
 #include "VoxelPhysicsRelevancyComponent.h"
 
-AVoxelFoliageActor::AVoxelFoliageActor() {
+AVoxelFoliageActor::AVoxelFoliageActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RootComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshComponent"));
     this->bAutomaticallySetMesh = true;
-    this->StaticMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshComponent"));
+    this->StaticMeshComponent = (UStaticMeshComponent*)RootComponent;
     this->PhysicsRelevancyComponent = CreateDefaultSubobject<UVoxelPhysicsRelevancyComponent>(TEXT("VoxelPhysicsRelevancyComponent"));
 }
+
 

@@ -9,6 +9,7 @@ class STEAMCORE_API UNetworkingUtils : public USteamCoreSubsystem {
     GENERATED_BODY()
 public:
     UNetworkingUtils();
+
     UFUNCTION(BlueprintCallable)
     static bool ParsePingLocationString(const FString& String, FSteamNetworkPingLocation& Result);
     

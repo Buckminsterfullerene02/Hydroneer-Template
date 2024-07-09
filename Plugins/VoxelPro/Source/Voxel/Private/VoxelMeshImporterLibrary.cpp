@@ -1,11 +1,7 @@
 #include "VoxelMeshImporterLibrary.h"
 
-class UStaticMesh;
-class UMaterialInterface;
-class UObject;
-class UTextureRenderTarget2D;
-class UVoxelMeshImporterInputData;
-class UVoxelDataAsset;
+UVoxelMeshImporterLibrary::UVoxelMeshImporterLibrary() {
+}
 
 UTextureRenderTarget2D* UVoxelMeshImporterLibrary::CreateTextureFromMaterial(UObject* WorldContextObject, UMaterialInterface* Material, int32 Width, int32 Height) {
     return NULL;
@@ -21,6 +17,4 @@ void UVoxelMeshImporterLibrary::ConvertMeshToVoxels_NoMaterials(UObject* WorldCo
 void UVoxelMeshImporterLibrary::ConvertMeshToVoxels(UObject* WorldContextObject, UVoxelMeshImporterInputData* Mesh, FTransform Transform, bool bSubtractive, FVoxelMeshImporterSettings Settings, FVoxelMeshImporterRenderTargetCache& RenderTargetCache, UVoxelDataAsset*& Asset, int32& NumLeaks) {
 }
 
-UVoxelMeshImporterLibrary::UVoxelMeshImporterLibrary() {
-}
 

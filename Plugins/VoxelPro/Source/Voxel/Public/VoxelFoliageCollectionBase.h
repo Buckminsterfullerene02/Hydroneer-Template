@@ -8,5 +8,6 @@ class VOXEL_API UVoxelFoliageCollectionBase : public UObject {
     GENERATED_BODY()
 public:
     UVoxelFoliageCollectionBase();
+
 };
 

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelSphereToolBase.h"
-#include "VoxelInt32Interval.h"
 #include "EVoxelFalloff.h"
+#include "VoxelInt32Interval.h"
+#include "VoxelSphereToolBase.h"
 #include "VoxelSphereTool.generated.h"
 
 class UMaterialInterface;
@@ -36,5 +36,6 @@ public:
     float Falloff;
     
     UVoxelSphereTool();
+
 };
 

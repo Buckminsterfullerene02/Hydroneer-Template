@@ -5,3 +5,4 @@ UVoxelNode_CraterNoiseFractal::UVoxelNode_CraterNoiseFractal() {
     this->FalloffExponent = 0.00f;
 }
 
+

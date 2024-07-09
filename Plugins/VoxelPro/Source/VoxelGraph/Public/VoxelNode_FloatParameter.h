@@ -11,5 +11,6 @@ public:
     float Value;
     
     UVoxelNode_FloatParameter();
+
 };
 

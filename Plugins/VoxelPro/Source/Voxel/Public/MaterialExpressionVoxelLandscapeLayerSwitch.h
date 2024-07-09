@@ -8,5 +8,6 @@ class VOXEL_API UMaterialExpressionVoxelLandscapeLayerSwitch : public UMaterialE
     GENERATED_BODY()
 public:
     UMaterialExpressionVoxelLandscapeLayerSwitch();
+
 };
 

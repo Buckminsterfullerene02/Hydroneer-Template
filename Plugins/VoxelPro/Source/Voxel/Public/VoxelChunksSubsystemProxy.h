@@ -8,5 +8,6 @@ class VOXEL_API UVoxelChunksSubsystemProxy : public UVoxelStaticSubsystemProxy {
     GENERATED_BODY()
 public:
     UVoxelChunksSubsystemProxy();
+
 };
 

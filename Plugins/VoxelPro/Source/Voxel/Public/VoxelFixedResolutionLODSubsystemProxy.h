@@ -8,5 +8,6 @@ class UVoxelFixedResolutionLODSubsystemProxy : public UVoxelLODSubsystemProxy {
     GENERATED_BODY()
 public:
     UVoxelFixedResolutionLODSubsystemProxy();
+
 };
 

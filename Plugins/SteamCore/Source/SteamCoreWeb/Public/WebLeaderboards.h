@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebLeaderboards.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebLeaderboards : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebLeaderboards();
+
     UFUNCTION(BlueprintCallable)
     void SetLeaderboardScore(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, int32 LeaderbordId, const FString& SteamID, int32 Score, TArray<uint8> Details, const FString& ScoreMethod);
     

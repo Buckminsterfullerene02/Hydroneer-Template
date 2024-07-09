@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelMaterialIndices.h"
 #include "VoxelMaterialCollectionBase.h"
+#include "VoxelMaterialIndices.h"
 #include "VoxelCachedMaterialCollection.generated.h"
 
 class UMaterialInterface;
@@ -11,10 +11,11 @@ class VOXEL_API UVoxelCachedMaterialCollection : public UVoxelMaterialCollection
     GENERATED_BODY()
 public:
 private:
-    /*UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    TMap<FVoxelMaterialIndices, UMaterialInterface*> CachedMaterials;*/
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<FVoxelMaterialIndices, UMaterialInterface*> CachedMaterials;
     
 public:
     UVoxelCachedMaterialCollection();
+
 };
 

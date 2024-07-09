@@ -1,7 +1,7 @@
 #include "SteamCoreSteamPartiesAsyncActionCreateBeacon.h"
 
-class UObject;
-class USteamCoreSteamPartiesAsyncActionCreateBeacon;
+USteamCoreSteamPartiesAsyncActionCreateBeacon::USteamCoreSteamPartiesAsyncActionCreateBeacon() {
+}
 
 void USteamCoreSteamPartiesAsyncActionCreateBeacon::HandleCallback(const FCreateBeaconData& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreSteamPartiesAsyncActionCreateBeacon* USteamCoreSteamPartiesAsyncAction
     return NULL;
 }
 
-USteamCoreSteamPartiesAsyncActionCreateBeacon::USteamCoreSteamPartiesAsyncActionCreateBeacon() {
-}
 

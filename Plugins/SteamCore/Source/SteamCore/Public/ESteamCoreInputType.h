@@ -18,6 +18,6 @@ enum class ESteamCoreInputType : uint8 {
     MobileTouch,
     PS3Controller,
     Count,
-    MaximumPossibleValue = 0xFF,
+    MaximumPossibleValue = 255,
 };
 

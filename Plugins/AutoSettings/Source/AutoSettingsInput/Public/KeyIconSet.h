@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
-#include "KeyIconPair.h"
 #include "InputCoreTypes.h"
+#include "KeyIconPair.h"
 #include "KeyIconSet.generated.h"
 
 class UTexture;

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamID.h"
 #include "ESteamP2PSessionError.h"
+#include "SteamID.h"
 #include "P2PSessionConnectFail.generated.h"
 
 USTRUCT(BlueprintType)

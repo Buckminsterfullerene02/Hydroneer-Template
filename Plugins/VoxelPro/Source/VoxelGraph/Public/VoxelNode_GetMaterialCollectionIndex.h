@@ -13,5 +13,6 @@ public:
     UMaterialInterface* Material;
     
     UVoxelNode_GetMaterialCollectionIndex();
+
 };
 

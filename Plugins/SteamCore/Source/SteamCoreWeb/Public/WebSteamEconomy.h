@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebSteamEconomy.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebSteamEconomy : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebSteamEconomy();
+
     UFUNCTION(BlueprintCallable)
     void StartTrade(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& SteamIDd, const FString& SteamId2);
     

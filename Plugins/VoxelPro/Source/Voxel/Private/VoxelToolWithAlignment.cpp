@@ -7,3 +7,4 @@ UVoxelToolWithAlignment::UVoxelToolWithAlignment() {
     this->bShowPlanePreview = true;
 }
 
+

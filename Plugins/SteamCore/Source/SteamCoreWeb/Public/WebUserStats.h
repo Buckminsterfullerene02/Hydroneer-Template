@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebUserStats.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebUserStats : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebUserStats();
+
     UFUNCTION(BlueprintCallable)
     void SetUserStatsForGame(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID, TArray<FString> Names, TArray<int32> Values);
     

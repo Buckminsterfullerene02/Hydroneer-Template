@@ -8,5 +8,6 @@ class VOXEL_API UVoxelStaticSubsystemProxy : public UVoxelSubsystemProxy {
     GENERATED_BODY()
 public:
     UVoxelStaticSubsystemProxy();
+
 };
 

@@ -1,8 +1,7 @@
 #include "SteamUtilities.h"
 
-class APlayerState;
-class UObject;
-class UServerFilter;
+USteamUtilities::USteamUtilities() {
+}
 
 bool USteamUtilities::WriteBytesToFile(bool bOverwriteIfExists, const FString& AbsoluteFilePath, const TArray<uint8>& DataBuffer) {
     return false;
@@ -235,6 +234,4 @@ FString USteamUtilities::BP_BytesToString(TArray<uint8> Array) {
     return TEXT("");
 }
 
-USteamUtilities::USteamUtilities() {
-}
 

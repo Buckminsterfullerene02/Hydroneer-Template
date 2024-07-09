@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
 #include "ESteamParentalFeature.h"
+#include "SteamCoreSubsystem.h"
 #include "ParentalSettings.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCORE_API UParentalSettings : public USteamCoreSubsystem {
     GENERATED_BODY()
 public:
     UParentalSettings();
+
     UFUNCTION(BlueprintCallable)
     bool BIsParentalLockLocked();
     

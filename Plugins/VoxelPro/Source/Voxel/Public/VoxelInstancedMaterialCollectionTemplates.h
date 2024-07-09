@@ -31,5 +31,6 @@ public:
     UMaterialInterface* Template6x;
     
     UVoxelInstancedMaterialCollectionTemplates();
+
 };
 

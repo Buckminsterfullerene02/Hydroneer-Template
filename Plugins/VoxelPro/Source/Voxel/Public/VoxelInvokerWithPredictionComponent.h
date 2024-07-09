@@ -13,6 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float PredictionTime;
     
-    UVoxelInvokerWithPredictionComponent();
+    UVoxelInvokerWithPredictionComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

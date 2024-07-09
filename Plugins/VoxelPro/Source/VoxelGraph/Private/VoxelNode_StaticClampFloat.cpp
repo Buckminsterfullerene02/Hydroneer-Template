@@ -5,3 +5,4 @@ UVoxelNode_StaticClampFloat::UVoxelNode_StaticClampFloat() {
     this->Max = 0.00f;
 }
 
+

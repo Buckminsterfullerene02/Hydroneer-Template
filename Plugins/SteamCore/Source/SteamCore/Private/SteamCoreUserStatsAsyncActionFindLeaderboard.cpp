@@ -1,7 +1,7 @@
 #include "SteamCoreUserStatsAsyncActionFindLeaderboard.h"
 
-class UObject;
-class USteamCoreUserStatsAsyncActionFindLeaderboard;
+USteamCoreUserStatsAsyncActionFindLeaderboard::USteamCoreUserStatsAsyncActionFindLeaderboard() {
+}
 
 void USteamCoreUserStatsAsyncActionFindLeaderboard::HandleCallback(const FLeaderboardFindResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUserStatsAsyncActionFindLeaderboard* USteamCoreUserStatsAsyncActionFin
     return NULL;
 }
 
-USteamCoreUserStatsAsyncActionFindLeaderboard::USteamCoreUserStatsAsyncActionFindLeaderboard() {
-}
 

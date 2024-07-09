@@ -1,5 +1,8 @@
 #include "WebInventoryService.h"
 
+UWebInventoryService::UWebInventoryService() {
+}
+
 void UWebInventoryService::ModifyItems(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& InputJson, const FString& SteamID, int32 Timestamp, const FString& Updates) {
 }
 
@@ -30,6 +33,4 @@ void UWebInventoryService::AddPromoItem(const FOnSteamCoreWebCallback& Callback,
 void UWebInventoryService::AddItem(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, TArray<int32> ItemdefId, const FString& ItemPropsJson, const FString& SteamID, bool bNotify, const FString& RequestID, bool bTradeRestriction) {
 }
 
-UWebInventoryService::UWebInventoryService() {
-}
 

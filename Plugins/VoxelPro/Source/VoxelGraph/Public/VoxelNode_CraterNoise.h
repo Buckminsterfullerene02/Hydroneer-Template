@@ -14,5 +14,6 @@ public:
     float FalloffExponent;
     
     UVoxelNode_CraterNoise();
+
 };
 

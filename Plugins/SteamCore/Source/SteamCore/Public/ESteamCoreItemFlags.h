@@ -5,7 +5,7 @@
 UENUM(BlueprintType)
 enum ESteamCoreItemFlags {
     ENoTrade,
-    ERemoved = 0x8,
+    ERemoved = 8,
     EConsumed,
 };
 

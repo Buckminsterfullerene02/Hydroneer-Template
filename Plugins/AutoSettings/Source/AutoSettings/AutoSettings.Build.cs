@@ -12,11 +12,6 @@ public class AutoSettings : ModuleRules {
             "DeveloperSettings",
             "Engine",
             "GameplayTags",
-            "InputCore",
-            "MovieScene",
-            "MovieSceneTracks",
-            "PropertyPath",
-            "Slate",
             "SlateCore",
             "UMG",
         });

@@ -22,5 +22,6 @@ public:
     TSoftObjectPtr<UMaterialInterface> Layer_3;
     
     UVG_Example_MultiIndex();
+
 };
 

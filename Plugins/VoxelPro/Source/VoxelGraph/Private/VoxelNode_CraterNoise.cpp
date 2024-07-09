@@ -5,3 +5,4 @@ UVoxelNode_CraterNoise::UVoxelNode_CraterNoise() {
     this->FalloffExponent = 0.00f;
 }
 
+

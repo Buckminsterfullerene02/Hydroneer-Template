@@ -1,6 +1,7 @@
 #include "CHydroneerLibrary.h"
 
-class UPrimitiveComponent;
+UCHydroneerLibrary::UCHydroneerLibrary() {
+}
 
 bool UCHydroneerLibrary::StringToClassRef(const FString& ClassStringName, UClass*& OutClass) {
     return false;
@@ -52,6 +53,4 @@ void UCHydroneerLibrary::CopyOverDirectory(const FString& OldDirectory, const FS
 void UCHydroneerLibrary::BackupSave(const FString& SaveName, bool bIncrementSave, int32 MaxIncrements) {
 }
 
-UCHydroneerLibrary::UCHydroneerLibrary() {
-}
 

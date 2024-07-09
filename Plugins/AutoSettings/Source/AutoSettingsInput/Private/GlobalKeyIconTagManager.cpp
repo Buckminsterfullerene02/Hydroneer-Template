@@ -1,6 +1,7 @@
 #include "GlobalKeyIconTagManager.h"
 
-class UTexture;
+UGlobalKeyIconTagManager::UGlobalKeyIconTagManager() {
+}
 
 void UGlobalKeyIconTagManager::SetGlobalKeyIconTags(FGameplayTagContainer InGlobalIconTags) {
 }
@@ -9,6 +10,4 @@ UTexture* UGlobalKeyIconTagManager::GetIconForKey(FKey InKey, FGameplayTagContai
     return NULL;
 }
 
-UGlobalKeyIconTagManager::UGlobalKeyIconTagManager() {
-}
 

@@ -1,5 +1,8 @@
 #include "Inventory.h"
 
+UInventory::UInventory() {
+}
+
 bool UInventory::TriggerItemDrop(FSteamInventoryResult& Result, FSteamItemDef ListDefinition) {
     return false;
 }
@@ -136,6 +139,4 @@ bool UInventory::AddPromoItem(FSteamInventoryResult& Result, FSteamItemDef ItemD
     return false;
 }
 
-UInventory::UInventory() {
-}
 

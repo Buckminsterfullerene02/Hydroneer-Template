@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnRequestLobbyListAsyncDelegateDelegate.h"
 #include "LobbyMatchList.h"
+#include "OnRequestLobbyListAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreMatchmakingAsyncActionRequestLobbyList.generated.h"
 
-class USteamCoreMatchmakingAsyncActionRequestLobbyList;
 class UObject;
+class USteamCoreMatchmakingAsyncActionRequestLobbyList;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreMatchmakingAsyncActionRequestLobbyList : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnRequestLobbyListAsyncDelegate OnCallback;
     
     USteamCoreMatchmakingAsyncActionRequestLobbyList();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreMatchmakingAsyncActionRequestLobbyList* RequestLobbyListAsync(UObject* WorldContextObject, float Timeout);
     
     UFUNCTION(BlueprintCallable)

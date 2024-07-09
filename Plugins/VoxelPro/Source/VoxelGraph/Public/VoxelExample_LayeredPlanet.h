@@ -22,5 +22,6 @@ public:
     bool Slice_Mode;
     
     UVoxelExample_LayeredPlanet();
+
 };
 

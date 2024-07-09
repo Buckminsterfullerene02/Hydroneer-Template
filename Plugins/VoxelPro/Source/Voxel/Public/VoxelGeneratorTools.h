@@ -1,26 +1,27 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "VoxelTransformableGeneratorPicker.h"
-#include "VoxelGeneratorPicker.h"
-#include "VoxelGeneratorInit.h"
 #include "Engine/LatentActionManager.h"
-#include "VoxelFloatTexture.h"
+#include "Templates/SubclassOf.h"
 #include "VoxelColorTexture.h"
+#include "VoxelFloatTexture.h"
+#include "VoxelGeneratorInit.h"
+#include "VoxelGeneratorPicker.h"
+#include "VoxelTransformableGeneratorPicker.h"
 #include "VoxelGeneratorTools.generated.h"
 
-class UVoxelTransformableGenerator;
-class UVoxelGenerator;
-class UVoxelTransformableGeneratorInstanceWrapper;
-class UVoxelGeneratorInstanceWrapper;
 class UObject;
+class UVoxelGenerator;
+class UVoxelGeneratorInstanceWrapper;
+class UVoxelTransformableGenerator;
+class UVoxelTransformableGeneratorInstanceWrapper;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelGeneratorTools : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelGeneratorTools();
+
     UFUNCTION(BlueprintCallable)
     static bool SetTransformableGeneratorParameter(const FVoxelTransformableGeneratorPicker& Picker, FName UniqueName, int32 Value);
     
@@ -51,13 +52,13 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool IsValid_GeneratorPicker(FVoxelGeneratorPicker GeneratorPicker);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo", WorldContext="WorldContextObject"))
     static void CreateFloatTextureFromGeneratorAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, FVoxelFloatTexture& OutTexture, UVoxelGeneratorInstanceWrapper* Generator, FName OutputName, int32 SizeX, int32 SizeY, float Scale, int32 StartX, int32 StartY, bool bHideLatentWarnings);
     
     UFUNCTION(BlueprintCallable)
     static void CreateFloatTextureFromGenerator(FVoxelFloatTexture& OutTexture, UVoxelGeneratorInstanceWrapper* Generator, FName OutputName, int32 SizeX, int32 SizeY, float Scale, int32 StartX, int32 StartY);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo", WorldContext="WorldContextObject"))
     static void CreateColorTextureFromGeneratorAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, FVoxelColorTexture& OutTexture, UVoxelGeneratorInstanceWrapper* Generator, FName OutputName, int32 SizeX, int32 SizeY, float Scale, int32 StartX, int32 StartY, bool bHideLatentWarnings);
     
     UFUNCTION(BlueprintCallable)

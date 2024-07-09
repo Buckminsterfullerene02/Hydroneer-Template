@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebEconService.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebEconService : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebEconService();
+
     UFUNCTION(BlueprintCallable)
     void GetTradeOffersSummary(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 TimeLastVisit);
     

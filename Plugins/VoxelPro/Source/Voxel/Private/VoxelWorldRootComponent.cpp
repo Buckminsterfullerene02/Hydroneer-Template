@@ -1,6 +1,7 @@
 #include "VoxelWorldRootComponent.h"
 
-UVoxelWorldRootComponent::UVoxelWorldRootComponent() {
+UVoxelWorldRootComponent::UVoxelWorldRootComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->BodySetup = NULL;
 }
+
 

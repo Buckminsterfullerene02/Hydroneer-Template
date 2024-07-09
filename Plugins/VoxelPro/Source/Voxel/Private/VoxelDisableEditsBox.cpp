@@ -1,7 +1,9 @@
 #include "VoxelDisableEditsBox.h"
 #include "Components/BoxComponent.h"
 
-AVoxelDisableEditsBox::AVoxelDisableEditsBox() {
-    this->Box = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
+AVoxelDisableEditsBox::AVoxelDisableEditsBox(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RootComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
+    this->Box = (UBoxComponent*)RootComponent;
 }
+
 

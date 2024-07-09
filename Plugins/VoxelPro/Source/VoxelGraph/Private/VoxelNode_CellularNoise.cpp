@@ -6,3 +6,4 @@ UVoxelNode_CellularNoise::UVoxelNode_CellularNoise() {
     this->Jitter = 0.45f;
 }
 
+

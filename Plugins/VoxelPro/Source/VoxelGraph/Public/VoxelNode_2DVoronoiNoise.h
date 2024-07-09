@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_2DVoronoiNoise : public UVoxelNode_VoronoiNoiseB
     GENERATED_BODY()
 public:
     UVoxelNode_2DVoronoiNoise();
+
 };
 

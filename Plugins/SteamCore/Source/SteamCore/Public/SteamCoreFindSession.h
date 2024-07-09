@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "FindSteamSessionsResultDelegateDelegate.h"
 #include "ESteamSessionFindType.h"
+#include "FindSteamSessionsResultDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamSessionSearchSetting.h"
 #include "SteamCoreFindSession.generated.h"
 
-class USteamCoreFindSession;
 class UObject;
+class USteamCoreFindSession;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFindSession : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FFindSteamSessionsResultDelegate OnCallback;
     
     USteamCoreFindSession();
+
     UFUNCTION(BlueprintCallable)
     void OnCompleted(bool bSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFindSession* FindSteamCoreSessions(UObject* WorldContextObject, TMap<FString, FSteamSessionSearchSetting> SearchSettings, int32 MaxResults, bool bUseLAN, ESteamSessionFindType ServerType, bool bEmptyServersOnly, bool bSecureServersOnly, float Timeout);
     
 };

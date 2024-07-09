@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "RequestStoreAuthURLDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "StoreAuthURLResponse.h"
 #include "SteamCoreUserAsyncActionRequestStoreAuthURL.generated.h"
 
-class USteamCoreUserAsyncActionRequestStoreAuthURL;
 class UObject;
+class USteamCoreUserAsyncActionRequestStoreAuthURL;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserAsyncActionRequestStoreAuthURL : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FRequestStoreAuthURLDelegate OnCallback;
     
     USteamCoreUserAsyncActionRequestStoreAuthURL();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserAsyncActionRequestStoreAuthURL* RequestStoreAuthURLAsync(UObject* WorldContextObject, const FString& RedirectURL, float Timeout);
     
     UFUNCTION(BlueprintCallable)

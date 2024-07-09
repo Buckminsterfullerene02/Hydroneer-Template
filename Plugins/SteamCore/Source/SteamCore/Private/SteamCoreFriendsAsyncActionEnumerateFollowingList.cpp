@@ -1,7 +1,7 @@
 #include "SteamCoreFriendsAsyncActionEnumerateFollowingList.h"
 
-class UObject;
-class USteamCoreFriendsAsyncActionEnumerateFollowingList;
+USteamCoreFriendsAsyncActionEnumerateFollowingList::USteamCoreFriendsAsyncActionEnumerateFollowingList() {
+}
 
 void USteamCoreFriendsAsyncActionEnumerateFollowingList::HandleCallback(const FFriendsEnumerateFollowingList& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreFriendsAsyncActionEnumerateFollowingList* USteamCoreFriendsAsyncAction
     return NULL;
 }
 
-USteamCoreFriendsAsyncActionEnumerateFollowingList::USteamCoreFriendsAsyncActionEnumerateFollowingList() {
-}
 

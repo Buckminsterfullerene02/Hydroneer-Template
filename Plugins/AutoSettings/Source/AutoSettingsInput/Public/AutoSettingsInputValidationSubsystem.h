@@ -8,5 +8,6 @@ class UAutoSettingsInputValidationSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
 public:
     UAutoSettingsInputValidationSubsystem();
+
 };
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebGameNotificationsService.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebGameNotificationsService : public USteamCoreWebSubsys
     GENERATED_BODY()
 public:
     UWebGameNotificationsService();
+
     UFUNCTION(BlueprintCallable)
     void UpdateSession(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SessionID, int32 AppID, const FString& Title, const FString& Users, const FString& SteamID);
     

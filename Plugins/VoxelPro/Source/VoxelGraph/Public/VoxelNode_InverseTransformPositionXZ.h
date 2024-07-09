@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_InverseTransformPositionXZ : public UVoxelPureNo
     GENERATED_BODY()
 public:
     UVoxelNode_InverseTransformPositionXZ();
+
 };
 

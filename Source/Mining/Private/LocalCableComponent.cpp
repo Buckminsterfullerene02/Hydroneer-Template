@@ -1,5 +1,6 @@
 #include "LocalCableComponent.h"
 
-ULocalCableComponent::ULocalCableComponent() {
+ULocalCableComponent::ULocalCableComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

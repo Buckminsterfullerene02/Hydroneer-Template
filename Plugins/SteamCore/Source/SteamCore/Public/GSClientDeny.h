@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamID.h"
 #include "ESteamDenyReason.h"
+#include "SteamID.h"
 #include "GSClientDeny.generated.h"
 
 USTRUCT(BlueprintType)

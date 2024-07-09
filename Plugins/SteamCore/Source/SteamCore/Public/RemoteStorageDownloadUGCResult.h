@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ESteamResult.h"
-#include "SteamUGCHandle.h"
 #include "SteamID.h"
+#include "SteamUGCHandle.h"
 #include "RemoteStorageDownloadUGCResult.generated.h"
 
 USTRUCT(BlueprintType)

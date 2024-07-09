@@ -9,6 +9,7 @@ class VOXEL_API UVoxelTextureTools : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelTextureTools();
+
     UFUNCTION(BlueprintCallable)
     static FVoxelFloatTexture Minimum(FVoxelFloatTexture Texture, float Radius);
     

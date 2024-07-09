@@ -14,6 +14,7 @@ private:
     UBodySetup* BodySetup;
     
 public:
-    UVoxelWorldRootComponent();
+    UVoxelWorldRootComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

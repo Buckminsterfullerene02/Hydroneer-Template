@@ -4,3 +4,4 @@ UVoxelGraphMacroInputOutputNode::UVoxelGraphMacroInputOutputNode() {
     this->Macro = NULL;
 }
 
+

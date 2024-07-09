@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelToolBase.h"
 #include "EVoxelFalloff.h"
+#include "VoxelToolBase.h"
 #include "VoxelSmoothTool.generated.h"
 
 class UMaterialInterface;
@@ -35,5 +35,6 @@ public:
     float Falloff;
     
     UVoxelSmoothTool();
+
 };
 

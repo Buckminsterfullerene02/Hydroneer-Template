@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_RangeUnion : public UVoxelNodeHelper {
     GENERATED_BODY()
 public:
     UVoxelNode_RangeUnion();
+
 };
 

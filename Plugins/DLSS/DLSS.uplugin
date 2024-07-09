@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 9,
-	"VersionName": "2.3.2",
+	"Version": 2,
+	"VersionName": "2.1.1",
 	"FriendlyName": "NVIDIA DLSS",
 	"Description": "NVIDIA Deep Learning Super Sampling",
 	"Category": "Rendering",
@@ -11,10 +11,11 @@
 	"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/product/nvidia-dlss",
 	"SupportURL": "mailto:DLSS-Support@nvidia.com",
 	"EngineVersion": "4.26.0",
+	"EnabledByDefault": false,
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-	"Installed": true,
+	"Installed": false,
 	"Modules": [
 		{
 			"Name": "DLSS",
@@ -27,7 +28,10 @@
 		{
 			"Name": "DLSSBlueprint",
 			"Type": "Runtime",
-			"LoadingPhase": "PostConfigInit"
+			"LoadingPhase": "PostEngineInit",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
 		}
 	]
 }

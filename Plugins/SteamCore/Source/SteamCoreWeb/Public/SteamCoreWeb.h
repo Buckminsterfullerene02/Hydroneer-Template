@@ -8,5 +8,6 @@ class STEAMCOREWEB_API USteamCoreWeb : public UObject {
     GENERATED_BODY()
 public:
     USteamCoreWeb();
+
 };
 

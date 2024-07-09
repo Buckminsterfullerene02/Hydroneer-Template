@@ -1,5 +1,8 @@
 #include "VoxelSaveUtilities.h"
 
+UVoxelSaveUtilities::UVoxelSaveUtilities() {
+}
+
 bool UVoxelSaveUtilities::DecompressVoxelSave(const FVoxelCompressedWorldSave& CompressedSave, FVoxelUncompressedWorldSave& OutUncompressedSave) {
     return false;
 }
@@ -7,6 +10,4 @@ bool UVoxelSaveUtilities::DecompressVoxelSave(const FVoxelCompressedWorldSave& C
 void UVoxelSaveUtilities::CompressVoxelSave(const FVoxelUncompressedWorldSave& UncompressedSave, FVoxelCompressedWorldSave& OutCompressedSave) {
 }
 
-UVoxelSaveUtilities::UVoxelSaveUtilities() {
-}
 

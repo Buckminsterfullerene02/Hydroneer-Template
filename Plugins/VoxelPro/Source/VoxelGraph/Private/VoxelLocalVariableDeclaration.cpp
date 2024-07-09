@@ -5,3 +5,4 @@ UVoxelLocalVariableDeclaration::UVoxelLocalVariableDeclaration() {
     this->Category = EVoxelPortalNodePinCategory::Float;
 }
 
+

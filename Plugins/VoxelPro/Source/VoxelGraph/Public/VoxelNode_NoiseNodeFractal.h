@@ -20,9 +20,10 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EVoxelNoiseFractalType FractalType;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FString, uint8> LODToOctavesMap;
     
     UVoxelNode_NoiseNodeFractal();
+
 };
 

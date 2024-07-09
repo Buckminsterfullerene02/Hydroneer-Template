@@ -5,19 +5,20 @@
 #include "VoxelIntBox.h"
 #include "VoxelPhysicsTools.generated.h"
 
-class UObject;
 class AVoxelWorld;
-class UVoxelPhysicsPartSpawnerResult;
-class IVoxelPhysicsPartSpawnerResult;
-class UVoxelPhysicsPartSpawner;
 class IVoxelPhysicsPartSpawner;
+class UVoxelPhysicsPartSpawner;
+class IVoxelPhysicsPartSpawnerResult;
+class UVoxelPhysicsPartSpawnerResult;
+class UObject;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelPhysicsTools : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelPhysicsTools();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo", WorldContext="WorldContextObject"))
     static void ApplyVoxelPhysics(UObject* WorldContextObject, FLatentActionInfo LatentInfo, TArray<TScriptInterface<IVoxelPhysicsPartSpawnerResult>>& Results, AVoxelWorld* World, FVoxelIntBox Bounds, TScriptInterface<IVoxelPhysicsPartSpawner> PartSpawner, int32 MinParts, bool bDebug, bool bHideLatentWarnings);
     
 };

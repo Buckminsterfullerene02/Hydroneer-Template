@@ -3,15 +3,16 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "SettingContainerUtils.generated.h"
 
+class UAutoSettingWidget;
 class UUserWidget;
 class UWidget;
-class UAutoSettingWidget;
 
 UCLASS(Blueprintable)
 class AUTOSETTINGS_API USettingContainerUtils : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     USettingContainerUtils();
+
     UFUNCTION(BlueprintCallable)
     static void SaveChildSettings(UUserWidget* UserWidget, UWidget* Parent);
     

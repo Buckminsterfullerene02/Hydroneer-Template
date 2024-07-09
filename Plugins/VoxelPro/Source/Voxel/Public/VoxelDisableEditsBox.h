@@ -10,10 +10,11 @@ class VOXEL_API AVoxelDisableEditsBox : public AVoxelPlaceableItemActor {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* Box;
     
 public:
-    AVoxelDisableEditsBox();
+    AVoxelDisableEditsBox(const FObjectInitializer& ObjectInitializer);
+
 };
 

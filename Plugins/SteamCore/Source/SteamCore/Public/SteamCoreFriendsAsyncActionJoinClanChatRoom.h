@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnJoinClanChatRoomAsyncDelegateDelegate.h"
-#include "SteamID.h"
 #include "JoinClanChatRoomCompletionResult.h"
+#include "OnJoinClanChatRoomAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
+#include "SteamID.h"
 #include "SteamCoreFriendsAsyncActionJoinClanChatRoom.generated.h"
 
 class UObject;
@@ -17,7 +17,8 @@ public:
     FOnJoinClanChatRoomAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionJoinClanChatRoom();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionJoinClanChatRoom* JoinClanChatRoomAsync(UObject* WorldContextObject, FSteamID SteamIDClan, float Timeout);
     
     UFUNCTION(BlueprintCallable)

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SetValueNode : public UVoxelNode_SetNode {
     GENERATED_BODY()
 public:
     UVoxelNode_SetValueNode();
+
 };
 

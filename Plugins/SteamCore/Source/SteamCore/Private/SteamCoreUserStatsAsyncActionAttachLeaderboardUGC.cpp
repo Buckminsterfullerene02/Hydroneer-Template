@@ -1,7 +1,7 @@
 #include "SteamCoreUserStatsAsyncActionAttachLeaderboardUGC.h"
 
-class UObject;
-class USteamCoreUserStatsAsyncActionAttachLeaderboardUGC;
+USteamCoreUserStatsAsyncActionAttachLeaderboardUGC::USteamCoreUserStatsAsyncActionAttachLeaderboardUGC() {
+}
 
 void USteamCoreUserStatsAsyncActionAttachLeaderboardUGC::HandleCallback(const FAttachLeaderboardUGCData& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUserStatsAsyncActionAttachLeaderboardUGC* USteamCoreUserStatsAsyncActi
     return NULL;
 }
 
-USteamCoreUserStatsAsyncActionAttachLeaderboardUGC::USteamCoreUserStatsAsyncActionAttachLeaderboardUGC() {
-}
 

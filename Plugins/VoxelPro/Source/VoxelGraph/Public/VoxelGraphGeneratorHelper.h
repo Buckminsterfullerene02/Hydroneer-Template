@@ -11,5 +11,6 @@ public:
     bool bEnableRangeAnalysis;
     
     UVoxelGraphGeneratorHelper();
+
 };
 

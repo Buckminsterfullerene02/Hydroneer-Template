@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "InputCoreTypes.h"
 #include "Subsystems/EngineSubsystem.h"
+#include "GameFramework/PlayerInput.h"
+#include "GameFramework/PlayerInput.h"
+#include "GameplayTagContainer.h"
+#include "InputCoreTypes.h"
+#include "InputMappingPreset.h"
 #include "OnMappingsChangedDelegate.h"
 #include "PlayerInputMappings.h"
-#include "GameplayTagContainer.h"
-#include "InputMappingPreset.h"
-#include "GameFramework/PlayerInput.h"
-#include "GameFramework/PlayerInput.h"
 #include "InputMappingManager.generated.h"
 
-class APlayerController;
 class AActor;
+class APlayerController;
 
 UCLASS(Blueprintable, Config=Input)
 class AUTOSETTINGSINPUT_API UInputMappingManager : public UEngineSubsystem {
@@ -29,6 +29,7 @@ private:
     
 public:
     UInputMappingManager();
+
     UFUNCTION(BlueprintCallable)
     static void SetPlayerKeyGroupStatic(APlayerController* Player, FGameplayTag KeyGroup);
     

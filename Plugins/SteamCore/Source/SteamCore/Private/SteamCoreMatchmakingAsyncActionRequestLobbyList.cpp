@@ -1,7 +1,7 @@
 #include "SteamCoreMatchmakingAsyncActionRequestLobbyList.h"
 
-class UObject;
-class USteamCoreMatchmakingAsyncActionRequestLobbyList;
+USteamCoreMatchmakingAsyncActionRequestLobbyList::USteamCoreMatchmakingAsyncActionRequestLobbyList() {
+}
 
 USteamCoreMatchmakingAsyncActionRequestLobbyList* USteamCoreMatchmakingAsyncActionRequestLobbyList::RequestLobbyListAsync(UObject* WorldContextObject, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreMatchmakingAsyncActionRequestLobbyList* USteamCoreMatchmakingAsyncActi
 void USteamCoreMatchmakingAsyncActionRequestLobbyList::HandleCallback(const FLobbyMatchList& Data, bool bWasSuccessful) {
 }
 
-USteamCoreMatchmakingAsyncActionRequestLobbyList::USteamCoreMatchmakingAsyncActionRequestLobbyList() {
-}
 

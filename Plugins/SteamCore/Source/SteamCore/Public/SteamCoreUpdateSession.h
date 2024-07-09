@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamSessionSearchSetting.h"
 #include "SteamCoreUpdateSession.generated.h"
 
-class USteamCoreUpdateSession;
 class UObject;
+class USteamCoreUpdateSession;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUpdateSession : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FEmptyOnlineDelegate OnCallback;
     
     USteamCoreUpdateSession();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUpdateSession* UpdateSteamCoreSession(UObject* WorldContextObject, TMap<FString, FSteamSessionSearchSetting> Settings, const FString& SessionName, int32 MaxPlayers);
     
     UFUNCTION(BlueprintCallable)

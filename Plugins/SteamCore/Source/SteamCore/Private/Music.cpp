@@ -1,5 +1,8 @@
 #include "Music.h"
 
+UMusic::UMusic() {
+}
+
 void UMusic::SetVolume(float flVolume) {
 }
 
@@ -31,6 +34,4 @@ bool UMusic::BIsEnabled() {
     return false;
 }
 
-UMusic::UMusic() {
-}
 

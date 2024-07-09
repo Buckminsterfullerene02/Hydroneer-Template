@@ -1,5 +1,8 @@
 #include "DLSSLibrary.h"
 
+UDLSSLibrary::UDLSSLibrary() {
+}
+
 void UDLSSLibrary::SetDLSSSharpness(float Sharpness) {
 }
 
@@ -29,7 +32,7 @@ float UDLSSLibrary::GetDLSSSharpness() {
 void UDLSSLibrary::GetDLSSScreenPercentageRange(float& MinScreenPercentage, float& MaxScreenPercentage) {
 }
 
-void UDLSSLibrary::GetDLSSModeInformation(UDLSSMode DLSSMode, FVector2D ScreenResolution, bool& bIsSupported, float& OptimalScreenPercentage, bool& bIsFixedScreenPercentage, float& MinScreenPercentage, float& MaxScreenPercentage, float& OptimalSharpness) {
+void UDLSSLibrary::GetDLSSModeInformation(UDLSSMode DLSSMode, bool& bIsSupported, float& OptimalScreenPercentage, bool& bIsFixedScreenPercentage, float& MinScreenPercentage, float& MaxScreenPercentage, float& OptimalSharpness) {
 }
 
 UDLSSMode UDLSSLibrary::GetDLSSMode() {
@@ -39,10 +42,4 @@ UDLSSMode UDLSSLibrary::GetDLSSMode() {
 void UDLSSLibrary::GetDLSSMinimumDriverVersion(int32& MinDriverVersionMajor, int32& MinDriverVersionMinor) {
 }
 
-UDLSSMode UDLSSLibrary::GetDefaultDLSSMode() {
-    return UDLSSMode::Off;
-}
-
-UDLSSLibrary::UDLSSLibrary() {
-}
 

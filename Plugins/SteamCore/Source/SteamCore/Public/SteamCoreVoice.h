@@ -9,7 +9,8 @@ UCLASS(Blueprintable, EditInlineNew)
 class USteamCoreVoice : public USoundWaveProcedural {
     GENERATED_BODY()
 public:
-    //USteamCoreVoice();
+    USteamCoreVoice();
+
     UFUNCTION(BlueprintCallable)
     static void DestroySteamCoreVoice(USteamCoreVoice* Obj);
     

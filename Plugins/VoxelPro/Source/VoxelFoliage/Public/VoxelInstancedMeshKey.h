@@ -4,9 +4,9 @@
 #include "VoxelInstancedMeshSettings.h"
 #include "VoxelInstancedMeshKey.generated.h"
 
+class AVoxelFoliageActor;
 class UMaterialInterface;
 class UStaticMesh;
-class AVoxelFoliageActor;
 
 USTRUCT(BlueprintType)
 struct FVoxelInstancedMeshKey {

@@ -1,5 +1,8 @@
 #include "WebGameServersService.h"
 
+UWebGameServersService::UWebGameServersService() {
+}
+
 void UWebGameServersService::SetMemo(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, const FString& Memo) {
 }
 
@@ -30,6 +33,4 @@ void UWebGameServersService::DeleteAccount(const FOnSteamCoreWebCallback& Callba
 void UWebGameServersService::CreateAccount(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& Memo) {
 }
 
-UWebGameServersService::UWebGameServersService() {
-}
 

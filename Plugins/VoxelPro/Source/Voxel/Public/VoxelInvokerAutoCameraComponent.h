@@ -7,6 +7,7 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class VOXEL_API UVoxelInvokerAutoCameraComponent : public UVoxelSimpleInvokerComponent {
     GENERATED_BODY()
 public:
-    UVoxelInvokerAutoCameraComponent();
+    UVoxelInvokerAutoCameraComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

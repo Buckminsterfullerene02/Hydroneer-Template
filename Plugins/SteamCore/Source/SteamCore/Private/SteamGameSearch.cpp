@@ -1,5 +1,8 @@
 #include "SteamGameSearch.h"
 
+USteamGameSearch::USteamGameSearch() {
+}
+
 ESteamGameSearchErrorCode USteamGameSearch::SubmitPlayerResult(const FString& UniqueGameID, FSteamID SteamIDPlayer, ESteamPlayerResult PlayerResult) {
     return ESteamGameSearchErrorCode::Invalid;
 }
@@ -56,6 +59,4 @@ ESteamGameSearchErrorCode USteamGameSearch::AcceptGame() {
     return ESteamGameSearchErrorCode::Invalid;
 }
 
-USteamGameSearch::USteamGameSearch() {
-}
 

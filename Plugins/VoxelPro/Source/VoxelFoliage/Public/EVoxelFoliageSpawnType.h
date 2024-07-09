@@ -2,8 +2,8 @@
 #include "CoreMinimal.h"
 #include "EVoxelFoliageSpawnType.generated.h"
 
-UENUM(BlueprintType)
-enum class EVoxelFoliageSpawnType : uint8 {
+UENUM()
+enum class EVoxelFoliageSpawnType : int32 {
     Ray,
     Height,
 };

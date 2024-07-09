@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "OnStartPlaytimeTrackingAsyncDelegateDelegate.h"
+#include "PublishedFileID.h"
 #include "StartPlaytimeTrackingResult.h"
 #include "SteamCoreAsyncAction.h"
-#include "PublishedFileID.h"
-#include "OnStartPlaytimeTrackingAsyncDelegateDelegate.h"
 #include "SteamCoreUGCAsyncActionStartPlaytimeTracking.generated.h"
 
-class USteamCoreUGCAsyncActionStartPlaytimeTracking;
 class UObject;
+class USteamCoreUGCAsyncActionStartPlaytimeTracking;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionStartPlaytimeTracking : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnStartPlaytimeTrackingAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionStartPlaytimeTracking();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionStartPlaytimeTracking* StartPlaytimeTrackingAsync(UObject* WorldContextObject, TArray<FPublishedFileID> PublishedFileIDs, float Timeout);
     
     UFUNCTION(BlueprintCallable)

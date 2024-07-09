@@ -1,5 +1,8 @@
 #include "EasyFileSystemBPLibrary.h"
 
+UEasyFileSystemBPLibrary::UEasyFileSystemBPLibrary() {
+}
+
 bool UEasyFileSystemBPLibrary::SetReadOnly(const FString& inPath, bool bNewReadOnlyValue) {
     return false;
 }
@@ -100,6 +103,4 @@ FString UEasyFileSystemBPLibrary::ChangeExtension(const FString& inPath, const F
     return TEXT("");
 }
 
-UEasyFileSystemBPLibrary::UEasyFileSystemBPLibrary() {
-}
 

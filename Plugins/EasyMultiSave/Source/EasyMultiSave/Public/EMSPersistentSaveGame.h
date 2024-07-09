@@ -12,5 +12,6 @@ public:
     FSaveSlotInfo SlotInfo;
     
     UEMSPersistentSaveGame();
+
 };
 

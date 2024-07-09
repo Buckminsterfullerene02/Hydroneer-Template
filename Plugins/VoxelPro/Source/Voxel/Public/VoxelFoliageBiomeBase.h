@@ -8,5 +8,6 @@ class VOXEL_API UVoxelFoliageBiomeBase : public UObject {
     GENERATED_BODY()
 public:
     UVoxelFoliageBiomeBase();
+
 };
 

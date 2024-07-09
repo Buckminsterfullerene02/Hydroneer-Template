@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_2DSimplexNoise : public UVoxelNode_NoiseNode {
     GENERATED_BODY()
 public:
     UVoxelNode_2DSimplexNoise();
+
 };
 

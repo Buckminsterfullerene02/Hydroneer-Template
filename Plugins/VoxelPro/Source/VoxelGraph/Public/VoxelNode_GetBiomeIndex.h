@@ -13,5 +13,6 @@ public:
     UVoxelFoliageBiomeBase* Biome;
     
     UVoxelNode_GetBiomeIndex();
+
 };
 

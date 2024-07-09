@@ -12,5 +12,6 @@ public:
     FRotator Rotation;
     
     UVoxelNode_3DIQNoiseBase();
+
 };
 

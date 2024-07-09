@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SetMultiIndexWetness : public UVoxelNode_Materia
     GENERATED_BODY()
 public:
     UVoxelNode_SetMultiIndexWetness();
+
 };
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GetUVChannel : public UVoxelMaterialNode {
     GENERATED_BODY()
 public:
     UVoxelNode_GetUVChannel();
+
 };
 

@@ -1,5 +1,8 @@
 #include "ParentalSettings.h"
 
+UParentalSettings::UParentalSettings() {
+}
+
 bool UParentalSettings::BIsParentalLockLocked() {
     return false;
 }
@@ -24,6 +27,4 @@ bool UParentalSettings::BIsAppBlocked(int32 AppID) {
     return false;
 }
 
-UParentalSettings::UParentalSettings() {
-}
 

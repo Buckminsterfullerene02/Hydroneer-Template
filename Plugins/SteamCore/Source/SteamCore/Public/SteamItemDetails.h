@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ESteamCoreItemFlags.h"
 #include "SteamItemDef.h"
 #include "SteamItemInstanceID.h"
-#include "ESteamCoreItemFlags.h"
 #include "SteamItemDetails.generated.h"
 
 USTRUCT(BlueprintType)
@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 Quantity;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TEnumAsByte<ESteamCoreItemFlags>> Flags;
     
     STEAMCORE_API FSteamItemDetails();

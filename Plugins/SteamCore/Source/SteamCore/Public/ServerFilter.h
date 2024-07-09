@@ -8,6 +8,7 @@ class STEAMCORE_API UServerFilter : public UObject {
     GENERATED_BODY()
 public:
     UServerFilter();
+
     UFUNCTION(BlueprintCallable)
     TMap<FString, FString> GetFilters();
     

@@ -14,6 +14,7 @@ public:
     float RightValue;
     
     USliderSetting();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateSliderValue(float NormalizedValue, float RawValue);

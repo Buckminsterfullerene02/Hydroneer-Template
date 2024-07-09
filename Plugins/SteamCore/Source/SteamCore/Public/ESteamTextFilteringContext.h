@@ -8,6 +8,5 @@ enum class ESteamTextFilteringContext : uint8 {
     k_ETextFilteringContextGameContent,
     k_ETextFilteringContextChat,
     k_ETextFilteringContextName,
-    k_MAX UMETA(Hidden),
 };
 

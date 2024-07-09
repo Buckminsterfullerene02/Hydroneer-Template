@@ -1,5 +1,8 @@
 #include "CVarChangeListenerManager.h"
 
+UCVarChangeListenerManager::UCVarChangeListenerManager() {
+}
+
 void UCVarChangeListenerManager::AddStringCVarCallbackStatic(FName Name, FStringCVarChangedSignature ChangedCallback, bool CallbackImmediately) {
 }
 
@@ -12,6 +15,4 @@ void UCVarChangeListenerManager::AddFloatCVarCallbackStatic(FName Name, FFloatCV
 void UCVarChangeListenerManager::AddBoolCVarCallbackStatic(FName Name, FBoolCVarChangedSignature ChangedCallback, bool CallbackImmediately) {
 }
 
-UCVarChangeListenerManager::UCVarChangeListenerManager() {
-}
 

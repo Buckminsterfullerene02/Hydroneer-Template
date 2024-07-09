@@ -8,6 +8,7 @@ class AUTOSETTINGS_API USettingValueMask : public UObject {
     GENERATED_BODY()
 public:
     USettingValueMask();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     FString RecombineValues(const FString& SettingValue, const FString& ConsoleValue) const;
     

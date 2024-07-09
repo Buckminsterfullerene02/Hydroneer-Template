@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionGetAppDependencies.h"
 
-class USteamCoreUGCAsyncActionGetAppDependencies;
-class UObject;
+USteamCoreUGCAsyncActionGetAppDependencies::USteamCoreUGCAsyncActionGetAppDependencies() {
+}
 
 void USteamCoreUGCAsyncActionGetAppDependencies::HandleCallback(const FGetAppDependenciesResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionGetAppDependencies* USteamCoreUGCAsyncActionGetAppDepend
     return NULL;
 }
 
-USteamCoreUGCAsyncActionGetAppDependencies::USteamCoreUGCAsyncActionGetAppDependencies() {
-}
 

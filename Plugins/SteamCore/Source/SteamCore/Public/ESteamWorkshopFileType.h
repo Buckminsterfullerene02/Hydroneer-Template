@@ -5,7 +5,7 @@
 UENUM(BlueprintType)
 enum class ESteamWorkshopFileType : uint8 {
     First,
-    Community = 0x0,
+    Community = First,
     Microtransaction,
     Collection,
     Art,

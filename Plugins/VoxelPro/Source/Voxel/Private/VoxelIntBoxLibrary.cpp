@@ -1,5 +1,8 @@
 #include "VoxelIntBoxLibrary.h"
 
+UVoxelIntBoxLibrary::UVoxelIntBoxLibrary() {
+}
+
 FVoxelIntBox UVoxelIntBoxLibrary::TranslateBox(FVoxelIntBox Box, FIntVector Position) {
     return FVoxelIntBox{};
 }
@@ -118,6 +121,4 @@ FVoxelIntBox UVoxelIntBoxLibrary::AddBox(FVoxelIntBox Box, FVoxelIntBox BoxToAdd
     return FVoxelIntBox{};
 }
 
-UVoxelIntBoxLibrary::UVoxelIntBoxLibrary() {
-}
 

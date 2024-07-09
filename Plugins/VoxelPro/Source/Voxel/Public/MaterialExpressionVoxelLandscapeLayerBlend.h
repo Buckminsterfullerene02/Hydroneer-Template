@@ -8,5 +8,6 @@ class VOXEL_API UMaterialExpressionVoxelLandscapeLayerBlend : public UMaterialEx
     GENERATED_BODY()
 public:
     UMaterialExpressionVoxelLandscapeLayerBlend();
+
 };
 

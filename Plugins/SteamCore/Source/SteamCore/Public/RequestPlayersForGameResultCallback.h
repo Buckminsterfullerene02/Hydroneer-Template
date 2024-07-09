@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "ESteamPlayerAcceptState.h"
 #include "ESteamResult.h"
 #include "SteamID.h"
-#include "ESteamPlayerAcceptState.h"
 #include "RequestPlayersForGameResultCallback.generated.h"
 
 USTRUCT(BlueprintType)

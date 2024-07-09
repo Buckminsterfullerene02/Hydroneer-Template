@@ -3,15 +3,16 @@
 #include "SteamCoreWebAsyncAction.h"
 #include "SteamCoreWebAsyncActionGetBadges.generated.h"
 
-class USteamCoreWebAsyncActionGetBadges;
 class UObject;
+class USteamCoreWebAsyncActionGetBadges;
 
 UCLASS(Blueprintable)
 class STEAMCOREWEB_API USteamCoreWebAsyncActionGetBadges : public USteamCoreWebAsyncAction {
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetBadges();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetBadges* GetBadgesAsync(UObject* WorldContextObject, const FString& Key, const FString& SteamID);
     
 };

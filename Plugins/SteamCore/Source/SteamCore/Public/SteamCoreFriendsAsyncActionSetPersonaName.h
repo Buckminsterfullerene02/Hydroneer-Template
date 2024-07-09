@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnSetPersonaNameAsyncDelegateDelegate.h"
 #include "SetPersonaNameResponse.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreFriendsAsyncActionSetPersonaName.generated.h"
 
-class USteamCoreFriendsAsyncActionSetPersonaName;
 class UObject;
+class USteamCoreFriendsAsyncActionSetPersonaName;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFriendsAsyncActionSetPersonaName : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnSetPersonaNameAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionSetPersonaName();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionSetPersonaName* SetPersonaNameAsync(UObject* WorldContextObject, const FString& Name, float Timeout);
     
     UFUNCTION(BlueprintCallable)

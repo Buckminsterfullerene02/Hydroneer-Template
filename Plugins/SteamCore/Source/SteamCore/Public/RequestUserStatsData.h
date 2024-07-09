@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamGameID.h"
 #include "ESteamResult.h"
+#include "SteamGameID.h"
 #include "SteamID.h"
 #include "RequestUserStatsData.generated.h"
 

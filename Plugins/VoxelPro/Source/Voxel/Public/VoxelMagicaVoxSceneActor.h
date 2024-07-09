@@ -4,8 +4,8 @@
 #include "GameFramework/Actor.h"
 #include "VoxelMagicaVoxSceneActor.generated.h"
 
-class AVoxelWorld;
 class AVoxelAssetActor;
+class AVoxelWorld;
 class UVoxelMagicaVoxScene;
 
 UCLASS(Blueprintable)
@@ -21,7 +21,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     AVoxelWorld* VoxelWorld;
     
-    AVoxelMagicaVoxSceneActor();
+    AVoxelMagicaVoxSceneActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void SetScene(UVoxelMagicaVoxScene* Scene);
     

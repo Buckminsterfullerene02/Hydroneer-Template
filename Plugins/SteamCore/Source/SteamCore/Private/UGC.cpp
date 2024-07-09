@@ -1,5 +1,8 @@
 #include "UGC.h"
 
+UUGC::UUGC() {
+}
+
 bool UUGC::UpdateItemPreviewVideo(FUGCUpdateHandle Handle, int32 Index, const FString& PreviewVideo) {
     return false;
 }
@@ -293,6 +296,4 @@ void UUGC::AddDependency(const FOnAddUGCDependencyResult& Callback, FPublishedFi
 void UUGC::AddAppDependency(const FOnAddAppDependencyResult& Callback, FPublishedFileID PublishedFileID, int32 AppID) {
 }
 
-UUGC::UUGC() {
-}
 

@@ -10,6 +10,7 @@ class VOXELHELPERS_API UVoxelHelpersLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelHelpersLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void CreateProcMeshPlane(UProceduralMeshComponent* Mesh, int32 SizeX, int32 SizeY, float Step);
     

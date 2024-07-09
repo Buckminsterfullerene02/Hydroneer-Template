@@ -1,5 +1,9 @@
 #include "Spinner.h"
 
+USpinner::USpinner() : UUserWidget(FObjectInitializer::Get()) {
+    this->bAllowWrapping = false;
+}
+
 void USpinner::SelectValue(const FString& Value) {
 }
 
@@ -31,7 +35,4 @@ int32 USpinner::GetCurrentIndex() const {
     return 0;
 }
 
-USpinner::USpinner() : UUserWidget(FObjectInitializer::Get()) {
-    this->bAllowWrapping = false;
-}
 

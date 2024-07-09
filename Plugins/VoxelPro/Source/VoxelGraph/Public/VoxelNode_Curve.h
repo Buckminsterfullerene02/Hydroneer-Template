@@ -13,5 +13,6 @@ public:
     UCurveFloat* Curve;
     
     UVoxelNode_Curve();
+
 };
 

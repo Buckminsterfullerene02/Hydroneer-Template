@@ -23,5 +23,6 @@ public:
     float Noise_Frequency;
     
     UVG_Example_Dunes();
+
 };
 

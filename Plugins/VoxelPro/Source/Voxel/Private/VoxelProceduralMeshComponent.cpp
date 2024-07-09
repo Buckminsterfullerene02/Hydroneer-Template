@@ -1,6 +1,14 @@
 #include "VoxelProceduralMeshComponent.h"
 
-class AVoxelWorld;
+UVoxelProceduralMeshComponent::UVoxelProceduralMeshComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->bCanEverAffectNavigation = true;
+    this->Mobility = EComponentMobility::Movable;
+    this->bCastShadowAsTwoSided = true;
+    this->bHasCustomNavigableGeometry = EHasCustomNavigableGeometry::EvenIfNotCollidable;
+    this->BodySetup = NULL;
+    this->BodySetupBeingCooked = NULL;
+    this->StaticMeshComponent = NULL;
+}
 
 void UVoxelProceduralMeshComponent::SetVoxelCollisionsFrozen(const AVoxelWorld* VoxelWorld, bool bFrozen) {
 }
@@ -9,15 +17,6 @@ void UVoxelProceduralMeshComponent::SetVoxelCollisionsFrozen(const AVoxelWorld* 
 bool UVoxelProceduralMeshComponent::AreVoxelCollisionsFrozen(const AVoxelWorld* VoxelWorld) {
     return false;
 }
-
-UVoxelProceduralMeshComponent::UVoxelProceduralMeshComponent(const FObjectInitializer& ObjectInitializer)
-: Super(ObjectInitializer)
-{
-    this->BodySetup = NULL;
-    this->BodySetupBeingCooked = NULL;
-    this->StaticMeshComponent = NULL;
-}
-
 
 void UVoxelProceduralMeshComponent::AddReferencedObjects(UObject* InThis, FReferenceCollector& Collector)
 {
@@ -148,6 +147,7 @@ void UVoxelProceduralMeshComponent::GetLightAndShadowMapMemoryUsage( int32& Ligh
 	/*return;*/
 }
 
+#if WITH_EDITOR
 void UVoxelProceduralMeshComponent::GetStaticLightingInfo(FStaticLightingPrimitiveInfo& OutPrimitiveInfo,const TArray<ULightComponent*>& InRelevantLights,const FLightingBuildOptions& Options)
 {
 	/*check(0);*/
@@ -158,7 +158,11 @@ void UVoxelProceduralMeshComponent::AddMapBuildDataGUIDs(TSet<FGuid>& InGUIDs) c
 	
 }
 
-#if WITH_EDITOR
+bool UVoxelProceduralMeshComponent::GenerateElements(bool bBuildRenderData)
+{
+	return false;
+}
+
 void UVoxelProceduralMeshComponent::PostEditUndo()
 {
 	/*PostEditUndo();*/
@@ -175,7 +179,3 @@ bool UVoxelProceduralMeshComponent::ContainsPhysicsTriMeshData(bool InUseAllTriD
 	return false;
 }
 
-bool UVoxelProceduralMeshComponent::GenerateElements(bool bBuildRenderData)
-{
-	return false;
-}

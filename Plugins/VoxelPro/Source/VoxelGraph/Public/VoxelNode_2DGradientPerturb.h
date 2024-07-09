@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_2DGradientPerturb : public UVoxelNode_GradientPe
     GENERATED_BODY()
 public:
     UVoxelNode_2DGradientPerturb();
+
 };
 

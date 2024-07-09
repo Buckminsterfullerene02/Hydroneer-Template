@@ -10,3 +10,4 @@ UVoxelInstancedMaterialCollectionTemplates::UVoxelInstancedMaterialCollectionTem
     this->Template6x = NULL;
 }
 
+

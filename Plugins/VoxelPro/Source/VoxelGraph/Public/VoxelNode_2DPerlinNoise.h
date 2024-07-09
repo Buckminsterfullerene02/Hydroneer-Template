@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_2DPerlinNoise : public UVoxelNode_NoiseNodeWithD
     GENERATED_BODY()
 public:
     UVoxelNode_2DPerlinNoise();
+
 };
 

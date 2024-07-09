@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_TransformVector : public UVoxelNodeWithContext {
     GENERATED_BODY()
 public:
     UVoxelNode_TransformVector();
+
 };
 

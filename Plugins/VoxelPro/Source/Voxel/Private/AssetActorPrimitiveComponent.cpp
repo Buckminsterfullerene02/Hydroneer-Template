@@ -1,5 +1,6 @@
 #include "AssetActorPrimitiveComponent.h"
 
-UAssetActorPrimitiveComponent::UAssetActorPrimitiveComponent() {
+UAssetActorPrimitiveComponent::UAssetActorPrimitiveComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
+
 

@@ -1,36 +1,36 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelInt32Interval.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "VoxelToolRenderingRef.h"
-#include "VoxelFloatTexture.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "VoxelColorTexture.h"
-#include "VoxelIntBox.h"
-#include "UObject/NoExportTypes.h"
-#include "EVoxelRGBA.h"
-#include "VoxelMaterial.h"
-#include "VoxelPaintMaterialColor.h"
-#include "UObject/NoExportTypes.h"
-#include "VoxelFloatInterval.h"
-#include "UObject/NoExportTypes.h"
-#include "VoxelPaintMaterialMultiIndex.h"
-#include "VoxelPaintMaterialSingleIndex.h"
-#include "UObject/NoExportTypes.h"
-#include "EVoxelMemoryUsageType.h"
-#include "VoxelPaintMaterial.h"
-#include "VoxelPaintMaterialMultiIndexRaw.h"
-#include "VoxelPaintMaterialUV.h"
-#include "VoxelPaintMaterialMultiIndexWetness.h"
-#include "VoxelPaintMaterialFiveWayBlend.h"
 #include "ChunkDynamicDelegateDelegate.h"
+#include "EVoxelMemoryUsageType.h"
+#include "EVoxelRGBA.h"
+#include "VoxelColorTexture.h"
+#include "VoxelFloatInterval.h"
+#include "VoxelFloatTexture.h"
+#include "VoxelInt32Interval.h"
+#include "VoxelIntBox.h"
+#include "VoxelMaterial.h"
+#include "VoxelPaintMaterial.h"
+#include "VoxelPaintMaterialColor.h"
+#include "VoxelPaintMaterialFiveWayBlend.h"
+#include "VoxelPaintMaterialMultiIndex.h"
+#include "VoxelPaintMaterialMultiIndexRaw.h"
+#include "VoxelPaintMaterialMultiIndexWetness.h"
+#include "VoxelPaintMaterialSingleIndex.h"
+#include "VoxelPaintMaterialUV.h"
+#include "VoxelToolRenderingRef.h"
 #include "VoxelBlueprintLibrary.generated.h"
 
-class UMaterialInterface;
-class AVoxelWorld;
-class UObject;
 class AActor;
+class AVoxelWorld;
+class UMaterialInterface;
+class UObject;
 class UTexture2D;
 
 UCLASS(Blueprintable)
@@ -38,6 +38,7 @@ class VOXEL_API UVoxelBlueprintLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelBlueprintLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void UpdatePosition(AVoxelWorld* World, FIntVector Position);
     
@@ -119,10 +120,10 @@ public:
     UFUNCTION(BlueprintCallable)
     static void MarkSpawnersDirty(AVoxelWorld* World, FVoxelIntBox Bounds);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelMaterial MakeSingleIndexMaterial(uint8 Index);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelMaterial MakeRawMaterial(uint8 R, uint8 G, uint8 B, uint8 A, uint8 U0, uint8 V0, uint8 U1, uint8 v1, uint8 U2, uint8 v2, uint8 U3, uint8 V3);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -167,13 +168,13 @@ public:
     UFUNCTION(BlueprintCallable)
     static bool HasMaterialData(AVoxelWorld* World);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static AVoxelWorld* GetVoxelWorldOverlappingBox(UObject* WorldContextObject, FBox Box);
     
     UFUNCTION(BlueprintCallable)
     static AVoxelWorld* GetVoxelWorldOverlappingActor(AActor* Actor);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static AVoxelWorld* GetVoxelWorldContainingPosition(UObject* WorldContextObject, FVector Position);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -188,13 +189,13 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static int32 GetTaskCount(AVoxelWorld* World);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static uint8 GetSingleIndex(FVoxelMaterial Material);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelIntBox GetRenderBoundsOverlappingDataBounds(AVoxelWorld* World, FVoxelIntBox DataBounds, int32 LOD);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetRawMaterial(FVoxelMaterial Material, uint8& R, uint8& G, uint8& B, uint8& A, uint8& U0, uint8& V0, uint8& U1, uint8& v1, uint8& U2, uint8& v2, uint8& U3, uint8& V3);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -206,7 +207,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static FVector GetNormal(AVoxelWorld* World, FIntVector Position);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetMultiIndex(FVoxelMaterial Material, bool bSortByStrength, float& Strength0, uint8& Index0, float& Strength1, uint8& Index1, float& Strength2, uint8& Index2, float& Strength3, uint8& Index3, float& Wetness);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
@@ -236,13 +237,13 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelIntBox GetBounds(AVoxelWorld* World);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static TArray<AVoxelWorld*> GetAllVoxelWorldsOverlappingBox(UObject* WorldContextObject, FBox Box);
     
     UFUNCTION(BlueprintCallable)
     static TArray<AVoxelWorld*> GetAllVoxelWorldsOverlappingActor(AActor* Actor);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static TArray<AVoxelWorld*> GetAllVoxelWorldsContainingPosition(UObject* WorldContextObject, FVector Position);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

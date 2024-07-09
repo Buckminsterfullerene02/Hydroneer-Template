@@ -27,5 +27,6 @@ public:
     bool bCenter;
     
     UVoxelNode_HeightmapSampler();
+
 };
 

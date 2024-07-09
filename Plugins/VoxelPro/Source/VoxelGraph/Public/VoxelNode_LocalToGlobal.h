@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_LocalToGlobal : public UVoxelNodeWithContext {
     GENERATED_BODY()
 public:
     UVoxelNode_LocalToGlobal();
+
 };
 

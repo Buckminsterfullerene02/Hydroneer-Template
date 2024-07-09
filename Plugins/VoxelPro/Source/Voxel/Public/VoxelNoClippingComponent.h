@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/SceneComponent.h"
 #include "UObject/NoExportTypes.h"
+#include "Components/SceneComponent.h"
 #include "VoxelNoClippingComponent.generated.h"
 
 class AVoxelWorld;
@@ -44,7 +44,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bIsInsideSurface;
     
-    UVoxelNoClippingComponent();
+    UVoxelNoClippingComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool ShouldUseVoxelWorld(AVoxelWorld* VoxelWorld);
     

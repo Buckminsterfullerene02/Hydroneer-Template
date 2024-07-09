@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnRequestGlobalAchievementPercentagesAsyncDelegateDelegate.h"
 #include "GlobalAchievementPercentagesReady.h"
+#include "OnRequestGlobalAchievementPercentagesAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages.generated.h"
 
-class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages;
 class UObject;
+class USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnRequestGlobalAchievementPercentagesAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionRequestGlobalAchievementPercentages* RequestGlobalAchievementPercentagesAsync(UObject* WorldContextObject, float Timeout);
     
     UFUNCTION(BlueprintCallable)

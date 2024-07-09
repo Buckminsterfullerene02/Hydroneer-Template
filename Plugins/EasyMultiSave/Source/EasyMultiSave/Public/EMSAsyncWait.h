@@ -4,8 +4,8 @@
 #include "AsyncWaitOutputPinDelegate.h"
 #include "EMSAsyncWait.generated.h"
 
-class UObject;
 class UEMSAsyncWait;
+class UObject;
 
 UCLASS(Blueprintable)
 class EASYMULTISAVE_API UEMSAsyncWait : public UBlueprintAsyncActionBase {
@@ -15,7 +15,8 @@ public:
     FAsyncWaitOutputPin OnCompleted;
     
     UEMSAsyncWait();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UEMSAsyncWait* AsyncWaitForOperation(UObject* WorldContextObject);
     
 };

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
 #include "UObject/NoExportTypes.h"
-#include "VoxelIntBox.h"
+#include "UObject/NoExportTypes.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "EVoxelSpawnerActorSpawnType.h"
+#include "VoxelIntBox.h"
 #include "VoxelFoliageSave.h"
 #include "VoxelInstancedMeshKey.h"
-#include "UObject/NoExportTypes.h"
 #include "VoxelFoliageBlueprintLibrary.generated.h"
 
-class AVoxelWorld;
 class AVoxelFoliageActor;
+class AVoxelWorld;
 class UVoxelHierarchicalInstancedStaticMeshComponent;
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ class VOXELFOLIAGE_API UVoxelFoliageBlueprintLibrary : public UBlueprintFunction
     GENERATED_BODY()
 public:
     UVoxelFoliageBlueprintLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void SpawnVoxelSpawnerActorsInArea(TArray<AVoxelFoliageActor*>& OutActors, AVoxelWorld* World, FVoxelIntBox Bounds, EVoxelSpawnerActorSpawnType SpawnType);
     

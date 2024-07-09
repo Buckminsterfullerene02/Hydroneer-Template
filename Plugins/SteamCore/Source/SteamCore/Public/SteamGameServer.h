@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
+#include "ESteamBeginAuthSessionResult.h"
+#include "ESteamUserHasLicenseForAppResult.h"
+#include "OnAssociateWithClanDelegate.h"
+#include "OnComputeNewPlayerCompatibilityDelegate.h"
+#include "OnGSClientApproveDelegate.h"
 #include "OnGSClientDenyDelegate.h"
 #include "OnGSClientGroupStatusDelegate.h"
 #include "OnGSPolicyResponseDelegate.h"
 #include "OnGSValidateAuthTicketResponseDelegate.h"
-#include "OnGSClientApproveDelegate.h"
-#include "ESteamUserHasLicenseForAppResult.h"
+#include "SteamCoreSubsystem.h"
 #include "SteamID.h"
 #include "SteamTicketHandle.h"
-#include "OnComputeNewPlayerCompatibilityDelegate.h"
-#include "ESteamBeginAuthSessionResult.h"
-#include "OnAssociateWithClanDelegate.h"
 #include "SteamGameServer.generated.h"
 
 UCLASS(Blueprintable)
@@ -34,6 +34,7 @@ public:
     FOnGSClientDeny GSClientDeny;
     
     USteamGameServer();
+
     UFUNCTION(BlueprintCallable)
     bool WasRestartRequested();
     

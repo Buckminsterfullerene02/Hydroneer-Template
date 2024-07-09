@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_3DCubicNoiseFractal : public UVoxelNode_NoiseNod
     GENERATED_BODY()
 public:
     UVoxelNode_3DCubicNoiseFractal();
+
 };
 

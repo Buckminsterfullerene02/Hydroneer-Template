@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelGenerator.h"
 #include "UObject/NoExportTypes.h"
 #include "VoxelFlatGeneratorDataItemConfig.h"
+#include "VoxelGenerator.h"
 #include "VoxelFlatGenerator.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,5 +16,6 @@ public:
     TArray<FVoxelFlatGeneratorDataItemConfig> DataItemConfigs;
     
     UVoxelFlatGenerator();
+
 };
 

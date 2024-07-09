@@ -8,3 +8,4 @@ UVoxelExample_HeightmapComposition::UVoxelExample_HeightmapComposition() {
     this->Size_Y = 512.00f;
 }
 
+

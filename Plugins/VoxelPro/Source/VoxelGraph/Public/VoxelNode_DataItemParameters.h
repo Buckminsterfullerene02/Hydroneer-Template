@@ -16,5 +16,6 @@ public:
     TMap<FName, float> PreviewValues;
     
     UVoxelNode_DataItemParameters();
+
 };
 

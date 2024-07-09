@@ -8,5 +8,6 @@ class STEAMCORE_API USteamCoreSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
 public:
     USteamCoreSubsystem();
+
 };
 

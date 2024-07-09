@@ -8,5 +8,6 @@ class VOXEL_API UVoxelMultiplayerInterface : public UObject {
     GENERATED_BODY()
 public:
     UVoxelMultiplayerInterface();
+
 };
 

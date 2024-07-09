@@ -11,6 +11,7 @@ class MINING_API UCModdingSubsystem : public UEngineSubsystem {
     GENERATED_BODY()
 public:
     UCModdingSubsystem();
+
     UFUNCTION(BlueprintCallable)
     static void UnloadMod(const FString& ModName);
     

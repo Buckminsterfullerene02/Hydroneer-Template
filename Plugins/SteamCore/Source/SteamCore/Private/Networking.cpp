@@ -1,5 +1,8 @@
 #include "Networking.h"
 
+UNetworking::UNetworking() {
+}
+
 bool UNetworking::SendP2PPacket(FSteamID SteamIDRemote, TArray<uint8> Data, ESteamP2PSend P2PSendType, int32 Channel) {
     return false;
 }
@@ -32,6 +35,4 @@ bool UNetworking::AcceptP2PSessionWithUser(FSteamID SteamIDRemote) {
     return false;
 }
 
-UNetworking::UNetworking() {
-}
 

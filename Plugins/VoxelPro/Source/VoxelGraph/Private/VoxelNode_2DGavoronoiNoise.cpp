@@ -4,3 +4,4 @@ UVoxelNode_2DGavoronoiNoise::UVoxelNode_2DGavoronoiNoise() {
     this->Jitter = 0.45f;
 }
 
+

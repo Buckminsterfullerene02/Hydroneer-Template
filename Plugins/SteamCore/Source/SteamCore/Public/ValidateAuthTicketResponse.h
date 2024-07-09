@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamID.h"
 #include "ESteamAuthSessionResponse.h"
+#include "SteamID.h"
 #include "ValidateAuthTicketResponse.generated.h"
 
 USTRUCT(BlueprintType)

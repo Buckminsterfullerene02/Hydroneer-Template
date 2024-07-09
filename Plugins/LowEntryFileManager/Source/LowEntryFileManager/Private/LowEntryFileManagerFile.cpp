@@ -1,7 +1,7 @@
 #include "LowEntryFileManagerFile.h"
 
-class ULowEntryFileManagerFile;
-class ULowEntryFileManagerDirectory;
+ULowEntryFileManagerFile::ULowEntryFileManagerFile() {
+}
 
 int32 ULowEntryFileManagerFile::Size() {
     return 0;
@@ -97,6 +97,4 @@ void ULowEntryFileManagerFile::Clear() {
 void ULowEntryFileManagerFile::AppendData(const TArray<uint8>& Data) {
 }
 
-ULowEntryFileManagerFile::ULowEntryFileManagerFile() {
-}
 

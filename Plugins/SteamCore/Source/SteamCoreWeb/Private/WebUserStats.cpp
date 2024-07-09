@@ -1,5 +1,8 @@
 #include "WebUserStats.h"
 
+UWebUserStats::UWebUserStats() {
+}
+
 void UWebUserStats::SetUserStatsForGame(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID, TArray<FString> Names, TArray<int32> Values) {
 }
 
@@ -21,6 +24,4 @@ void UWebUserStats::GetGlobalStatsForGame(const FOnSteamCoreWebCallback& Callbac
 void UWebUserStats::GetGlobalAchievementPercentagesForApp(const FOnSteamCoreWebCallback& Callback, const FString& GameID) {
 }
 
-UWebUserStats::UWebUserStats() {
-}
 

@@ -1,5 +1,8 @@
 #include "SteamParties.h"
 
+USteamParties::USteamParties() {
+}
+
 void USteamParties::OnReservationCompleted(FPartyBeaconID BeaconID, FSteamID SteamIDUser) {
 }
 
@@ -43,6 +46,4 @@ void USteamParties::ChangeNumOpenSlots(const FOnChangeNumOpenSlots& Callback, FP
 void USteamParties::CancelReservation(FPartyBeaconID BeaconID, FSteamID SteamIDUser) {
 }
 
-USteamParties::USteamParties() {
-}
 

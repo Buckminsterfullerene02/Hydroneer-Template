@@ -26,5 +26,6 @@ public:
     TArray<FVoxelInstancedMaterialCollectionLayer> Layers;
     
     UVoxelInstancedMaterialCollection();
+
 };
 

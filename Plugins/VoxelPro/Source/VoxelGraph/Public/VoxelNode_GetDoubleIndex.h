@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GetDoubleIndex : public UVoxelMaterialNode {
     GENERATED_BODY()
 public:
     UVoxelNode_GetDoubleIndex();
+
 };
 

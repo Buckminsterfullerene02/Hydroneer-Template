@@ -1,24 +1,24 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnLobbyChatMsgDelegate.h"
-#include "SteamCoreSubsystem.h"
-#include "OnFavoritesListAccountsUpdatedDelegate.h"
-#include "OnFavoritesListChangedDelegate.h"
-#include "OnLobbyChatUpdateDelegate.h"
-#include "OnLobbyDataUpdateDelegate.h"
-#include "OnLobbyGameCreatedDelegate.h"
-#include "OnLobbyEnterDelegate.h"
-#include "OnLobbyInviteDelegate.h"
-#include "OnLobbyKickedDelegate.h"
-#include "SteamID.h"
-#include "ESteamLobbyType.h"
-#include "OnRequestLobbyListDelegate.h"
-#include "ESteamFavoriteFlags.h"
-#include "OnJoinLobbyDelegate.h"
 #include "ESteamChatEntryType.h"
-#include "OnCreateLobbyDelegate.h"
+#include "ESteamFavoriteFlags.h"
 #include "ESteamLobbyComparison.h"
 #include "ESteamLobbyDistanceFilter.h"
+#include "ESteamLobbyType.h"
+#include "OnCreateLobbyDelegate.h"
+#include "OnFavoritesListAccountsUpdatedDelegate.h"
+#include "OnFavoritesListChangedDelegate.h"
+#include "OnJoinLobbyDelegate.h"
+#include "OnLobbyChatMsgDelegate.h"
+#include "OnLobbyChatUpdateDelegate.h"
+#include "OnLobbyDataUpdateDelegate.h"
+#include "OnLobbyEnterDelegate.h"
+#include "OnLobbyGameCreatedDelegate.h"
+#include "OnLobbyInviteDelegate.h"
+#include "OnLobbyKickedDelegate.h"
+#include "OnRequestLobbyListDelegate.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
 #include "Matchmaking.generated.h"
 
 UCLASS(Blueprintable)
@@ -53,6 +53,7 @@ public:
     FOnLobbyKicked LobbyKicked;
     
     UMatchmaking();
+
     UFUNCTION(BlueprintCallable)
     static bool SetLobbyType(FSteamID SteamIDLobby, ESteamLobbyType LobbyType);
     

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamLeaderboard.h"
 #include "ESteamResult.h"
+#include "SteamLeaderboard.h"
 #include "AttachLeaderboardUGCData.generated.h"
 
 USTRUCT(BlueprintType)

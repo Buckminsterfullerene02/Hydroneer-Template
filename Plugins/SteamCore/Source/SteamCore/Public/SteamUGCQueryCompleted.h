@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UGCQueryHandle.h"
 #include "ESteamResult.h"
+#include "UGCQueryHandle.h"
 #include "SteamUGCQueryCompleted.generated.h"
 
 USTRUCT(BlueprintType)

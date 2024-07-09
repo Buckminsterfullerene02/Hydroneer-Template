@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "UObject/Object.h"
 #include "UObject/NoExportTypes.h"
-#include "VoxelToolTickData.h"
-#include "Engine/EngineTypes.h"
 #include "UObject/NoExportTypes.h"
+#include "Engine/EngineTypes.h"
+#include "Templates/SubclassOf.h"
+#include "VoxelToolTickData.h"
 #include "VoxelTool.generated.h"
 
-class UVoxelToolSharedConfig;
-class UVoxelTool;
 class APlayerController;
 class AVoxelWorld;
+class UVoxelTool;
+class UVoxelToolSharedConfig;
 
 UCLASS(Abstract, Blueprintable)
 class VOXEL_API UVoxelTool : public UObject {
@@ -43,7 +43,8 @@ private:
     
 public:
     UVoxelTool();
-    UFUNCTION(BlueprintPure)
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelToolTickData MakeVoxelToolTickData(APlayerController* PlayerController, bool bEdit, const TMap<FName, bool>& Keys, const TMap<FName, float>& Axes, FVector2D MousePosition, FVector CameraDirection, TEnumAsByte<ECollisionChannel> CollisionChannel);
     
     UFUNCTION(BlueprintCallable)
@@ -58,7 +59,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void K2_SimpleTick(APlayerController* PlayerController, bool bEdit, const TMap<FName, bool>& Keys, const TMap<FName, float>& Axes, const UVoxelTool::FDoEditDynamicOverride& DoEditOverride, TEnumAsByte<ECollisionChannel> CollisionChannel);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     void K2_AdvancedTick(UObject* WorldContextObject, const FVoxelToolTickData& TickData, const UVoxelTool::FDoEditDynamicOverride& DoEditOverride);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

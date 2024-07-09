@@ -1,8 +1,7 @@
 #include "SettingContainerUtils.h"
 
-class UUserWidget;
-class UWidget;
-class UAutoSettingWidget;
+USettingContainerUtils::USettingContainerUtils() {
+}
 
 void USettingContainerUtils::SaveChildSettings(UUserWidget* UserWidget, UWidget* Parent) {
 }
@@ -25,6 +24,4 @@ void USettingContainerUtils::CancelChildSettings(UUserWidget* UserWidget, UWidge
 void USettingContainerUtils::ApplyChildSettings(UUserWidget* UserWidget, UWidget* Parent) {
 }
 
-USettingContainerUtils::USettingContainerUtils() {
-}
 

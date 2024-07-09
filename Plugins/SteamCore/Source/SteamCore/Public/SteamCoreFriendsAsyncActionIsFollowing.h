@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "FriendsIsFollowing.h"
+#include "OnIsFollowingAsyncDelegateDelegate.h"
 #include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
-#include "OnIsFollowingAsyncDelegateDelegate.h"
-#include "FriendsIsFollowing.h"
 #include "SteamCoreFriendsAsyncActionIsFollowing.generated.h"
 
-class USteamCoreFriendsAsyncActionIsFollowing;
 class UObject;
+class USteamCoreFriendsAsyncActionIsFollowing;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFriendsAsyncActionIsFollowing : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnIsFollowingAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionIsFollowing();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionIsFollowing* IsFollowingAsync(UObject* WorldContextObject, FSteamID SteamID, float Timeout);
     
     UFUNCTION(BlueprintCallable)

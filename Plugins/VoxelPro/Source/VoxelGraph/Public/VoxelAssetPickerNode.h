@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelAssetPickerNode : public UVoxelExposedNode {
     GENERATED_BODY()
 public:
     UVoxelAssetPickerNode();
+
 };
 

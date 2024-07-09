@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
 #include "OnGSStatsUnloadedDelegate.h"
-#include "SteamID.h"
-#include "OnServerStoreUserStatsDelegate.h"
 #include "OnServerRequestUserStatsDelegate.h"
+#include "OnServerStoreUserStatsDelegate.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
 #include "GameServerStats.generated.h"
 
 UCLASS(Blueprintable)
@@ -15,6 +15,7 @@ public:
     FOnGSStatsUnloaded GSStatsUnloaded;
     
     UGameServerStats();
+
     UFUNCTION(BlueprintCallable)
     bool UpdateUserAvgRateStat(FSteamID SteamIDUser, const FString& Name, float CountThisSession, float SessionLength);
     

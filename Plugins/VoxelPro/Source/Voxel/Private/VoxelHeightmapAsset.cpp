@@ -1,13 +1,5 @@
 #include "VoxelHeightmapAsset.h"
 
-int32 UVoxelHeightmapAsset::GetWidth() const {
-    return 0;
-}
-
-int32 UVoxelHeightmapAsset::GetHeight() const {
-    return 0;
-}
-
 UVoxelHeightmapAsset::UVoxelHeightmapAsset() {
     this->Scale = 1.00f;
     this->HeightScale = 1.00f;
@@ -20,4 +12,13 @@ UVoxelHeightmapAsset::UVoxelHeightmapAsset() {
     this->VoxelCustomVersion = 0;
     this->MaterialConfigFlag = 0;
 }
+
+int32 UVoxelHeightmapAsset::GetWidth() const {
+    return 0;
+}
+
+int32 UVoxelHeightmapAsset::GetHeight() const {
+    return 0;
+}
+
 

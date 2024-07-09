@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SmartMin : public UVoxelNodeHelper {
     GENERATED_BODY()
 public:
     UVoxelNode_SmartMin();
+
 };
 

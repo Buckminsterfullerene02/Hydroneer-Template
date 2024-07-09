@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionGetTradeHistory : public USteamCo
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetTradeHistory();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetTradeHistory* GetTradeHistoryAsync(UObject* WorldContextObject, const FString& Key, int32 MaxTrades, int32 StartAfterTime, const FString& StartAfterTradeId, bool bNavigatingBack, bool bGetDescriptions, const FString& Language, bool bIncludeFailed, bool bIncludeTotal);
     
 };

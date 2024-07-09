@@ -1,8 +1,7 @@
 #include "SteamCoreMatchmakingServersAsyncActionRequestServerList.h"
 
-class UObject;
-class UServerFilter;
-class USteamCoreMatchmakingServersAsyncActionRequestServerList;
+USteamCoreMatchmakingServersAsyncActionRequestServerList::USteamCoreMatchmakingServersAsyncActionRequestServerList() {
+}
 
 USteamCoreMatchmakingServersAsyncActionRequestServerList* USteamCoreMatchmakingServersAsyncActionRequestServerList::RequestSpectatorServerListAsync(UObject* WorldContextObject, int32 AppID, float Timeout, int32 MaxResults, bool bIgnoreNonResponsive, UServerFilter* ServerFilter) {
     return NULL;
@@ -34,6 +33,4 @@ void USteamCoreMatchmakingServersAsyncActionRequestServerList::HandleServerListF
 void USteamCoreMatchmakingServersAsyncActionRequestServerList::HandleCallback(const FGameServerItem& Data) {
 }
 
-USteamCoreMatchmakingServersAsyncActionRequestServerList::USteamCoreMatchmakingServersAsyncActionRequestServerList() {
-}
 

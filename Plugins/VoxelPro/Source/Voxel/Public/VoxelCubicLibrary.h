@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "VoxelCubicLibrary.generated.h"
 
 class AVoxelWorld;
@@ -12,6 +12,7 @@ class UVoxelCubicLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelCubicLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void SetCubicVoxelValue(AVoxelWorld* World, FIntVector Position, bool bValue);
     

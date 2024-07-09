@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelNodeHelper.h"
 #include "EVoxelPinCategory.h"
+#include "VoxelNodeHelper.h"
 #include "VoxelNode_CompileTimeConstant.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
@@ -18,5 +18,6 @@ public:
     TMap<FName, FString> Constants;
     
     UVoxelNode_CompileTimeConstant();
+
 };
 

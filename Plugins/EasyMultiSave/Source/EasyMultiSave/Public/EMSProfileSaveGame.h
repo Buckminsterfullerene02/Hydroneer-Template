@@ -8,5 +8,6 @@ class EASYMULTISAVE_API UEMSProfileSaveGame : public USaveGame {
     GENERATED_BODY()
 public:
     UEMSProfileSaveGame();
+
 };
 

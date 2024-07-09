@@ -7,6 +7,7 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class VOXEL_API UAssetActorPrimitiveComponent : public UPrimitiveComponent {
     GENERATED_BODY()
 public:
-    UAssetActorPrimitiveComponent();
+    UAssetActorPrimitiveComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

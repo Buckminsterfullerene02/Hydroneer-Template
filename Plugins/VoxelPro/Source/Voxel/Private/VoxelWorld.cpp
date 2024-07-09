@@ -1,12 +1,30 @@
 #include "VoxelWorld.h"
 #include "Templates/SubclassOf.h"
-#include "VoxelWorldRootComponent.h"
 #include "VoxelLineBatchComponent.h"
+#include "VoxelMultiplayerTcpInterface.h"
+#include "VoxelWorldRootComponent.h"
 
-class UVoxelGenerator;
-class AVoxelWorld;
-class UVoxelMultiplayerInterface;
-class UVoxelGeneratorCache;
+AVoxelWorld::AVoxelWorld(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RootComponent = CreateDefaultSubobject<UVoxelWorldRootComponent>(TEXT("Root"));
+    this->MultiplayerInterface = UVoxelMultiplayerTcpInterface::StaticClass();
+    this->WorldRoot = (UVoxelWorldRootComponent*)RootComponent;
+    this->LineBatchComponent = CreateDefaultSubobject<UVoxelLineBatchComponent>(TEXT("LineBatchComponent"));
+    this->SaveObject = NULL;
+    this->bAutomaticallySaveToFile = false;
+    this->bAppendDateToSavePath = false;
+    this->bRecomputeNormalsBeforeBaking = false;
+    this->BakedMeshTemplate = NULL;
+    this->BakedMeshComponentTemplate = NULL;
+    this->bEnableFoliageInEditor = true;
+    this->bAutomaticallyRefreshMaterials = true;
+    this->bAutomaticallyRefreshFoliage = true;
+    this->NumberOfThreads = 0;
+    this->SpawnerConfig = NULL;
+    this->MultiplayerInterfaceInstance = NULL;
+    this->GeneratorCache = NULL;
+    this->PlaceableItemActorHelper = NULL;
+    this->bIsToggled = false;
+}
 
 void AVoxelWorld::SetWorldSize(int32 NewWorldSizeInVoxel) {
 }
@@ -87,23 +105,4 @@ UVoxelMultiplayerInterface* AVoxelWorld::CreateMultiplayerInterfaceInstance() {
     return NULL;
 }
 
-AVoxelWorld::AVoxelWorld() {
-    this->WorldRoot = CreateDefaultSubobject<UVoxelWorldRootComponent>(TEXT("Root"));
-    this->LineBatchComponent = CreateDefaultSubobject<UVoxelLineBatchComponent>(TEXT("LineBatchComponent"));
-    this->SaveObject = NULL;
-    this->bAutomaticallySaveToFile = false;
-    this->bAppendDateToSavePath = false;
-    this->bRecomputeNormalsBeforeBaking = false;
-    this->BakedMeshTemplate = NULL;
-    this->BakedMeshComponentTemplate = NULL;
-    this->bEnableFoliageInEditor = true;
-    this->bAutomaticallyRefreshMaterials = true;
-    this->bAutomaticallyRefreshFoliage = true;
-    this->NumberOfThreads = 0;
-    this->SpawnerConfig = NULL;
-    this->MultiplayerInterfaceInstance = NULL;
-    this->GeneratorCache = NULL;
-    this->PlaceableItemActorHelper = NULL;
-    this->bIsToggled = false;
-}
 

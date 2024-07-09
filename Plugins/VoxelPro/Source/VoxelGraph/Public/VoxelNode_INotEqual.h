@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_INotEqual : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_INotEqual();
+
 };
 

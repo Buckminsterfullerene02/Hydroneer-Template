@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelTestValues.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "VoxelIntBox.h"
+#include "VoxelTestValues.h"
 #include "VoxelTestLibrary.generated.h"
 
 class AVoxelWorld;
@@ -12,6 +12,7 @@ class VOXEL_API UVoxelTestLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelTestLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void TestValues(FVoxelTestValues ValuesA, FVoxelTestValues ValuesB);
     

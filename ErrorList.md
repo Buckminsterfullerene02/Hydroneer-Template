@@ -2,37 +2,13 @@ Switch the GameProjectGenerator version to 4.26 & generate solution files. Build
 
 Generate solution files for generated project.
 
-Duplicate MiningEditor.Target.cs in Source/ and rename to MiningGame.Target.cs. Then replace any instances of `Editor` with `Game` i.e. add this code:
-```cs
-using UnrealBuildTool;
-
-public class MiningGameTarget : TargetRules {
-	public MiningGameTarget(TargetInfo Target) : base(Target) {
-		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange(new string[] {
-			"Mining",
-		});
-	}
-}
-```
-
 Add this to the plugins list in Mining.uproject:
 ```json
 {
-	"Name": "MobilePatchingUtils",
+	"Name": "ChaosEditor",
 	"Enabled": false
 }
 ```
-
-In:
-- VoxelSettings.h
-- SteamCoreWebSettings.h
-- SteamCoreSettings.h
-- SubstanceSettings.h
-- EMSPluginSettings.h
-- DLSSOverrideSettings.h
-- DLSSSettings.h, add `, config = Engine` to the `UCLASS()` macro.
 
 Comment out/delete the `FConfigureVoxelWorld` type + macro in VoxelPhysicsPartSpawner_VoxelWorlds.h.
 
@@ -139,7 +115,7 @@ public:
 	virtual bool WantsNegXTriMesh() override { return false; }
 	//~ End Interface_CollisionDataProvider Interface
 
-	#if WITH_EDITOR
+#if WITH_EDITOR
 	/**
 	 *	Generate the Elements array.
 	 *
@@ -158,7 +134,15 @@ VoxelProceduralMeshComponent.cpp:
 ```c++
 #include "VoxelProceduralMeshComponent.h"
 
-class AVoxelWorld;
+UVoxelProceduralMeshComponent::UVoxelProceduralMeshComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->bCanEverAffectNavigation = true;
+    this->Mobility = EComponentMobility::Movable;
+    this->bCastShadowAsTwoSided = true;
+    this->bHasCustomNavigableGeometry = EHasCustomNavigableGeometry::EvenIfNotCollidable;
+    this->BodySetup = NULL;
+    this->BodySetupBeingCooked = NULL;
+    this->StaticMeshComponent = NULL;
+}
 
 void UVoxelProceduralMeshComponent::SetVoxelCollisionsFrozen(const AVoxelWorld* VoxelWorld, bool bFrozen) {
 }
@@ -167,15 +151,6 @@ void UVoxelProceduralMeshComponent::SetVoxelCollisionsFrozen(const AVoxelWorld* 
 bool UVoxelProceduralMeshComponent::AreVoxelCollisionsFrozen(const AVoxelWorld* VoxelWorld) {
     return false;
 }
-
-UVoxelProceduralMeshComponent::UVoxelProceduralMeshComponent(const FObjectInitializer& ObjectInitializer)
-: Super(ObjectInitializer)
-{
-    this->BodySetup = NULL;
-    this->BodySetupBeingCooked = NULL;
-    this->StaticMeshComponent = NULL;
-}
-
 
 void UVoxelProceduralMeshComponent::AddReferencedObjects(UObject* InThis, FReferenceCollector& Collector)
 {
@@ -306,6 +281,7 @@ void UVoxelProceduralMeshComponent::GetLightAndShadowMapMemoryUsage( int32& Ligh
 	/*return;*/
 }
 
+#if WITH_EDITOR
 void UVoxelProceduralMeshComponent::GetStaticLightingInfo(FStaticLightingPrimitiveInfo& OutPrimitiveInfo,const TArray<ULightComponent*>& InRelevantLights,const FLightingBuildOptions& Options)
 {
 	/*check(0);*/
@@ -316,7 +292,11 @@ void UVoxelProceduralMeshComponent::AddMapBuildDataGUIDs(TSet<FGuid>& InGUIDs) c
 	
 }
 
-#if WITH_EDITOR
+bool UVoxelProceduralMeshComponent::GenerateElements(bool bBuildRenderData)
+{
+	return false;
+}
+
 void UVoxelProceduralMeshComponent::PostEditUndo()
 {
 	/*PostEditUndo();*/
@@ -329,11 +309,6 @@ bool UVoxelProceduralMeshComponent::GetPhysicsTriMeshData(struct FTriMeshCollisi
 }
 
 bool UVoxelProceduralMeshComponent::ContainsPhysicsTriMeshData(bool InUseAllTriData) const
-{
-	return false;
-}
-
-bool UVoxelProceduralMeshComponent::GenerateElements(bool bBuildRenderData)
 {
 	return false;
 }

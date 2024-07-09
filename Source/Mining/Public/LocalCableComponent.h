@@ -7,6 +7,7 @@ UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnable
 class MINING_API ULocalCableComponent : public UCableComponent {
     GENERATED_BODY()
 public:
-    ULocalCableComponent();
+    ULocalCableComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

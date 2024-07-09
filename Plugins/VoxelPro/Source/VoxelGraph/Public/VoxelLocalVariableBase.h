@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelLocalVariableBase : public UVoxelNode {
     GENERATED_BODY()
 public:
     UVoxelLocalVariableBase();
+
 };
 

@@ -1,5 +1,8 @@
 #include "WebEconService.h"
 
+UWebEconService::UWebEconService() {
+}
+
 void UWebEconService::GetTradeOffersSummary(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 TimeLastVisit) {
 }
 
@@ -27,6 +30,4 @@ void UWebEconService::DeclineTradeOffer(const FOnSteamCoreWebCallback& Callback,
 void UWebEconService::CancelTradeOffer(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& TradeOfferId) {
 }
 
-UWebEconService::UWebEconService() {
-}
 

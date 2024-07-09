@@ -10,6 +10,7 @@ class VOXEL_API UVoxelSaveUtilities : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelSaveUtilities();
+
     UFUNCTION(BlueprintCallable)
     static bool DecompressVoxelSave(const FVoxelCompressedWorldSave& CompressedSave, FVoxelUncompressedWorldSave& OutUncompressedSave);
     

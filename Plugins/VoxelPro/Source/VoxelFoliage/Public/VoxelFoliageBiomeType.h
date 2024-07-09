@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelGeneratorOutputPicker.h"
 #include "UObject/Object.h"
+#include "VoxelGeneratorOutputPicker.h"
 #include "VoxelGeneratorPicker.h"
 #include "VoxelFoliageBiomeTypeEntry.h"
 #include "VoxelFoliageBiomeType.generated.h"
@@ -20,5 +20,6 @@ public:
     TArray<FVoxelFoliageBiomeTypeEntry> Entries;
     
     UVoxelFoliageBiomeType();
+
 };
 

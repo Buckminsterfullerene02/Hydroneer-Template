@@ -1,7 +1,7 @@
 #include "SteamCoreMatchmakingServersAsyncActionServerRules.h"
 
-class UObject;
-class USteamCoreMatchmakingServersAsyncActionServerRules;
+USteamCoreMatchmakingServersAsyncActionServerRules::USteamCoreMatchmakingServersAsyncActionServerRules() {
+}
 
 USteamCoreMatchmakingServersAsyncActionServerRules* USteamCoreMatchmakingServersAsyncActionServerRules::ServerRulesAsync(UObject* WorldContextObject, const FString& IP, int32 QueryPort, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreMatchmakingServersAsyncActionServerRules* USteamCoreMatchmakingServers
 void USteamCoreMatchmakingServersAsyncActionServerRules::HandleCallback(const TArray<FGameServerRule>& Data, bool bWasSuccessful) {
 }
 
-USteamCoreMatchmakingServersAsyncActionServerRules::USteamCoreMatchmakingServersAsyncActionServerRules() {
-}
 

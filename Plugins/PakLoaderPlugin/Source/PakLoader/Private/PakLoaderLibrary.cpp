@@ -1,13 +1,7 @@
 #include "PakLoaderLibrary.h"
 
-class UTexture2D;
-class UObject;
-class UStaticMesh;
-class UMaterialInstanceConstant;
-class USoundBase;
-class USkeletalMesh;
-class UAnimSequence;
-class UMaterial;
+UPakLoaderLibrary::UPakLoaderLibrary() {
+}
 
 void UPakLoaderLibrary::UnRegisterMountPoint(const FString& RootPath, const FString& ContentPath) {
 }
@@ -120,6 +114,4 @@ bool UPakLoaderLibrary::DoesPakDirectoryExist(const FString& PakDirectory) {
     return false;
 }
 
-UPakLoaderLibrary::UPakLoaderLibrary() {
-}
 

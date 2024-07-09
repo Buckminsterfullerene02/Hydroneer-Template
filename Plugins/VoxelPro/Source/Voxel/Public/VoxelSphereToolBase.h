@@ -3,8 +3,8 @@
 #include "VoxelToolWithAlignment.h"
 #include "VoxelSphereToolBase.generated.h"
 
-class UStaticMesh;
 class UMaterialInterface;
+class UStaticMesh;
 
 UCLASS(Abstract, Blueprintable)
 class VOXEL_API UVoxelSphereToolBase : public UVoxelToolWithAlignment {
@@ -17,5 +17,6 @@ public:
     UStaticMesh* SphereMesh;
     
     UVoxelSphereToolBase();
+
 };
 

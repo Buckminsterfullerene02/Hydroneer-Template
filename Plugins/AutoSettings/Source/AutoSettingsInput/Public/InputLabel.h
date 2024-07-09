@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
+#include "GameplayTagContainer.h"
 #include "Blueprint/UserWidget.h"
-#include "GameplayTagContainer.h"
-#include "GameplayTagContainer.h"
 #include "InputLabel.generated.h"
 
 class APlayerController;
@@ -24,6 +24,7 @@ public:
     FGameplayTagContainer IconTags;
     
     UInputLabel();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateLabel();
     

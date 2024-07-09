@@ -4,8 +4,8 @@
 #include "VoxelPhysicsPartSpawner.h"
 #include "VoxelPhysicsPartSpawner_Cubes.generated.h"
 
-class UStaticMesh;
 class UMaterialInterface;
+class UStaticMesh;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelPhysicsPartSpawner_Cubes : public UObject, public IVoxelPhysicsPartSpawner {
@@ -21,7 +21,8 @@ public:
     float SpawnProbability;
     
     UVoxelPhysicsPartSpawner_Cubes();
-    
+
+
     // Fix for true pure virtual functions not being implemented
 };
 

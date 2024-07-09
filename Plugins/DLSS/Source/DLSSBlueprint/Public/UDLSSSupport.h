@@ -9,6 +9,5 @@ enum class UDLSSSupport : uint8 {
     NotSupportedIncompatibleHardware,
     NotSupportedDriverOutOfDate,
     NotSupportedOperatingSystemOutOfDate,
-    NotSupportedByPlatformAtBuildTime,
 };
 

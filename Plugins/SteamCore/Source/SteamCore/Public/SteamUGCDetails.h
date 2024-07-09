@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ESteamResult.h"
-#include "PublishedFileID.h"
 #include "ESteamRemoteStoragePublishedFileVisibility.h"
+#include "ESteamResult.h"
 #include "ESteamWorkshopFileType.h"
+#include "PublishedFileID.h"
 #include "SteamID.h"
 #include "SteamUGCHandle.h"
 #include "SteamUGCDetails.generated.h"

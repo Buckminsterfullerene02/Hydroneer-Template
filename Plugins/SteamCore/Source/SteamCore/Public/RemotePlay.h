@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "OnSteamRemotePlaySessionConnectedDelegate.h"
-#include "SteamID.h"
-#include "OnSteamRemotePlaySessionDisconnectedDelegate.h"
 #include "ESteamCoreDeviceFormFactor.h"
+#include "OnSteamRemotePlaySessionConnectedDelegate.h"
+#include "OnSteamRemotePlaySessionDisconnectedDelegate.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
 #include "RemotePlay.generated.h"
 
 UCLASS(Blueprintable)
@@ -18,6 +18,7 @@ public:
     FOnSteamRemotePlaySessionDisconnected SteamRemotePlaySessionDisconnected;
     
     URemotePlay();
+
     UFUNCTION(BlueprintCallable)
     FSteamID GetSessionSteamID(int32 SessionID);
     

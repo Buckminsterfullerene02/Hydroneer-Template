@@ -3,7 +3,7 @@
 #include "Engine/DeveloperSettings.h"
 #include "SteamCoreSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig, config = Engine)
+UCLASS(Blueprintable, DefaultConfig, Config=Engine)
 class STEAMCORE_API USteamCoreSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:
@@ -41,5 +41,6 @@ public:
     FString GameVersion;
     
     USteamCoreSettings();
+
 };
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GetGeneratorMaterial : public UVoxelNode_SingleG
     GENERATED_BODY()
 public:
     UVoxelNode_GetGeneratorMaterial();
+
 };
 

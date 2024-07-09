@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnRemoveUGCDependencyResultAsyncDelegateDelegate.h"
-#include "RemoveUGCDependencyResult.h"
 #include "PublishedFileID.h"
+#include "RemoveUGCDependencyResult.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionRemoveUGCDependency.generated.h"
 
-class USteamCoreUGCAsyncActionRemoveUGCDependency;
 class UObject;
+class USteamCoreUGCAsyncActionRemoveUGCDependency;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionRemoveUGCDependency : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnRemoveUGCDependencyResultAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionRemoveUGCDependency();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionRemoveUGCDependency* RemoveDependencyAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileID, FPublishedFileID ChildPublishedFileId, float Timeout);
     
     UFUNCTION(BlueprintCallable)

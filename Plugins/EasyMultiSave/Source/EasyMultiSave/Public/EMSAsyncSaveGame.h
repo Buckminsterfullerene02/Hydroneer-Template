@@ -4,8 +4,8 @@
 #include "AsyncSaveOutputPinDelegate.h"
 #include "EMSAsyncSaveGame.generated.h"
 
-class UObject;
 class UEMSAsyncSaveGame;
+class UObject;
 
 UCLASS(Blueprintable)
 class EASYMULTISAVE_API UEMSAsyncSaveGame : public UBlueprintAsyncActionBase {
@@ -15,7 +15,8 @@ public:
     FAsyncSaveOutputPin OnCompleted;
     
     UEMSAsyncSaveGame();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UEMSAsyncSaveGame* AsyncSaveActors(UObject* WorldContextObject, int32 Data);
     
 };

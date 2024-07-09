@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnAddItemToFavoritesAsyncDelegateDelegate.h"
-#include "UserFavoriteItemsListChanged.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
+#include "UserFavoriteItemsListChanged.h"
 #include "SteamCoreUGCAsyncActionAddItemToFavorites.generated.h"
 
 class UObject;
@@ -17,10 +17,11 @@ public:
     FOnAddItemToFavoritesAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionAddItemToFavorites();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FUserFavoriteItemsListChanged& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionAddItemToFavorites* AddItemToFavoritesAsync(UObject* WorldContextObject, int32 AppID, FPublishedFileID PublishedFileID, float Timeout);
     
 };

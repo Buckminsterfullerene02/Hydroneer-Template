@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_3DCraterNoise : public UVoxelNode_CraterNoise {
     GENERATED_BODY()
 public:
     UVoxelNode_3DCraterNoise();
+
 };
 

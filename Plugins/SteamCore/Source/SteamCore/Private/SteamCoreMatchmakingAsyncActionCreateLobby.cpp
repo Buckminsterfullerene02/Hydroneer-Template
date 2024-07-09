@@ -1,7 +1,7 @@
 #include "SteamCoreMatchmakingAsyncActionCreateLobby.h"
 
-class UObject;
-class USteamCoreMatchmakingAsyncActionCreateLobby;
+USteamCoreMatchmakingAsyncActionCreateLobby::USteamCoreMatchmakingAsyncActionCreateLobby() {
+}
 
 void USteamCoreMatchmakingAsyncActionCreateLobby::HandleCallback(const FCreateLobbyData& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreMatchmakingAsyncActionCreateLobby* USteamCoreMatchmakingAsyncActionCre
     return NULL;
 }
 
-USteamCoreMatchmakingAsyncActionCreateLobby::USteamCoreMatchmakingAsyncActionCreateLobby() {
-}
 

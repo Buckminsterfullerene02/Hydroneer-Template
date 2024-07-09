@@ -10,3 +10,4 @@ UVoxelSettings::UVoxelSettings() {
     this->DefaultCompressionLevel = 1;
 }
 
+

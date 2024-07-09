@@ -1,5 +1,9 @@
 #include "RadioButton.h"
 
+URadioButton::URadioButton() : UUserWidget(FObjectInitializer::Get()) {
+    this->Selected = false;
+}
+
 
 
 void URadioButton::TriggerSelection() {
@@ -26,7 +30,4 @@ FText URadioButton::GetLabel() const {
     return FText::GetEmpty();
 }
 
-URadioButton::URadioButton() : UUserWidget(FObjectInitializer::Get()) {
-    this->Selected = false;
-}
 

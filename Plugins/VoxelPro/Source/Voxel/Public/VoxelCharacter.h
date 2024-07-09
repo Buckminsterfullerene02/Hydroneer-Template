@@ -7,6 +7,7 @@ UCLASS(Blueprintable)
 class VOXEL_API AVoxelCharacter : public ACharacter {
     GENERATED_BODY()
 public:
-    AVoxelCharacter();
+    AVoxelCharacter(const FObjectInitializer& ObjectInitializer);
+
 };
 

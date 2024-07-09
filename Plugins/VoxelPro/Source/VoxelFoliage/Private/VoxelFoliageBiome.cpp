@@ -4,3 +4,4 @@ UVoxelFoliageBiome::UVoxelFoliageBiome() {
     this->Type = NULL;
 }
 
+

@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelNode_NoiseNode.h"
 #include "EVoxelCellularDistanceFunction.h"
 #include "EVoxelCellularReturnType.h"
+#include "VoxelNode_NoiseNode.h"
 #include "VoxelNode_CellularNoise.generated.h"
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
@@ -19,5 +19,6 @@ public:
     float Jitter;
     
     UVoxelNode_CellularNoise();
+
 };
 

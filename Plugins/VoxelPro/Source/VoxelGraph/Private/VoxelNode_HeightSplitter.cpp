@@ -4,3 +4,4 @@ UVoxelNode_HeightSplitter::UVoxelNode_HeightSplitter() {
     this->NumSplits = 4;
 }
 
+

@@ -10,6 +10,5 @@ enum class EActorType : uint8 {
     AT_Player,
     AT_GameObject,
     AT_Persistent,
-    AT_MAX UMETA(Hidden),
 };
 

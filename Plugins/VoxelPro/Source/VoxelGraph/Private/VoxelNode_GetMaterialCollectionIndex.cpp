@@ -4,3 +4,4 @@ UVoxelNode_GetMaterialCollectionIndex::UVoxelNode_GetMaterialCollectionIndex() {
     this->Material = NULL;
 }
 
+

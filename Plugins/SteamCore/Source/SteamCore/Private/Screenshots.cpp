@@ -1,5 +1,8 @@
 #include "Screenshots.h"
 
+UScreenshots::UScreenshots() {
+}
+
 FScreenshotHandle UScreenshots::WriteScreenshot(TArray<uint8> PubRGB, int32 Width, int32 Height) {
     return FScreenshotHandle{};
 }
@@ -34,6 +37,4 @@ FScreenshotHandle UScreenshots::AddScreenshotToLibrary(const FString& Filename, 
     return FScreenshotHandle{};
 }
 
-UScreenshots::UScreenshots() {
-}
 

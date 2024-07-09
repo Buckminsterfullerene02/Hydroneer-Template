@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionDeleteItem.h"
 
-class UObject;
-class USteamCoreUGCAsyncActionDeleteItem;
+USteamCoreUGCAsyncActionDeleteItem::USteamCoreUGCAsyncActionDeleteItem() {
+}
 
 void USteamCoreUGCAsyncActionDeleteItem::HandleCallback(const FUGCDeleteItemResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionDeleteItem* USteamCoreUGCAsyncActionDeleteItem::DeleteIt
     return NULL;
 }
 
-USteamCoreUGCAsyncActionDeleteItem::USteamCoreUGCAsyncActionDeleteItem() {
-}
 

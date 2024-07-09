@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "SteamID.h"
+#include "ESteamVRScreenshotType.h"
 #include "OnScreenshotReadyDelegate.h"
 #include "OnScreenshotRequestedDelegate.h"
-#include "ESteamVRScreenshotType.h"
 #include "PublishedFileID.h"
 #include "ScreenshotHandle.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
 #include "Screenshots.generated.h"
 
 UCLASS(Blueprintable)
@@ -20,6 +20,7 @@ public:
     FOnScreenshotRequested ScreenshotRequested;
     
     UScreenshots();
+
     UFUNCTION(BlueprintCallable)
     static FScreenshotHandle WriteScreenshot(TArray<uint8> PubRGB, int32 Width, int32 Height);
     

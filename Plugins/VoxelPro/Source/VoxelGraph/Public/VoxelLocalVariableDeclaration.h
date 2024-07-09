@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelLocalVariableBase.h"
 #include "UObject/NoExportTypes.h"
 #include "EVoxelPortalNodePinCategory.h"
+#include "VoxelLocalVariableBase.h"
 #include "VoxelLocalVariableDeclaration.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew, NotPlaceable)
@@ -19,5 +19,6 @@ public:
     FGuid VariableGuid;
     
     UVoxelLocalVariableDeclaration();
+
 };
 

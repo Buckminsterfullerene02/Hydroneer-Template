@@ -35,3 +35,4 @@ UVoxelGraphPreviewSettings::UVoxelGraphPreviewSettings() {
     this->LODToPreview = 0;
 }
 
+

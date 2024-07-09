@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GradientPerturbFractal : public UVoxelNode_Noise
     GENERATED_BODY()
 public:
     UVoxelNode_GradientPerturbFractal();
+
 };
 

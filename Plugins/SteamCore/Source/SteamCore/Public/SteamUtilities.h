@@ -1,34 +1,35 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
-#include "SteamSessionSetting.h"
-#include "SteamItemInstanceID.h"
-#include "SteamTicketHandle.h"
-#include "ESteamCoreIdentical.h"
-#include "PublishedFileID.h"
-#include "SteamID.h"
-#include "SteamUGCHandle.h"
 #include "UObject/NoExportTypes.h"
-#include "SteamGameID.h"
-#include "SteamSessionSearchSetting.h"
-#include "ESteamComparisonOp.h"
-#include "HostPingData.h"
-#include "SteamInventoryUpdateHandle.h"
-#include "OnSteamMessageDelegate.h"
-#include "ESteamCoreValid.h"
-#include "OnHTTPResponseDelegate.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "ESteamAccountType.h"
+#include "ESteamComparisonOp.h"
+#include "ESteamCoreIdentical.h"
+#include "ESteamCoreValid.h"
+#include "HostPingData.h"
+#include "OnHTTPResponseDelegate.h"
+#include "OnSteamMessageDelegate.h"
+#include "PublishedFileID.h"
+#include "SteamGameID.h"
+#include "SteamID.h"
+#include "SteamInventoryUpdateHandle.h"
+#include "SteamItemInstanceID.h"
+#include "SteamSessionSearchSetting.h"
+#include "SteamSessionSetting.h"
+#include "SteamTicketHandle.h"
+#include "SteamUGCHandle.h"
 #include "SteamUtilities.generated.h"
 
 class APlayerState;
-class UServerFilter;
 class UObject;
+class UServerFilter;
 
 UCLASS(Abstract, Blueprintable)
 class STEAMCORE_API USteamUtilities : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     USteamUtilities();
+
     UFUNCTION(BlueprintCallable)
     static bool WriteBytesToFile(bool bOverwriteIfExists, const FString& AbsoluteFilePath, const TArray<uint8>& DataBuffer);
     
@@ -182,7 +183,7 @@ public:
     UFUNCTION(BlueprintCallable)
     static FString EncryptString(const FString& String);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static UServerFilter* ConstructServerFilter(UObject* WorldContextObject);
     
     UFUNCTION(BlueprintCallable)
@@ -206,10 +207,10 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString BreakInventoryUpdateHandle(FSteamInventoryUpdateHandle Handle);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static TArray<uint8> BP_StringToBytes(const FString& String);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString BP_BytesToString(TArray<uint8> Array);
     
 };

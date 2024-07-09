@@ -8,5 +8,6 @@ class AUTOSETTINGSINPUT_API UAutoSettingsInputSubsystem : public UGameInstanceSu
     GENERATED_BODY()
 public:
     UAutoSettingsInputSubsystem();
+
 };
 

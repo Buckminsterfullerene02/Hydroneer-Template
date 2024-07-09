@@ -24,6 +24,7 @@ public:
     bool bIsRoot;
     
     ULowEntryFileManagerDirectory();
+
     UFUNCTION(BlueprintCallable)
     void MoveTo(ULowEntryFileManagerDirectory* NewDirectory, const bool OverrideExistingFiles);
     

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_2DCubicNoise : public UVoxelNode_NoiseNode {
     GENERATED_BODY()
 public:
     UVoxelNode_2DCubicNoise();
+
 };
 

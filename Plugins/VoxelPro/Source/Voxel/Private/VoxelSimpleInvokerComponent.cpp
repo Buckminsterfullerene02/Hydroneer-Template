@@ -1,10 +1,6 @@
 #include "VoxelSimpleInvokerComponent.h"
 
-FVector UVoxelSimpleInvokerComponent::GetInvokerGlobalPosition_Implementation() const {
-    return FVector{};
-}
-
-UVoxelSimpleInvokerComponent::UVoxelSimpleInvokerComponent() {
+UVoxelSimpleInvokerComponent::UVoxelSimpleInvokerComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bUseForLOD = true;
     this->LODToSet = 0;
     this->LODRange = 1000.00f;
@@ -13,4 +9,9 @@ UVoxelSimpleInvokerComponent::UVoxelSimpleInvokerComponent() {
     this->bUseForNavmesh = true;
     this->NavmeshRange = 1000.00f;
 }
+
+FVector UVoxelSimpleInvokerComponent::GetInvokerGlobalPosition_Implementation() const {
+    return FVector{};
+}
+
 

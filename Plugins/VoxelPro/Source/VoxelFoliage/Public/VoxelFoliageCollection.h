@@ -13,5 +13,6 @@ public:
     TArray<UVoxelFoliage*> Foliages;
     
     UVoxelFoliageCollection();
+
 };
 

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelMaterialCollectionBase.h"
 #include "VoxelLandscapeMaterialCollectionLayer.h"
 #include "VoxelLandscapeMaterialCollectionPermutation.h"
+#include "VoxelMaterialCollectionBase.h"
 #include "VoxelLandscapeMaterialCollection.generated.h"
 
-class UMaterialInterface;
 class UMaterialInstanceConstant;
+class UMaterialInterface;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelLandscapeMaterialCollection : public UVoxelMaterialCollectionBase {
@@ -24,8 +24,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FVoxelLandscapeMaterialCollectionLayer> Layers;
     
-    /*UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TMap<FVoxelLandscapeMaterialCollectionPermutation, UMaterialInstanceConstant*> MaterialCache;*/
+    // UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    // TMap<FVoxelLandscapeMaterialCollectionPermutation, UMaterialInstanceConstant*> MaterialCache;
     
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
@@ -33,5 +33,6 @@ private:
     
 public:
     UVoxelLandscapeMaterialCollection();
+
 };
 

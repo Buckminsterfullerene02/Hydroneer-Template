@@ -1,7 +1,7 @@
 #include "SteamCoreFriendsAsyncActionGetFollowerCount.h"
 
-class UObject;
-class USteamCoreFriendsAsyncActionGetFollowerCount;
+USteamCoreFriendsAsyncActionGetFollowerCount::USteamCoreFriendsAsyncActionGetFollowerCount() {
+}
 
 void USteamCoreFriendsAsyncActionGetFollowerCount::HandleCallback(const FFriendsGetFollowerCount& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreFriendsAsyncActionGetFollowerCount* USteamCoreFriendsAsyncActionGetFol
     return NULL;
 }
 
-USteamCoreFriendsAsyncActionGetFollowerCount::USteamCoreFriendsAsyncActionGetFollowerCount() {
-}
 

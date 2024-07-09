@@ -8,6 +8,7 @@ class AUTOSETTINGS_API UToggleSetting : public UAutoSettingWidget {
     GENERATED_BODY()
 public:
     UToggleSetting();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateToggleState(bool State);

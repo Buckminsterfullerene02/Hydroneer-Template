@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnDownloadLeaderboardEntriesForUsersAsyncDelegateDelegate.h"
 #include "LeaderboardScoresDownloadedForUsers.h"
-#include "SteamLeaderboard.h"
+#include "OnDownloadLeaderboardEntriesForUsersAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
+#include "SteamLeaderboard.h"
 #include "SteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers.generated.h"
 
 class UObject;
@@ -18,10 +18,11 @@ public:
     FOnDownloadLeaderboardEntriesForUsersAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FLeaderboardScoresDownloadedForUsers& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers* DownloadLeaderboardEntriesForUsersAsync(UObject* WorldContextObject, FSteamLeaderboard SteamLeaderboard, TArray<FSteamID> Users, float Timeout);
     
 };

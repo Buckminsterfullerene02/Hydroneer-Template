@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
-#include "InputCoreTypes.h"
 #include "GameplayTagContainer.h"
-#include "Components/SlateWrapperTypes.h"
+#include "InputCoreTypes.h"
 #include "Styling/SlateBrush.h"
+#include "Components/SlateWrapperTypes.h"
+#include "Blueprint/UserWidget.h"
 #include "KeyLabel.generated.h"
 
 class UTexture;
@@ -29,6 +29,7 @@ public:
     FGameplayTagContainer IconTags;
     
     UKeyLabel();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdateKeyLabel();
     

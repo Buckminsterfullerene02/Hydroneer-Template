@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionGetNewsForAppAuthed : public USte
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetNewsForAppAuthed();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetNewsForAppAuthed* GetNewsForAppAuthedAsync(UObject* WorldContextObject, const FString& Key, int32 AppID, int32 MaxLength, TArray<FString> Feeds, int32 EndDate, int32 Count);
     
 };

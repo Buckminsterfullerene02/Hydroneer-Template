@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ESteamResult.h"
-#include "SteamID.h"
 #include "PartyBeaconID.h"
+#include "SteamID.h"
 #include "JoinPartyData.generated.h"
 
 USTRUCT(BlueprintType)

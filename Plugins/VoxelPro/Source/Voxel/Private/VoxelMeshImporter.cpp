@@ -1,6 +1,6 @@
 #include "VoxelMeshImporter.h"
 
-AVoxelMeshImporter::AVoxelMeshImporter() {
+AVoxelMeshImporter::AVoxelMeshImporter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->StaticMesh = NULL;
     this->SizeX = 0;
     this->SizeY = 0;
@@ -11,4 +11,5 @@ AVoxelMeshImporter::AVoxelMeshImporter() {
     this->MaterialInstance = NULL;
     this->CachedStaticMesh = NULL;
 }
+
 

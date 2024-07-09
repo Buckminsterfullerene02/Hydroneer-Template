@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Kismet/BlueprintFunctionLibrary.h"
 #include "UObject/NoExportTypes.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 #include "CHydroneerLibrary.generated.h"
 
 class UPrimitiveComponent;
@@ -11,6 +11,7 @@ class MINING_API UCHydroneerLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UCHydroneerLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool StringToClassRef(const FString& ClassStringName, UClass*& OutClass);
     

@@ -11,5 +11,6 @@ public:
     float Jitter;
     
     UVoxelNode_2DErosion();
+
 };
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamID.h"
 #include "PartyBeaconID.h"
+#include "SteamID.h"
 #include "ReservationNotificationData.generated.h"
 
 USTRUCT(BlueprintType)

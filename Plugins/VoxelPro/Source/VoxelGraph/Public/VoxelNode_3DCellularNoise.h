@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_3DCellularNoise : public UVoxelNode_CellularNois
     GENERATED_BODY()
 public:
     UVoxelNode_3DCellularNoise();
+
 };
 

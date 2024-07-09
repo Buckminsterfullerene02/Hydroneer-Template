@@ -14,5 +14,6 @@ public:
     int32 Seed;
     
     UVDI_Capsule_Graph();
+
 };
 

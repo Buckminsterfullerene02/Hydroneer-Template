@@ -21,6 +21,7 @@ private:
     FVoxelInstancedMeshKey Voxel_MeshKey;
     
 public:
-    UVoxelHierarchicalInstancedStaticMeshComponent();
+    UVoxelHierarchicalInstancedStaticMeshComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

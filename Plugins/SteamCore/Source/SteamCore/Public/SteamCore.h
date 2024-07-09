@@ -8,5 +8,6 @@ class STEAMCORE_API USteamCore : public UObject {
     GENERATED_BODY()
 public:
     USteamCore();
+
 };
 

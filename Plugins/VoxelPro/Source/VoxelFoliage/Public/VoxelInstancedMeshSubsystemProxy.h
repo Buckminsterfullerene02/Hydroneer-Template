@@ -8,5 +8,6 @@ class VOXELFOLIAGE_API UVoxelInstancedMeshSubsystemProxy : public UVoxelStaticSu
     GENERATED_BODY()
 public:
     UVoxelInstancedMeshSubsystemProxy();
+
 };
 

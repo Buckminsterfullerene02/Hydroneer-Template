@@ -8,5 +8,6 @@ class VOXEL_API UMaterialExpressionVoxelLandscapeVisibilityMask : public UMateri
     GENERATED_BODY()
 public:
     UMaterialExpressionVoxelLandscapeVisibilityMask();
+
 };
 

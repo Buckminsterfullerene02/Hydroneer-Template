@@ -4,3 +4,4 @@ UVoxelNode_CurveColor::UVoxelNode_CurveColor() {
     this->Curve = NULL;
 }
 
+

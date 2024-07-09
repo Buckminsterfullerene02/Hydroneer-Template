@@ -1,6 +1,7 @@
 #include "LowEntryFileManagerLibrary.h"
 
-class ULowEntryFileManagerDirectory;
+ULowEntryFileManagerLibrary::ULowEntryFileManagerLibrary() {
+}
 
 void ULowEntryFileManagerLibrary::SplitPath(const FString& Path, FString& PathPart, FString& NamePart) {
 }
@@ -213,6 +214,4 @@ void ULowEntryFileManagerLibrary::ClearDirectory(const FString& Directory) {
 void ULowEntryFileManagerLibrary::AppendFileData(const FString& File, const TArray<uint8>& Data) {
 }
 
-ULowEntryFileManagerLibrary::ULowEntryFileManagerLibrary() {
-}
 

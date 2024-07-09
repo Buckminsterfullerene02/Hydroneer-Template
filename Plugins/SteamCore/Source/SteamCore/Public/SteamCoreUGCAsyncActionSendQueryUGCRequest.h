@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnSendQueryUGCRequestAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamUGCQueryCompleted.h"
 #include "UGCQueryHandle.h"
 #include "SteamCoreUGCAsyncActionSendQueryUGCRequest.generated.h"
 
-class USteamCoreUGCAsyncActionSendQueryUGCRequest;
 class UObject;
+class USteamCoreUGCAsyncActionSendQueryUGCRequest;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionSendQueryUGCRequest : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnSendQueryUGCRequestAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionSendQueryUGCRequest();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionSendQueryUGCRequest* SendQueryUGCRequestAsync(UObject* WorldContextObject, FUGCQueryHandle Handle, float Timeout);
     
     UFUNCTION(BlueprintCallable)

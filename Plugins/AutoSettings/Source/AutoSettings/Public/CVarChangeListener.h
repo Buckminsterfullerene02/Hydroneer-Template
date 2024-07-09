@@ -8,5 +8,6 @@ class AUTOSETTINGS_API UCVarChangeListener : public UObject {
     GENERATED_BODY()
 public:
     UCVarChangeListener();
+
 };
 

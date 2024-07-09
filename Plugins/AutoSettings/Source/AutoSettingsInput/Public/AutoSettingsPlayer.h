@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "PlayerInputMappings.h"
 #include "InputMappingPreset.h"
+#include "PlayerInputMappings.h"
 #include "AutoSettingsPlayer.generated.h"
 
 UINTERFACE(Blueprintable, MinimalAPI)

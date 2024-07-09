@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SettingOption.h"
 #include "Blueprint/UserWidget.h"
+#include "SettingOption.h"
 #include "SpinnerSelectionChangedDelegate.h"
 #include "Spinner.generated.h"
 
@@ -19,6 +19,7 @@ public:
     FSpinnerSelectionChanged SelectionChangedEvent;
     
     USpinner();
+
     UFUNCTION(BlueprintCallable)
     void SelectValue(const FString& Value);
     

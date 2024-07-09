@@ -24,6 +24,7 @@ private:
     
 public:
     URadioButton();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void UpdateSelected(bool InSelected);

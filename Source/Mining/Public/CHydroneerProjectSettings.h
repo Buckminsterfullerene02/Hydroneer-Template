@@ -13,6 +13,7 @@ public:
     bool bDebugMainMenu;
     
     UCHydroneerProjectSettings();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UCHydroneerProjectSettings* Get();
     

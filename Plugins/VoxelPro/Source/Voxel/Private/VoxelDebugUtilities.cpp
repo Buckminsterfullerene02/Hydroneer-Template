@@ -1,6 +1,7 @@
 #include "VoxelDebugUtilities.h"
 
-class AVoxelWorld;
+UVoxelDebugUtilities::UVoxelDebugUtilities() {
+}
 
 void UVoxelDebugUtilities::DrawDebugIntBox(AVoxelWorld* World, FVoxelIntBox Bounds, FTransform Transform, float LifeTime, float Thickness, FLinearColor Color) {
 }
@@ -11,6 +12,4 @@ void UVoxelDebugUtilities::DrawDataOctree(AVoxelWorld* World, EVoxelDataType Dat
 void UVoxelDebugUtilities::DebugVoxelsInsideBounds(AVoxelWorld* World, FVoxelIntBox Bounds, FLinearColor Color, float LifeTime, float Thickness, bool bDebugDensities, FLinearColor TextColor) {
 }
 
-UVoxelDebugUtilities::UVoxelDebugUtilities() {
-}
 

@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "UObject/NoExportTypes.h"
-#include "VoxelIntBox.h"
-#include "UObject/NoExportTypes.h"
 #include "EVoxelDataType.h"
-#include "UObject/NoExportTypes.h"
+#include "VoxelIntBox.h"
 #include "VoxelDebugUtilities.generated.h"
 
 class AVoxelWorld;
@@ -15,6 +15,7 @@ class VOXEL_API UVoxelDebugUtilities : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelDebugUtilities();
+
     UFUNCTION(BlueprintCallable)
     static void DrawDebugIntBox(AVoxelWorld* World, FVoxelIntBox Bounds, FTransform Transform, float LifeTime, float Thickness, FLinearColor Color);
     

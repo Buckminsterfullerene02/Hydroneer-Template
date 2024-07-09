@@ -8,5 +8,6 @@ class UVDI_Ravine_Graph : public UVoxelGraphGeneratorHelper {
     GENERATED_BODY()
 public:
     UVDI_Ravine_Graph();
+
 };
 

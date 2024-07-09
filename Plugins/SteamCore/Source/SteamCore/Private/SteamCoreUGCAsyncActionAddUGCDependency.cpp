@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionAddUGCDependency.h"
 
-class UObject;
-class USteamCoreUGCAsyncActionAddUGCDependency;
+USteamCoreUGCAsyncActionAddUGCDependency::USteamCoreUGCAsyncActionAddUGCDependency() {
+}
 
 void USteamCoreUGCAsyncActionAddUGCDependency::HandleCallback(const FAddUGCDependencyResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionAddUGCDependency* USteamCoreUGCAsyncActionAddUGCDependen
     return NULL;
 }
 
-USteamCoreUGCAsyncActionAddUGCDependency::USteamCoreUGCAsyncActionAddUGCDependency() {
-}
 

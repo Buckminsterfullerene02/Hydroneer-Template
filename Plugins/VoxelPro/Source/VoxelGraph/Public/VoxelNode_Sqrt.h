@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_Sqrt : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_Sqrt();
+
 };
 

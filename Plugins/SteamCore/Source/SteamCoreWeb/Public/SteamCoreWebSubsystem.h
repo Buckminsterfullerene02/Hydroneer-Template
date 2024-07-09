@@ -8,5 +8,6 @@ class STEAMCOREWEB_API USteamCoreWebSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
 public:
     USteamCoreWebSubsystem();
+
 };
 

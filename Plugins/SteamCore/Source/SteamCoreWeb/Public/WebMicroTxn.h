@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebMicroTxn.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebMicroTxn : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebMicroTxn();
+
     UFUNCTION(BlueprintCallable)
     void RefundTxn(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& OrderId, int32 AppID);
     

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_FMod : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_FMod();
+
 };
 

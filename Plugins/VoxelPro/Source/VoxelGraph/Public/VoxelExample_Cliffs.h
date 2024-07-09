@@ -44,5 +44,6 @@ public:
     float Top_Noise_Scale;
     
     UVoxelExample_Cliffs();
+
 };
 

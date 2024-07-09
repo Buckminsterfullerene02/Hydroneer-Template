@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "UserFavoriteItemsListChanged.h"
 #include "OnRemoveItemFromFavoritesAsyncDelegateDelegate.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
+#include "UserFavoriteItemsListChanged.h"
 #include "SteamCoreUGCAsyncActionRemoveItemFromFavorites.generated.h"
 
 class UObject;
@@ -17,7 +17,8 @@ public:
     FOnRemoveItemFromFavoritesAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionRemoveItemFromFavorites();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionRemoveItemFromFavorites* RemoveItemFromFavoritesAsync(UObject* WorldContextObject, int32 AppID, FPublishedFileID PublishedFileID, float Timeout);
     
     UFUNCTION(BlueprintCallable)

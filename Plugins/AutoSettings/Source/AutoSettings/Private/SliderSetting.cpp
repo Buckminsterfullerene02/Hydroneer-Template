@@ -1,5 +1,10 @@
 #include "SliderSetting.h"
 
+USliderSetting::USliderSetting() {
+    this->LeftValue = 0.00f;
+    this->RightValue = 1.00f;
+}
+
 void USliderSetting::UpdateSliderValue_Implementation(float NormalizedValue, float RawValue) {
 }
 
@@ -23,8 +28,4 @@ float USliderSetting::ClampRawValue(float RawValue) const {
     return 0.0f;
 }
 
-USliderSetting::USliderSetting() {
-    this->LeftValue = 0.00f;
-    this->RightValue = 1.00f;
-}
 

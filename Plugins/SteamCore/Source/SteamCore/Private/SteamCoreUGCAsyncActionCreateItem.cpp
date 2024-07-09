@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionCreateItem.h"
 
-class USteamCoreUGCAsyncActionCreateItem;
-class UObject;
+USteamCoreUGCAsyncActionCreateItem::USteamCoreUGCAsyncActionCreateItem() {
+}
 
 void USteamCoreUGCAsyncActionCreateItem::HandleCallback(const FCreateItemResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionCreateItem* USteamCoreUGCAsyncActionCreateItem::CreateIt
     return NULL;
 }
 
-USteamCoreUGCAsyncActionCreateItem::USteamCoreUGCAsyncActionCreateItem() {
-}
 

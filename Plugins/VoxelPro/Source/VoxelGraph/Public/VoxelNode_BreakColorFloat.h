@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_BreakColorFloat : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_BreakColorFloat();
+
 };
 

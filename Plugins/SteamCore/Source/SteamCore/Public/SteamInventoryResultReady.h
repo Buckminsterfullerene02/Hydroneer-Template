@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamInventoryResult.h"
 #include "ESteamResult.h"
+#include "SteamInventoryResult.h"
 #include "SteamInventoryResultReady.generated.h"
 
 USTRUCT(BlueprintType)

@@ -14,5 +14,6 @@ public:
     float Tolerance;
     
     UVoxelNode_BiomeMerge();
+
 };
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelToolBase.h"
 #include "UObject/NoExportTypes.h"
 #include "EVoxelFalloff.h"
 #include "VoxelSurfaceToolMask.h"
+#include "VoxelToolBase.h"
 #include "VoxelSurfaceTool.generated.h"
 
 class UMaterialInterface;
@@ -70,5 +70,6 @@ private:
     
 public:
     UVoxelSurfaceTool();
+
 };
 

@@ -10,7 +10,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName InputName;
     
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
+    //UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     FExpressionInput Input;
     
     VOXELHELPERS_API FMaterialPackInput();

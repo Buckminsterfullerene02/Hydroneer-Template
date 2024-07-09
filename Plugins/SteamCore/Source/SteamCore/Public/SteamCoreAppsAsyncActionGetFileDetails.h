@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnFileDetailsResultAsyncDelegateDelegate.h"
 #include "FileDetailsResult.h"
+#include "OnFileDetailsResultAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreAppsAsyncActionGetFileDetails.generated.h"
 
-class USteamCoreAppsAsyncActionGetFileDetails;
 class UObject;
+class USteamCoreAppsAsyncActionGetFileDetails;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreAppsAsyncActionGetFileDetails : public USteamCoreAsyncAction {
@@ -16,10 +16,11 @@ public:
     FOnFileDetailsResultAsyncDelegate OnCallback;
     
     USteamCoreAppsAsyncActionGetFileDetails();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FFileDetailsResult& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreAppsAsyncActionGetFileDetails* GetFileDetailsAsync(UObject* WorldContextObject, const FString& Filename, float Timeout);
     
 };

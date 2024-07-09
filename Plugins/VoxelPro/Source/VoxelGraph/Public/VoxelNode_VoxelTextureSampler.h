@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "EVoxelSamplerMode.h"
-#include "VoxelExposedNode.h"
 #include "VoxelFloatTexture.h"
+#include "VoxelExposedNode.h"
 #include "VoxelNode_VoxelTextureSampler.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
@@ -19,5 +19,6 @@ public:
     FVoxelFloatTexture Texture;
     
     UVoxelNode_VoxelTextureSampler();
+
 };
 

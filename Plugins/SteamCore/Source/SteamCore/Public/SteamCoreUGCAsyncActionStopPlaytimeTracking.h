@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "StopPlaytimeTrackingResult.h"
 #include "OnStopPlaytimeTrackingAsyncDelegateDelegate.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
+#include "StopPlaytimeTrackingResult.h"
 #include "SteamCoreUGCAsyncActionStopPlaytimeTracking.generated.h"
 
-class USteamCoreUGCAsyncActionStopPlaytimeTracking;
 class UObject;
+class USteamCoreUGCAsyncActionStopPlaytimeTracking;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionStopPlaytimeTracking : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnStopPlaytimeTrackingAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionStopPlaytimeTracking();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionStopPlaytimeTracking* StopPlaytimeTrackingAsync(UObject* WorldContextObject, TArray<FPublishedFileID> PublishedFileIDs, float Timeout);
     
     UFUNCTION(BlueprintCallable)

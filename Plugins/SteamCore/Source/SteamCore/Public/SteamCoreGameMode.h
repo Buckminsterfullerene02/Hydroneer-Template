@@ -7,6 +7,7 @@ UCLASS(Blueprintable, NonTransient)
 class STEAMCORE_API ASteamCoreGameMode : public AGameMode {
     GENERATED_BODY()
 public:
-    ASteamCoreGameMode();
+    ASteamCoreGameMode(const FObjectInitializer& ObjectInitializer);
+
 };
 

@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "RequestEncryptedAppTicketDelegateDelegate.h"
 #include "EncryptedAppTicketResponse.h"
+#include "RequestEncryptedAppTicketDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUserAsyncActionRequestEncryptedAppTicket.generated.h"
 
-class USteamCoreUserAsyncActionRequestEncryptedAppTicket;
 class UObject;
+class USteamCoreUserAsyncActionRequestEncryptedAppTicket;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserAsyncActionRequestEncryptedAppTicket : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FRequestEncryptedAppTicketDelegate OnCallback;
     
     USteamCoreUserAsyncActionRequestEncryptedAppTicket();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserAsyncActionRequestEncryptedAppTicket* RequestEncryptedAppTicketAsync(UObject* WorldContextObject, TArray<uint8> DataToInclude, float Timeout);
     
     UFUNCTION(BlueprintCallable)

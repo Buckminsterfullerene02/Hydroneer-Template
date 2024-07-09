@@ -1,15 +1,15 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnGamepadTextInputDismissedDelegate.h"
-#include "SteamCoreSubsystem.h"
-#include "OnIPCountryDelegate.h"
-#include "OnCheckFileSignatureDelegate.h"
-#include "OnSteamShutdownDelegate.h"
-#include "OnLowBatteryPowerDelegate.h"
 #include "ESteamGamepadTextInputLineMode.h"
 #include "ESteamGamepadTextInputMode.h"
 #include "ESteamNotificationPosition.h"
 #include "ESteamUniverse.h"
+#include "OnCheckFileSignatureDelegate.h"
+#include "OnGamepadTextInputDismissedDelegate.h"
+#include "OnIPCountryDelegate.h"
+#include "OnLowBatteryPowerDelegate.h"
+#include "OnSteamShutdownDelegate.h"
+#include "SteamCoreSubsystem.h"
 #include "Utils.generated.h"
 
 UCLASS(Blueprintable)
@@ -32,6 +32,7 @@ public:
     FOnSteamShutdown SteamShutdown;
     
     UUtils();
+
     UFUNCTION(BlueprintCallable)
     static void StartVRDashboard();
     

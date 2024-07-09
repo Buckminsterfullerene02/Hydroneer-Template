@@ -10,13 +10,7 @@ public class VoxelHelpers : ModuleRules {
             "Core",
             "CoreUObject",
             "Engine",
-            "InputCore",
-            "MovieScene",
-            "MovieSceneTracks",
             "ProceduralMeshComponent",
-            "PropertyPath",
-            "Slate",
-            "SlateCore",
             "UMG",
         });
     }

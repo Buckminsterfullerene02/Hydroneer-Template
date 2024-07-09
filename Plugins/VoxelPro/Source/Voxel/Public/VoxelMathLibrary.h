@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "VoxelHaltonStream.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "VoxelMathLibrary.generated.h"
 
 UCLASS(Blueprintable)
@@ -11,6 +11,7 @@ class VOXEL_API UVoxelMathLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelMathLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void ResetHaltonStream(const FVoxelHaltonStream& Stream);
     

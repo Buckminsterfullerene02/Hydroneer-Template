@@ -1,12 +1,11 @@
 #include "CHydroneerProjectSettings.h"
 
-class UCHydroneerProjectSettings;
+UCHydroneerProjectSettings::UCHydroneerProjectSettings() {
+    this->bDebugMainMenu = true;
+}
 
 UCHydroneerProjectSettings* UCHydroneerProjectSettings::Get() {
     return NULL;
 }
 
-UCHydroneerProjectSettings::UCHydroneerProjectSettings() {
-    this->bDebugMainMenu = true;
-}
 

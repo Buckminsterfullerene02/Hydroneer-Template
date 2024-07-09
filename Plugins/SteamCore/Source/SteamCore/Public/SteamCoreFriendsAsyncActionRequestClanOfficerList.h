@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "ClanOfficerListResponse.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnRequestClanOfficerListAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
 #include "SteamCoreFriendsAsyncActionRequestClanOfficerList.generated.h"
 
@@ -17,7 +17,8 @@ public:
     FOnRequestClanOfficerListAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionRequestClanOfficerList();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionRequestClanOfficerList* RequestClanOfficerListAsync(UObject* WorldContextObject, FSteamID SteamIDClan, float Timeout);
     
     UFUNCTION(BlueprintCallable)

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebApps.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebApps : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebApps();
+
     UFUNCTION(BlueprintCallable)
     void UpToDateCheck(const FOnSteamCoreWebCallback& Callback, int32 AppID, int32 Version);
     

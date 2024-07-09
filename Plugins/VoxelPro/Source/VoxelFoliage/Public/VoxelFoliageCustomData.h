@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EVoxelUVAxis.h"
+#include "VoxelGeneratorOutputPicker.h"
 #include "VoxelGeneratorPicker.h"
 #include "EVoxelFoliageCustomDataType.h"
-#include "VoxelGeneratorOutputPicker.h"
-#include "EVoxelUVAxis.h"
 #include "VoxelFoliageCustomData.generated.h"
 
 USTRUCT(BlueprintType)

@@ -11,5 +11,6 @@ public:
     bool Value;
     
     UVoxelNode_BoolParameter();
+
 };
 

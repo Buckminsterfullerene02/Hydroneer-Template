@@ -1,29 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "VoxelFloatTexture.h"
-#include "VoxelIntBox.h"
-#include "EVoxelSamplerMode.h"
+#include "Engine/LatentActionManager.h"
 #include "EVoxelComputeDevice.h"
 #include "EVoxelFalloff.h"
+#include "EVoxelSDFMergeMode.h"
+#include "EVoxelSamplerMode.h"
+#include "VoxelFloatTexture.h"
+#include "VoxelIntBox.h"
 #include "VoxelSurfaceEditsProcessedVoxels.h"
-#include "VoxelSurfaceEditsVoxels.h"
-#include "Engine/LatentActionManager.h"
 #include "VoxelSurfaceEditsStack.h"
 #include "VoxelSurfaceEditsStackElement.h"
-#include "UObject/NoExportTypes.h"
-#include "EVoxelSDFMergeMode.h"
+#include "VoxelSurfaceEditsVoxels.h"
 #include "VoxelSurfaceTools.generated.h"
 
-class UObject;
 class AVoxelWorld;
 class UCurveFloat;
+class UObject;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelSurfaceTools : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelSurfaceTools();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetStrengthMaskScale(float& ScaleX, float& ScaleY, AVoxelWorld* World, FVoxelFloatTexture Mask, float SizeX, float SizeY, bool bConvertToVoxelSpace);
     
@@ -33,10 +34,10 @@ public:
     UFUNCTION(BlueprintCallable)
     static void FindSurfaceVoxelsFromDistanceField(FVoxelSurfaceEditsVoxels& Voxels, AVoxelWorld* World, FVoxelIntBox Bounds, bool bMultiThreaded, EVoxelComputeDevice ComputeDevice);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo", WorldContext="WorldContextObject"))
     static void FindSurfaceVoxelsAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, FVoxelSurfaceEditsVoxels& Voxels, AVoxelWorld* World, FVoxelIntBox Bounds, bool bComputeNormals, bool bHideLatentWarnings);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo", WorldContext="WorldContextObject"))
     static void FindSurfaceVoxels2DAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, FVoxelSurfaceEditsVoxels& Voxels, AVoxelWorld* World, FVoxelIntBox Bounds, bool bComputeNormals, bool bHideLatentWarnings);
     
     UFUNCTION(BlueprintCallable)
@@ -57,7 +58,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelSurfaceEditsStackElement ApplyStrengthCurve(AVoxelWorld* World, FVector Center, float Radius, UCurveFloat* StrengthCurve, bool bConvertToVoxelSpace);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo", WorldContext="WorldContextObject"))
     static void ApplyStackAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, FVoxelSurfaceEditsProcessedVoxels& ProcessedVoxels, FVoxelSurfaceEditsVoxels Voxels, FVoxelSurfaceEditsStack Stack, bool bHideLatentWarnings);
     
     UFUNCTION(BlueprintCallable)

@@ -1,16 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "RequestPlayersForGameFinalResultDelegateDelegate.h"
-#include "RequestPlayersForGameProgressDelegateDelegate.h"
-#include "SteamCoreSubsystem.h"
-#include "SearchForGameProgressDelegateDelegate.h"
-#include "SearchForGameResultDelegateDelegate.h"
-#include "SubmitPlayerResultResultDelegateDelegate.h"
-#include "RequestPlayersForGameResultDelegateDelegate.h"
+#include "ESteamGameSearchErrorCode.h"
 #include "ESteamPlayerResult.h"
 #include "EndGameResultDelegateDelegate.h"
-#include "ESteamGameSearchErrorCode.h"
+#include "RequestPlayersForGameFinalResultDelegateDelegate.h"
+#include "RequestPlayersForGameProgressDelegateDelegate.h"
+#include "RequestPlayersForGameResultDelegateDelegate.h"
+#include "SearchForGameProgressDelegateDelegate.h"
+#include "SearchForGameResultDelegateDelegate.h"
+#include "SteamCoreSubsystem.h"
 #include "SteamID.h"
+#include "SubmitPlayerResultResultDelegateDelegate.h"
 #include "SteamGameSearch.generated.h"
 
 UCLASS(Blueprintable)
@@ -39,6 +39,7 @@ public:
     FEndGameResultDelegate EndGameResultDelegate;
     
     USteamGameSearch();
+
     UFUNCTION(BlueprintCallable)
     ESteamGameSearchErrorCode SubmitPlayerResult(const FString& UniqueGameID, FSteamID SteamIDPlayer, ESteamPlayerResult PlayerResult);
     

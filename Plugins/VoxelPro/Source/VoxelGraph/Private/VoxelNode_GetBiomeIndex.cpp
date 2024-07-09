@@ -4,3 +4,4 @@ UVoxelNode_GetBiomeIndex::UVoxelNode_GetBiomeIndex() {
     this->Biome = NULL;
 }
 
+

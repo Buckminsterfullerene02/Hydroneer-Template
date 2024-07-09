@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_XF : public UVoxelCoordinateNode {
     GENERATED_BODY()
 public:
     UVoxelNode_XF();
+
 };
 

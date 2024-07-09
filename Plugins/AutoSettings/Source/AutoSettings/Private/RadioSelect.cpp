@@ -1,7 +1,9 @@
 #include "RadioSelect.h"
 
-class URadioButton;
-class UPanelSlot;
+URadioSelect::URadioSelect() : UUserWidget(FObjectInitializer::Get()) {
+    this->RadioButtonClass = NULL;
+    this->ButtonContainer = NULL;
+}
 
 void URadioSelect::SetOptions(TArray<FSettingOption> InOptions) {
 }
@@ -23,8 +25,4 @@ TArray<FSettingOption> URadioSelect::GetOptions() const {
 void URadioSelect::ButtonSelected(const FString& Value) {
 }
 
-URadioSelect::URadioSelect() : UUserWidget(FObjectInitializer::Get()) {
-    this->RadioButtonClass = NULL;
-    this->ButtonContainer = NULL;
-}
 

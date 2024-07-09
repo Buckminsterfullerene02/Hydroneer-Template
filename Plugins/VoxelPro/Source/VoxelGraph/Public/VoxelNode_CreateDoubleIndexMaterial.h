@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_CreateDoubleIndexMaterial : public UVoxelMateria
     GENERATED_BODY()
 public:
     UVoxelNode_CreateDoubleIndexMaterial();
+
 };
 

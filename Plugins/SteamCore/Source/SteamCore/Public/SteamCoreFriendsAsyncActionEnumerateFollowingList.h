@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "FriendsEnumerateFollowingList.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnEnumerateFollowingListAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreFriendsAsyncActionEnumerateFollowingList.generated.h"
 
-class USteamCoreFriendsAsyncActionEnumerateFollowingList;
 class UObject;
+class USteamCoreFriendsAsyncActionEnumerateFollowingList;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFriendsAsyncActionEnumerateFollowingList : public USteamCoreAsyncAction {
@@ -16,10 +16,11 @@ public:
     FOnEnumerateFollowingListAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionEnumerateFollowingList();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FFriendsEnumerateFollowingList& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionEnumerateFollowingList* EnumerateFollowingListAsync(UObject* WorldContextObject, int32 StartIndex, float Timeout);
     
 };

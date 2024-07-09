@@ -1,8 +1,7 @@
 #include "VoxelSurfaceTools.h"
 
-class AVoxelWorld;
-class UObject;
-class UCurveFloat;
+UVoxelSurfaceTools::UVoxelSurfaceTools() {
+}
 
 void UVoxelSurfaceTools::GetStrengthMaskScale(float& ScaleX, float& ScaleY, AVoxelWorld* World, FVoxelFloatTexture Mask, float SizeX, float SizeY, bool bConvertToVoxelSpace) {
 }
@@ -64,6 +63,4 @@ FVoxelSurfaceEditsStack UVoxelSurfaceTools::AddToStack(FVoxelSurfaceEditsStack S
     return FVoxelSurfaceEditsStack{};
 }
 
-UVoxelSurfaceTools::UVoxelSurfaceTools() {
-}
 

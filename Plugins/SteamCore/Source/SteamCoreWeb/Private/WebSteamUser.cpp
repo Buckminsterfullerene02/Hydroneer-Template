@@ -1,5 +1,8 @@
 #include "WebSteamUser.h"
 
+UWebSteamUser::UWebSteamUser() {
+}
+
 void UWebSteamUser::ResolveVanityURL(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& VanityURL, EVanityUrlType URLType) {
 }
 
@@ -30,6 +33,4 @@ void UWebSteamUser::GetAppPriceInfo(const FOnSteamCoreWebCallback& Callback, con
 void UWebSteamUser::CheckAppOwnership(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID) {
 }
 
-UWebSteamUser::UWebSteamUser() {
-}
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelInvokerComponentBase.h"
 #include "UObject/NoExportTypes.h"
+#include "VoxelInvokerComponentBase.h"
 #include "VoxelSimpleInvokerComponent.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
@@ -29,7 +29,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float NavmeshRange;
     
-    UVoxelSimpleInvokerComponent();
+    UVoxelSimpleInvokerComponent(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     FVector GetInvokerGlobalPosition() const;
     

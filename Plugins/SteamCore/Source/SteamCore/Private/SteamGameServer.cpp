@@ -1,5 +1,8 @@
 #include "SteamGameServer.h"
 
+USteamGameServer::USteamGameServer() {
+}
+
 bool USteamGameServer::WasRestartRequested() {
     return false;
 }
@@ -138,6 +141,4 @@ ESteamBeginAuthSessionResult USteamGameServer::BeginAuthSession(TArray<uint8> Ti
 void USteamGameServer::AssociateWithClan(const FOnAssociateWithClan& Callback, FSteamID SteamIDClan) {
 }
 
-USteamGameServer::USteamGameServer() {
-}
 

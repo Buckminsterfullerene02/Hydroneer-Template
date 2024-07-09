@@ -1,6 +1,11 @@
 #include "VoxelInvokerComponentBase.h"
 
-class AVoxelWorld;
+UVoxelInvokerComponentBase::UVoxelInvokerComponentBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->bIsInvokerEnabled = true;
+    this->bEditorOnlyInvoker = false;
+    this->bUseForEvents = true;
+    this->bUseForPriorities = true;
+}
 
 bool UVoxelInvokerComponentBase::ShouldUseInvoker_Implementation(AVoxelWorld* VoxelWorld) const {
     return false;
@@ -21,10 +26,4 @@ FVoxelInvokerSettings UVoxelInvokerComponentBase::GetInvokerSettings_Implementat
     return FVoxelInvokerSettings{};
 }
 
-UVoxelInvokerComponentBase::UVoxelInvokerComponentBase() {
-    this->bIsInvokerEnabled = true;
-    this->bEditorOnlyInvoker = false;
-    this->bUseForEvents = true;
-    this->bUseForPriorities = true;
-}
 

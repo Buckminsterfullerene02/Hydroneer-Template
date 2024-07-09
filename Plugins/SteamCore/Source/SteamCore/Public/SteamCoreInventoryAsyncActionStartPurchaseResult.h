@@ -6,8 +6,8 @@
 #include "SteamItemDef.h"
 #include "SteamCoreInventoryAsyncActionStartPurchaseResult.generated.h"
 
-class USteamCoreInventoryAsyncActionStartPurchaseResult;
 class UObject;
+class USteamCoreInventoryAsyncActionStartPurchaseResult;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreInventoryAsyncActionStartPurchaseResult : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnSteamInventoryStartPurchaseResultAsyncDelegate OnCallback;
     
     USteamCoreInventoryAsyncActionStartPurchaseResult();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreInventoryAsyncActionStartPurchaseResult* StartPurchaseAsync(UObject* WorldContextObject, const TArray<FSteamItemDef> ItemDefs, const TArray<int32> Quantity, float Timeout);
     
     UFUNCTION(BlueprintCallable)

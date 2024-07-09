@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_PerlinWormDistance : public UVoxelNodeHelper {
     GENERATED_BODY()
 public:
     UVoxelNode_PerlinWormDistance();
+
 };
 

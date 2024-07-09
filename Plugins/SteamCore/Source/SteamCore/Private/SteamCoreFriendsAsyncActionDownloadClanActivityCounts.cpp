@@ -1,7 +1,7 @@
 #include "SteamCoreFriendsAsyncActionDownloadClanActivityCounts.h"
 
-class UObject;
-class USteamCoreFriendsAsyncActionDownloadClanActivityCounts;
+USteamCoreFriendsAsyncActionDownloadClanActivityCounts::USteamCoreFriendsAsyncActionDownloadClanActivityCounts() {
+}
 
 void USteamCoreFriendsAsyncActionDownloadClanActivityCounts::HandleCallback(const FDownloadClanActivityCountsResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreFriendsAsyncActionDownloadClanActivityCounts* USteamCoreFriendsAsyncAc
     return NULL;
 }
 
-USteamCoreFriendsAsyncActionDownloadClanActivityCounts::USteamCoreFriendsAsyncActionDownloadClanActivityCounts() {
-}
 

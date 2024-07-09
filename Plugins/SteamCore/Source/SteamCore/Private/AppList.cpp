@@ -1,5 +1,8 @@
 #include "AppList.h"
 
+UAppList::UAppList() {
+}
+
 int32 UAppList::GetNumInstalledApps() {
     return 0;
 }
@@ -20,6 +23,4 @@ int32 UAppList::GetAppBuildId(int32 AppID) {
     return 0;
 }
 
-UAppList::UAppList() {
-}
 

@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionEnumerateSessionsForApp : public 
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionEnumerateSessionsForApp();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionEnumerateSessionsForApp* EnumerateSessionsForAppAsync(UObject* WorldContextObject, const FString& Key, int32 AppID, const FString& SteamID, bool bIncludeAllUserMessages, bool bIncludeAuthUserMessage, const FString& Language);
     
 };

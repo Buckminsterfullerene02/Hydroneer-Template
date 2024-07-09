@@ -8,5 +8,6 @@ class VOXEL_API UVoxelMultiplayerSubsystemProxy : public UVoxelStaticSubsystemPr
     GENERATED_BODY()
 public:
     UVoxelMultiplayerSubsystemProxy();
+
 };
 

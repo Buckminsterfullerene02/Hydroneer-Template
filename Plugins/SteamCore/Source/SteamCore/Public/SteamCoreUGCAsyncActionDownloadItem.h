@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnDownloadItemResultDelegateDelegate.h"
 #include "DownloadItemResult.h"
+#include "OnDownloadItemResultDelegateDelegate.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionDownloadItem.generated.h"
 
-class USteamCoreUGCAsyncActionDownloadItem;
 class UObject;
+class USteamCoreUGCAsyncActionDownloadItem;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionDownloadItem : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FOnDownloadItemResultDelegate OnCallback;
     
     USteamCoreUGCAsyncActionDownloadItem();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FDownloadItemResult& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionDownloadItem* DownloadItemAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileID, bool bHighPriority, float Timeout);
     
 };

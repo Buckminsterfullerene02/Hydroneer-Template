@@ -11,13 +11,14 @@ class VOXEL_API UVoxelMaterialCollectionBase : public UObject {
     GENERATED_BODY()
 public:
     UVoxelMaterialCollectionBase();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     TArray<FVoxelMaterialCollectionMaterialInfo> GetMaterials() const;
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetMaterialIndex(FName Name) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     UMaterialInterface* GetIndexMaterial(uint8 Index) const;
     
 };

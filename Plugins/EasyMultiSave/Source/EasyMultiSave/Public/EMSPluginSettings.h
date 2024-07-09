@@ -6,7 +6,7 @@
 #include "ELoadMethod.h"
 #include "EMSPluginSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig, config = Engine)
+UCLASS(Blueprintable, DefaultConfig, Config=Engine)
 class EASYMULTISAVE_API UEMSPluginSettings : public UObject {
     GENERATED_BODY()
 public:
@@ -50,5 +50,6 @@ public:
     FSoftClassPath ProfileSaveGameClass;
     
     UEMSPluginSettings();
+
 };
 

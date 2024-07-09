@@ -8,6 +8,7 @@ class UEasyFileSystemBPLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UEasyFileSystemBPLibrary();
+
     UFUNCTION(BlueprintCallable)
     static bool SetReadOnly(const FString& inPath, bool bNewReadOnlyValue);
     
@@ -23,7 +24,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FString LoadFileToString(const FString& inPath);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static bool LoadFileToArray(const FString& inPath, TArray<uint8>& Result);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

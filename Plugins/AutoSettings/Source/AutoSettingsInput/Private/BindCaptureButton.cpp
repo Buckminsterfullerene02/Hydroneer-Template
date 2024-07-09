@@ -1,6 +1,10 @@
 #include "BindCaptureButton.h"
 
-class UBindCapturePrompt;
+UBindCaptureButton::UBindCaptureButton() : UUserWidget(FObjectInitializer::Get()) {
+    this->BindCapturePromptClass = NULL;
+    this->CapturePromptZOrder = 1;
+    this->Prompt = NULL;
+}
 
 UBindCapturePrompt* UBindCaptureButton::StartCapture() {
     return NULL;
@@ -12,9 +16,4 @@ void UBindCaptureButton::InitializePrompt_Implementation(UBindCapturePrompt* Pro
 void UBindCaptureButton::ChordCaptured(FCapturedInput CapturedInput) {
 }
 
-UBindCaptureButton::UBindCaptureButton() : UUserWidget(FObjectInitializer::Get()) {
-    this->BindCapturePromptClass = NULL;
-    this->CapturePromptZOrder = 1;
-    this->Prompt = NULL;
-}
 

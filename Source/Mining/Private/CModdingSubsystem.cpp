@@ -1,6 +1,7 @@
 #include "CModdingSubsystem.h"
 
-class UCModdingSubsystem;
+UCModdingSubsystem::UCModdingSubsystem() {
+}
 
 void UCModdingSubsystem::UnloadMod(const FString& ModName) {
 }
@@ -30,6 +31,4 @@ TArray<FPublishedFileID> UCModdingSubsystem::GetAllSubscribedMods() {
     return TArray<FPublishedFileID>();
 }
 
-UCModdingSubsystem::UCModdingSubsystem() {
-}
 

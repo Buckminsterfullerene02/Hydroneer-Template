@@ -1,7 +1,7 @@
 #include "SteamCoreAppsAsyncActionGetFileDetails.h"
 
-class UObject;
-class USteamCoreAppsAsyncActionGetFileDetails;
+USteamCoreAppsAsyncActionGetFileDetails::USteamCoreAppsAsyncActionGetFileDetails() {
+}
 
 void USteamCoreAppsAsyncActionGetFileDetails::HandleCallback(const FFileDetailsResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreAppsAsyncActionGetFileDetails* USteamCoreAppsAsyncActionGetFileDetails
     return NULL;
 }
 
-USteamCoreAppsAsyncActionGetFileDetails::USteamCoreAppsAsyncActionGetFileDetails() {
-}
 

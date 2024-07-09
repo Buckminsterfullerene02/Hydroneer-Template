@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelMaterialCollectionBase.h"
 #include "VoxelBasicMaterialCollectionLayer.h"
+#include "VoxelMaterialCollectionBase.h"
 #include "VoxelBasicMaterialCollection.generated.h"
 
 UCLASS(Blueprintable)
@@ -12,5 +12,6 @@ public:
     TArray<FVoxelBasicMaterialCollectionLayer> Layers;
     
     UVoxelBasicMaterialCollection();
+
 };
 

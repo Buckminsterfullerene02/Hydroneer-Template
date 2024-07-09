@@ -8,5 +8,6 @@ class UVG_Example_FastCraters : public UVoxelGraphGeneratorHelper {
     GENERATED_BODY()
 public:
     UVG_Example_FastCraters();
+
 };
 

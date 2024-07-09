@@ -11,13 +11,14 @@ class AUTOSETTINGS_API UComboBoxSetting : public USelectSetting {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UComboBoxString* ComboBox;
     
 public:
     UComboBoxSetting();
+
 private:
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void ComboBoxSelectionChanged(const FString& SelectedItem, TEnumAsByte<ESelectInfo::Type> SelectionType);
     
 };

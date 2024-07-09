@@ -1,8 +1,11 @@
 #include "VoxelToolBase.h"
 
-class UMaterialInterface;
-class UStaticMesh;
-class UMaterialInstanceDynamic;
+UVoxelToolBase::UVoxelToolBase() {
+    this->VoxelWorld = NULL;
+    this->ToolOverlayMaterialInstance = NULL;
+    this->ToolMeshMaterialInstance = NULL;
+    this->PlaneMeshMaterialInstance = NULL;
+}
 
 void UVoxelToolBase::UpdateToolMesh(UStaticMesh* Mesh, UMaterialInterface* Material, const FTransform& Transform, FName ID) {
 }
@@ -69,10 +72,4 @@ bool UVoxelToolBase::CanEdit() const {
     return false;
 }
 
-UVoxelToolBase::UVoxelToolBase() {
-    this->VoxelWorld = NULL;
-    this->ToolOverlayMaterialInstance = NULL;
-    this->ToolMeshMaterialInstance = NULL;
-    this->PlaneMeshMaterialInstance = NULL;
-}
 

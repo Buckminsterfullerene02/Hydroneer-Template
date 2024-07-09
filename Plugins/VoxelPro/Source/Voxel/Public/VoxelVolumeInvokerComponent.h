@@ -19,6 +19,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUseForNavmesh;
     
-    UVoxelVolumeInvokerComponent();
+    UVoxelVolumeInvokerComponent(const FObjectInitializer& ObjectInitializer);
+
 };
 

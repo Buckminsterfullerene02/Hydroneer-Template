@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_MakeMaterialFromColor : public UVoxelMaterialNod
     GENERATED_BODY()
 public:
     UVoxelNode_MakeMaterialFromColor();
+
 };
 

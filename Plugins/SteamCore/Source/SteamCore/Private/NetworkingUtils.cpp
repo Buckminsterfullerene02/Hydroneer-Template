@@ -1,5 +1,8 @@
 #include "NetworkingUtils.h"
 
+UNetworkingUtils::UNetworkingUtils() {
+}
+
 bool UNetworkingUtils::ParsePingLocationString(const FString& String, FSteamNetworkPingLocation& Result) {
     return false;
 }
@@ -26,6 +29,4 @@ bool UNetworkingUtils::CheckPingDataUpToDate(float MaxAgeSeconds) {
     return false;
 }
 
-UNetworkingUtils::UNetworkingUtils() {
-}
 

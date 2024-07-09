@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "Blueprint/UserWidget.h"
 #include "GameplayTagContainer.h"
+#include "Blueprint/UserWidget.h"
 #include "CapturedInput.h"
+#include "Templates/SubclassOf.h"
 #include "BindCaptureButton.generated.h"
 
 class UBindCapturePrompt;
@@ -22,11 +22,12 @@ public:
     int32 CapturePromptZOrder;
     
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBindCapturePrompt* Prompt;
     
 public:
     UBindCaptureButton();
+
     UFUNCTION(BlueprintCallable)
     UBindCapturePrompt* StartCapture();
     

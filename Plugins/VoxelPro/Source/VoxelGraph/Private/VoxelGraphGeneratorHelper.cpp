@@ -4,3 +4,4 @@ UVoxelGraphGeneratorHelper::UVoxelGraphGeneratorHelper() {
     this->bEnableRangeAnalysis = true;
 }
 
+

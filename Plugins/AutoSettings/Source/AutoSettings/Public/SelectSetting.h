@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "AutoSettingWidget.h"
 #include "SettingOption.h"
+#include "Templates/SubclassOf.h"
 #include "SelectSetting.generated.h"
 
 class USettingOptionFactory;
@@ -23,6 +23,7 @@ private:
     
 public:
     USelectSetting();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateOptions(const TArray<FSettingOption>& InOptions);

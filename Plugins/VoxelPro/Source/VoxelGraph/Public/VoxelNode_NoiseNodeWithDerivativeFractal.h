@@ -11,5 +11,6 @@ public:
     bool bComputeDerivative;
     
     UVoxelNode_NoiseNodeWithDerivativeFractal();
+
 };
 

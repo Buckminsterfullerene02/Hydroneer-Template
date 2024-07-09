@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "VoxelIntBox.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
 #include "VoxelIntBoxWithValidity.h"
-#include "UObject/NoExportTypes.h"
 #include "VoxelIntBoxLibrary.generated.h"
 
 UCLASS(Blueprintable)
@@ -13,6 +13,7 @@ class UVoxelIntBoxLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UVoxelIntBoxLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FVoxelIntBox TranslateBox(FVoxelIntBox Box, FIntVector Position);
     

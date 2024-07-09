@@ -1,6 +1,7 @@
 #include "MatchmakingServers.h"
 
-class UServerFilter;
+UMatchmakingServers::UMatchmakingServers() {
+}
 
 void UMatchmakingServers::ServerRules(const FOnServerRules& Callback, const FString& IP, int32 QueryPort) {
 }
@@ -26,6 +27,4 @@ void UMatchmakingServers::RequestFavoritesServerList(const FOnServerUpdated& Ser
 void UMatchmakingServers::PingServer(const FOnServerPing& Callback, const FString& IP, int32 QueryPort) {
 }
 
-UMatchmakingServers::UMatchmakingServers() {
-}
 

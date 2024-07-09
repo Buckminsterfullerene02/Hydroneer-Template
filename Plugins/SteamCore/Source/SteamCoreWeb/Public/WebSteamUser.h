@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
-#include "OnSteamCoreWebCallbackDelegate.h"
 #include "EVanityUrlType.h"
+#include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebSteamUser.generated.h"
 
 UCLASS(Blueprintable)
@@ -10,6 +10,7 @@ class STEAMCOREWEB_API UWebSteamUser : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebSteamUser();
+
     UFUNCTION(BlueprintCallable)
     void ResolveVanityURL(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& VanityURL, EVanityUrlType URLType);
     

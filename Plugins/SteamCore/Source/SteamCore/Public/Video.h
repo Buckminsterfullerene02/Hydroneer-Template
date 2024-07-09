@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
 #include "OnGetOPFSettingsResultDelegate.h"
 #include "OnGetVideoURLResultDelegate.h"
+#include "SteamCoreSubsystem.h"
 #include "Video.generated.h"
 
 UCLASS(Blueprintable)
@@ -16,6 +16,7 @@ public:
     FOnGetVideoURLResult GetVideoURLResult;
     
     UVideo();
+
     UFUNCTION(BlueprintCallable)
     static bool IsBroadcasting(int32& NumViewers);
     

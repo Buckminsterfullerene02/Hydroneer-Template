@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamP2PSessionState.h"
+#include "ESteamP2PSend.h"
+#include "OnP2PSessionConnectFailDelegate.h"
 #include "OnP2PSessionRequestDelegate.h"
 #include "SteamCoreSubsystem.h"
-#include "OnP2PSessionConnectFailDelegate.h"
 #include "SteamID.h"
-#include "ESteamP2PSend.h"
+#include "SteamP2PSessionState.h"
 #include "Networking.generated.h"
 
 UCLASS(Blueprintable)
@@ -19,6 +19,7 @@ public:
     FOnP2PSessionConnectFail OnP2PSessionConnectFailDelegate;
     
     UNetworking();
+
     UFUNCTION(BlueprintCallable)
     bool SendP2PPacket(FSteamID SteamIDRemote, TArray<uint8> Data, ESteamP2PSend P2PSendType, int32 Channel);
     

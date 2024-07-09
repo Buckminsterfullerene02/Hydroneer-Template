@@ -12,6 +12,7 @@ public:
     FOnSteamCoreWebAsyncCallback OnCallback;
     
     USteamCoreWebAsyncAction();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FString& Data, bool bWasSuccessful);
     

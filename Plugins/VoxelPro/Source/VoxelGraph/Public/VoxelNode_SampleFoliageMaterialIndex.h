@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SampleFoliageMaterialIndex : public UVoxelNodeWi
     GENERATED_BODY()
 public:
     UVoxelNode_SampleFoliageMaterialIndex();
+
 };
 

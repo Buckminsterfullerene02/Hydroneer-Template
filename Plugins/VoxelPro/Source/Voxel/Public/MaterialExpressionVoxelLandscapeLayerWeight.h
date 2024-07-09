@@ -8,5 +8,6 @@ class VOXEL_API UMaterialExpressionVoxelLandscapeLayerWeight : public UMaterialE
     GENERATED_BODY()
 public:
     UMaterialExpressionVoxelLandscapeLayerWeight();
+
 };
 

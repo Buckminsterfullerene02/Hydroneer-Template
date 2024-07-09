@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionGetCommunityBadgeProgress : publi
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetCommunityBadgeProgress();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetCommunityBadgeProgress* GetCommunityBadgeProgressAsync(UObject* WorldContextObject, const FString& Key, const FString& SteamID, int32 BadgeId);
     
 };

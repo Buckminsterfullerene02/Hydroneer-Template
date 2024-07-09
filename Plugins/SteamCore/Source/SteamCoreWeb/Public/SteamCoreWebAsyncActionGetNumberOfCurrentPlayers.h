@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionGetNumberOfCurrentPlayers : publi
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetNumberOfCurrentPlayers();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetNumberOfCurrentPlayers* GetNumberOfCurrentPlayersAsync(UObject* WorldContextObject, int32 AppID);
     
 };

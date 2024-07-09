@@ -5,3 +5,4 @@ UVoxelNode_RandomFloat::UVoxelNode_RandomFloat() {
     this->Max = 1.00f;
 }
 
+

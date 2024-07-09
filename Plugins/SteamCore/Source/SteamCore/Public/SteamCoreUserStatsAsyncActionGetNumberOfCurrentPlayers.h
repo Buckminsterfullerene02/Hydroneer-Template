@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnGetNumberOfCurrentPlayersAsyncDelegateDelegate.h"
 #include "NumberOfCurrentPlayers.h"
+#include "OnGetNumberOfCurrentPlayersAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers.generated.h"
 
-class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers;
 class UObject;
+class USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers : public USteamCoreAsyncAction {
@@ -16,10 +16,11 @@ public:
     FOnGetNumberOfCurrentPlayersAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FNumberOfCurrentPlayers& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionGetNumberOfCurrentPlayers* GetNumberOfCurrentPlayersAsync(UObject* WorldContextObject, float Timeout);
     
 };

@@ -7,6 +7,5 @@ enum class ESaveGameMode : uint8 {
     MODE_Player,
     MODE_Level,
     MODE_All,
-    MODE_MAX UMETA(Hidden),
 };
 

@@ -35,11 +35,6 @@
 			"Enabled": false
 		},
 		{
-			"Name": "Substance",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/2f6439c2f9584f49809d9b13b16c2ba4"
-		},
-		{
 			"Name": "EasyFileSystem",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/fa8842035ef0407c89f8b74638cbd080"
@@ -112,6 +107,10 @@
 			"Name": "PakLoader",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/fb9820b9b5c24f8ba178b2a11a61063f"
+		},
+		{
+			"Name": "BlueprintFileUtils",
+			"Enabled": true
 		},
 		{
 			"Name": "ChaosEditor",

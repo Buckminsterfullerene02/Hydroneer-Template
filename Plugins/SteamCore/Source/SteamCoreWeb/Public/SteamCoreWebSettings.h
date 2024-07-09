@@ -3,7 +3,7 @@
 #include "Engine/DeveloperSettings.h"
 #include "SteamCoreWebSettings.generated.h"
 
-UCLASS(Blueprintable, DefaultConfig, config = Engine)
+UCLASS(Blueprintable, DefaultConfig, Config=Engine)
 class STEAMCOREWEB_API USteamCoreWebSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:
@@ -32,5 +32,6 @@ public:
     bool bSandboxMode;
     
     USteamCoreWebSettings();
+
 };
 

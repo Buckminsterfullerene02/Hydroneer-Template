@@ -8,5 +8,6 @@ class UVoxelExamplesModuleDummy : public UObject {
     GENERATED_BODY()
 public:
     UVoxelExamplesModuleDummy();
+
 };
 

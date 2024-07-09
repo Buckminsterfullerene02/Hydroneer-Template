@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelPaintMaterial.h"
 #include "UObject/Object.h"
-#include "VoxelTool_OnBoundsUpdatedDelegate.h"
 #include "EVoxelComputeDevice.h"
+#include "VoxelPaintMaterial.h"
+#include "VoxelTool_OnBoundsUpdatedDelegate.h"
 #include "VoxelToolSharedConfig.generated.h"
 
+class AVoxelWorld;
 class UMaterialInterface;
 class UStaticMesh;
-class AVoxelWorld;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelToolSharedConfig : public UObject {
@@ -66,5 +66,6 @@ public:
     FVoxelTool_OnBoundsUpdated OnBoundsUpdated;
     
     UVoxelToolSharedConfig();
+
 };
 

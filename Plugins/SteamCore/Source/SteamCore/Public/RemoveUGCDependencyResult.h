@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "PublishedFileID.h"
 #include "ESteamResult.h"
+#include "PublishedFileID.h"
 #include "RemoveUGCDependencyResult.generated.h"
 
 USTRUCT(BlueprintType)

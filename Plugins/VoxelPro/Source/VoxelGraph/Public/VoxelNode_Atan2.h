@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_Atan2 : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_Atan2();
+
 };
 

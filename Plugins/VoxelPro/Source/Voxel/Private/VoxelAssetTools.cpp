@@ -1,9 +1,7 @@
 #include "VoxelAssetTools.h"
 
-class UVoxelDataAsset;
-class UObject;
-class AVoxelWorld;
-class UVoxelTransformableGeneratorInstanceWrapper;
+UVoxelAssetTools::UVoxelAssetTools() {
+}
 
 void UVoxelAssetTools::SetDataAssetMaterial(UVoxelDataAsset* Asset, UVoxelDataAsset*& NewAsset, FVoxelMaterial Material) {
 }
@@ -45,6 +43,4 @@ void UVoxelAssetTools::AddDisableEditsBoxAsync(UObject* WorldContextObject, FLat
 void UVoxelAssetTools::AddDisableEditsBox(FVoxelDisableEditsBoxItemReference& Reference, AVoxelWorld* World, FVoxelIntBox Bounds) {
 }
 
-UVoxelAssetTools::UVoxelAssetTools() {
-}
 

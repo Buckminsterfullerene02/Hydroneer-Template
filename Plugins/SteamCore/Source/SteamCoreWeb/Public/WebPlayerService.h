@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebPlayerService.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebPlayerService : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebPlayerService();
+
     UFUNCTION(BlueprintCallable)
     void IsPlayingSharedGame(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppIdPlaying);
     

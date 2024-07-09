@@ -5,8 +5,8 @@
 #include "StopPlaytimeTrackingResult.h"
 #include "SteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems.generated.h"
 
-class USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems;
 class UObject;
+class USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnStopPlaytimeTrackingForAllItemsAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems* StopPlaytimeTrackingForAllItemsAsync(UObject* WorldContextObject, float Timeout);
     
     UFUNCTION(BlueprintCallable)

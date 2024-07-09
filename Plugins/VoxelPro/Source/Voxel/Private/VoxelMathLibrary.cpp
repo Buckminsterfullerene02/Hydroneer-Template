@@ -1,5 +1,8 @@
 #include "VoxelMathLibrary.h"
 
+UVoxelMathLibrary::UVoxelMathLibrary() {
+}
+
 void UVoxelMathLibrary::ResetHaltonStream(const FVoxelHaltonStream& Stream) {
 }
 
@@ -23,6 +26,4 @@ float UVoxelMathLibrary::GetHalton1D(const FVoxelHaltonStream& Stream) {
     return 0.0f;
 }
 
-UVoxelMathLibrary::UVoxelMathLibrary() {
-}
 

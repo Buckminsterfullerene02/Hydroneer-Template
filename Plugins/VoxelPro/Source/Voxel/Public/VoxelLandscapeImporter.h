@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelLandscapeImporterLayerInfo.h"
 #include "GameFramework/Actor.h"
 #include "EVoxelHeightmapImporterMaterialConfig.h"
+#include "VoxelLandscapeImporterLayerInfo.h"
 #include "VoxelLandscapeImporter.generated.h"
 
 class ALandscape;
@@ -20,6 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FVoxelLandscapeImporterLayerInfo> LayerInfos;
     
-    AVoxelLandscapeImporter();
+    AVoxelLandscapeImporter(const FObjectInitializer& ObjectInitializer);
+
 };
 

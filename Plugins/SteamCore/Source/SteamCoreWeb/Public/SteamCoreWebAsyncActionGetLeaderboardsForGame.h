@@ -3,15 +3,16 @@
 #include "SteamCoreWebAsyncAction.h"
 #include "SteamCoreWebAsyncActionGetLeaderboardsForGame.generated.h"
 
-class USteamCoreWebAsyncActionGetLeaderboardsForGame;
 class UObject;
+class USteamCoreWebAsyncActionGetLeaderboardsForGame;
 
 UCLASS(Blueprintable)
 class STEAMCOREWEB_API USteamCoreWebAsyncActionGetLeaderboardsForGame : public USteamCoreWebAsyncAction {
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetLeaderboardsForGame();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetLeaderboardsForGame* GetLeaderboardsForGameAsync(UObject* WorldContextObject, const FString& Key, int32 AppID);
     
 };

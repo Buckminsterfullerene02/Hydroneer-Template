@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnAddUGCDependencyResultAsyncDelegateDelegate.h"
 #include "AddUGCDependencyResult.h"
+#include "OnAddUGCDependencyResultAsyncDelegateDelegate.h"
 #include "PublishedFileID.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionAddUGCDependency.generated.h"
 
-class USteamCoreUGCAsyncActionAddUGCDependency;
 class UObject;
+class USteamCoreUGCAsyncActionAddUGCDependency;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUGCAsyncActionAddUGCDependency : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FOnAddUGCDependencyResultAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionAddUGCDependency();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FAddUGCDependencyResult& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionAddUGCDependency* AddDependencyAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileID, FPublishedFileID ChildPublishedFileId, float Timeout);
     
 };

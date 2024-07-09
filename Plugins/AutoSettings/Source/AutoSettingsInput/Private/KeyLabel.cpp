@@ -1,6 +1,9 @@
 #include "KeyLabel.h"
 
-class UTexture;
+UKeyLabel::UKeyLabel() : UUserWidget(FObjectInitializer::Get()) {
+    this->KeyInvalidText = FText::FromString(TEXT("-"));
+    this->AxisScale = 0.00f;
+}
 
 
 void UKeyLabel::OnGlobalKeyIconTagsModified() {
@@ -34,8 +37,4 @@ FText UKeyLabel::GetDisplayName() const {
     return FText::GetEmpty();
 }
 
-UKeyLabel::UKeyLabel() : UUserWidget(FObjectInitializer::Get()) {
-    this->KeyInvalidText = FText::FromString(TEXT("-"));
-    this->AxisScale = 0.00f;
-}
 

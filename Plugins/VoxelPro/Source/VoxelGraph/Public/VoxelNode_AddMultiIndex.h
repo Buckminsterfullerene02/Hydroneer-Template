@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_AddMultiIndex : public UVoxelNode_MaterialSetter
     GENERATED_BODY()
 public:
     UVoxelNode_AddMultiIndex();
+
 };
 

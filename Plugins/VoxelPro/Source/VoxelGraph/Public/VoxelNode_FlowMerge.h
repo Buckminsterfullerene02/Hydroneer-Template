@@ -12,5 +12,6 @@ public:
     TArray<FVoxelNamedDataPin> Types;
     
     UVoxelNode_FlowMerge();
+
 };
 

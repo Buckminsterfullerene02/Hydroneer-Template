@@ -15,3 +15,4 @@ UVoxelToolSharedConfig::UVoxelToolSharedConfig() {
     this->FixedDeltaTime = 0.02f;
 }
 
+

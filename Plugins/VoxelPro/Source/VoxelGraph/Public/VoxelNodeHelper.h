@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNodeHelper : public UVoxelNode {
     GENERATED_BODY()
 public:
     UVoxelNodeHelper();
+
 };
 

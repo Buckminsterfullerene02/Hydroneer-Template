@@ -4,3 +4,4 @@ UVoxelHeightmapAssetUINT16::UVoxelHeightmapAssetUINT16() {
     this->MaterialConfig = EVoxelHeightmapImporterMaterialConfig::RGB;
 }
 
+

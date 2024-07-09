@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_InverseTransformVector : public UVoxelNodeWithCo
     GENERATED_BODY()
 public:
     UVoxelNode_InverseTransformVector();
+
 };
 

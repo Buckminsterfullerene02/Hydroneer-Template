@@ -7,3 +7,4 @@ UVoxelNode_NoiseNode::UVoxelNode_NoiseNode() {
     this->Tolerance = 0.10f;
 }
 
+

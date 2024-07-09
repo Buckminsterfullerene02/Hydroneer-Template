@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionSubscribePublishedFile : public U
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionSubscribePublishedFile();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionSubscribePublishedFile* SubscribePublishedFileAsync(UObject* WorldContextObject, const FString& Key, const FString& SteamID, int32 AppID, const FString& PublishedFileIDs);
     
 };

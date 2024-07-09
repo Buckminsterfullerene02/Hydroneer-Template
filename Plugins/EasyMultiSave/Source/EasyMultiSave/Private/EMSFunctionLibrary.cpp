@@ -1,13 +1,8 @@
 #include "EMSFunctionLibrary.h"
 #include "Templates/SubclassOf.h"
 
-class UEMSProfileSaveGame;
-class UObject;
-class UTextureRenderTarget2D;
-class UEMSCustomSaveGame;
-class UTexture2D;
-class UEMSPersistentSaveGame;
-class UEMSInfoSaveGame;
+UEMSFunctionLibrary::UEMSFunctionLibrary() {
+}
 
 void UEMSFunctionLibrary::SetCurrentSaveUserName(UObject* WorldContextObject, const FString& UserName) {
 }
@@ -85,6 +80,4 @@ void UEMSFunctionLibrary::DeleteCustomSave(UObject* WorldContextObject, UEMSCust
 void UEMSFunctionLibrary::DeleteAllSaveDataForSlot(UObject* WorldContextObject, const FString& SaveGameName) {
 }
 
-UEMSFunctionLibrary::UEMSFunctionLibrary() {
-}
 

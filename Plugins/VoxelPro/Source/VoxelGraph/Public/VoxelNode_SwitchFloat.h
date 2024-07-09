@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SwitchFloat : public UVoxelNodeHelper {
     GENERATED_BODY()
 public:
     UVoxelNode_SwitchFloat();
+
 };
 

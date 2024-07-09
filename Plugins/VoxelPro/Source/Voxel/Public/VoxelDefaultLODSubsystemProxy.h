@@ -8,5 +8,6 @@ class UVoxelDefaultLODSubsystemProxy : public UVoxelLODSubsystemProxy {
     GENERATED_BODY()
 public:
     UVoxelDefaultLODSubsystemProxy();
+
 };
 

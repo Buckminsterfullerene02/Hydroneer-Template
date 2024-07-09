@@ -1,9 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UDLSSSupport.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "UDLSSMode.h"
-#include "UObject/NoExportTypes.h"
+#include "UDLSSSupport.h"
 #include "DLSSLibrary.generated.h"
 
 UCLASS(Blueprintable, MinimalAPI)
@@ -11,6 +10,7 @@ class UDLSSLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UDLSSLibrary();
+
     UFUNCTION(BlueprintCallable)
     static void SetDLSSSharpness(float Sharpness);
     
@@ -36,16 +36,13 @@ public:
     static void GetDLSSScreenPercentageRange(float& MinScreenPercentage, float& MaxScreenPercentage);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
-    static void GetDLSSModeInformation(UDLSSMode DLSSMode, FVector2D ScreenResolution, bool& bIsSupported, float& OptimalScreenPercentage, bool& bIsFixedScreenPercentage, float& MinScreenPercentage, float& MaxScreenPercentage, float& OptimalSharpness);
+    static void GetDLSSModeInformation(UDLSSMode DLSSMode, bool& bIsSupported, float& OptimalScreenPercentage, bool& bIsFixedScreenPercentage, float& MinScreenPercentage, float& MaxScreenPercentage, float& OptimalSharpness);
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UDLSSMode GetDLSSMode();
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetDLSSMinimumDriverVersion(int32& MinDriverVersionMajor, int32& MinDriverVersionMinor);
-    
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-    static UDLSSMode GetDefaultDLSSMode();
     
 };
 

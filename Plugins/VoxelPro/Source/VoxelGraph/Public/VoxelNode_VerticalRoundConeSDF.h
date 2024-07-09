@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_VerticalRoundConeSDF : public UVoxelSDFNode {
     GENERATED_BODY()
 public:
     UVoxelNode_VerticalRoundConeSDF();
+
 };
 

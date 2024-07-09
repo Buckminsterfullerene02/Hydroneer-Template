@@ -8,3 +8,4 @@ UVoxelNode_RangeAnalysisDebuggerFloat::UVoxelNode_RangeAnalysisDebuggerFloat() {
     this->GraphStep = 1.00f;
 }
 
+

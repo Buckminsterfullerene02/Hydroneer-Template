@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamID.h"
 #include "ESteamChatRoomEnterResponse.h"
+#include "SteamID.h"
 #include "LobbyEnterData.generated.h"
 
 USTRUCT(BlueprintType)

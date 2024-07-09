@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "SettingOption.h"
 #include "Blueprint/UserWidget.h"
 #include "RadioSelectedSignatureDelegate.h"
+#include "SettingOption.h"
+#include "Templates/SubclassOf.h"
 #include "RadioSelect.generated.h"
 
-class URadioButton;
-class UPanelWidget;
 class UPanelSlot;
+class UPanelWidget;
+class URadioButton;
 
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class AUTOSETTINGS_API URadioSelect : public UUserWidget {
@@ -24,15 +24,16 @@ public:
     FRadioSelectedSignature SelectionChangedEvent;
     
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPanelWidget* ButtonContainer;
     
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<URadioButton*> RadioButtons;
     
 public:
     URadioSelect();
+
     UFUNCTION(BlueprintCallable)
     void SetOptions(TArray<FSettingOption> InOptions);
     

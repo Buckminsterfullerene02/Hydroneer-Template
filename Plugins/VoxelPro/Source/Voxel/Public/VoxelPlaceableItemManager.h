@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelDataItemConstructionInfo.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/Object.h"
 #include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "VoxelDataItemConstructionInfo.h"
 #include "VoxelPlaceableItemManager.generated.h"
 
 class UVoxelGeneratorCache;
@@ -27,6 +27,7 @@ private:
     
 public:
     UVoxelPlaceableItemManager();
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnGenerate();
     

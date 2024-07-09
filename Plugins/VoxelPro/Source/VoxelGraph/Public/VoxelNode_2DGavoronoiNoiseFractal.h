@@ -13,5 +13,6 @@ private:
     
 public:
     UVoxelNode_2DGavoronoiNoiseFractal();
+
 };
 

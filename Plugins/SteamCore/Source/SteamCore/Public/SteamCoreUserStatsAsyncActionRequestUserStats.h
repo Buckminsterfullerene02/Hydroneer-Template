@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnRequestUserStatsAsyncDelegateDelegate.h"
 #include "RequestUserStatsData.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
 #include "SteamCoreUserStatsAsyncActionRequestUserStats.generated.h"
 
-class USteamCoreUserStatsAsyncActionRequestUserStats;
 class UObject;
+class USteamCoreUserStatsAsyncActionRequestUserStats;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserStatsAsyncActionRequestUserStats : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnRequestUserStatsAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionRequestUserStats();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionRequestUserStats* RequestUserStatsAsync(UObject* WorldContextObject, FSteamID SteamID, float Timeout);
     
     UFUNCTION(BlueprintCallable)

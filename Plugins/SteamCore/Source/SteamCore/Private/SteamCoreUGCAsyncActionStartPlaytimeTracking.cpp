@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionStartPlaytimeTracking.h"
 
-class UObject;
-class USteamCoreUGCAsyncActionStartPlaytimeTracking;
+USteamCoreUGCAsyncActionStartPlaytimeTracking::USteamCoreUGCAsyncActionStartPlaytimeTracking() {
+}
 
 USteamCoreUGCAsyncActionStartPlaytimeTracking* USteamCoreUGCAsyncActionStartPlaytimeTracking::StartPlaytimeTrackingAsync(UObject* WorldContextObject, TArray<FPublishedFileID> PublishedFileIDs, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionStartPlaytimeTracking* USteamCoreUGCAsyncActionStartPlay
 void USteamCoreUGCAsyncActionStartPlaytimeTracking::HandleCallback(const FStartPlaytimeTrackingResult& Data, bool bWasSuccessful) {
 }
 
-USteamCoreUGCAsyncActionStartPlaytimeTracking::USteamCoreUGCAsyncActionStartPlaytimeTracking() {
-}
 

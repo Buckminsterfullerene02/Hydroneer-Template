@@ -8,5 +8,6 @@ class VOXEL_API UVoxelTexturePoolSubsystemProxy : public UVoxelStaticSubsystemPr
     GENERATED_BODY()
 public:
     UVoxelTexturePoolSubsystemProxy();
+
 };
 

@@ -1,5 +1,8 @@
 #include "RemoteStorage.h"
 
+URemoteStorage::URemoteStorage() {
+}
+
 int32 URemoteStorage::UGCRead(FSteamUGCHandle Content, TArray<uint8>& OutData, int32 DataToRead, int32 Offset, ESteamUGCReadAction Action) {
     return 0;
 }
@@ -118,6 +121,4 @@ bool URemoteStorage::FileDelete(const FString& File) {
     return false;
 }
 
-URemoteStorage::URemoteStorage() {
-}
 

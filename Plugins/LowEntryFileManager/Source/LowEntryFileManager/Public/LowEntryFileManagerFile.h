@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
 #include "UObject/NoExportTypes.h"
+#include "UObject/Object.h"
 #include "ELowEntryFileManagerYesNo.h"
 #include "LowEntryFileManagerFile.generated.h"
 
-class ULowEntryFileManagerFile;
 class ULowEntryFileManagerDirectory;
+class ULowEntryFileManagerFile;
 
 UCLASS(Blueprintable)
 class LOWENTRYFILEMANAGER_API ULowEntryFileManagerFile : public UObject {
@@ -22,6 +22,7 @@ public:
     FString Path;
     
     ULowEntryFileManagerFile();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 Size();
     
@@ -67,7 +68,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     FString GetExtension() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     TArray<uint8> GetData();
     
     UFUNCTION(BlueprintCallable, BlueprintPure)

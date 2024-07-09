@@ -19,5 +19,6 @@ public:
     float Roughness;
     
     UVoxelTrimTool();
+
 };
 

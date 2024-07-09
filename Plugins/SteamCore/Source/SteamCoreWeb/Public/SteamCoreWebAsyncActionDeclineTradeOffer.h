@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionDeclineTradeOffer : public USteam
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionDeclineTradeOffer();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionDeclineTradeOffer* DeclineTradeOfferAsync(UObject* WorldContextObject, const FString& Key, const FString& TradeOfferId);
     
 };

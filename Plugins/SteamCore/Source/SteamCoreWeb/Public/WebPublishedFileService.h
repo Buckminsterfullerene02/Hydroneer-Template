@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebPublishedFileService.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebPublishedFileService : public USteamCoreWebSubsystem 
     GENERATED_BODY()
 public:
     UWebPublishedFileService();
+
     UFUNCTION(BlueprintCallable)
     void UpdateTags(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& PublishedFileID, int32 AppID, const FString& AddTags, const FString& RemoveTags);
     

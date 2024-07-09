@@ -1,10 +1,7 @@
 #include "VoxelBlueprintLibrary.h"
 
-class AVoxelWorld;
-class UObject;
-class UMaterialInterface;
-class AActor;
-class UTexture2D;
+UVoxelBlueprintLibrary::UVoxelBlueprintLibrary() {
+}
 
 void UVoxelBlueprintLibrary::UpdatePosition(AVoxelWorld* World, FIntVector Position) {
 }
@@ -369,6 +366,4 @@ FIntVector UVoxelBlueprintLibrary::Add_IntVectorIntVector(FIntVector Left, FIntV
     return FIntVector{};
 }
 
-UVoxelBlueprintLibrary::UVoxelBlueprintLibrary() {
-}
 

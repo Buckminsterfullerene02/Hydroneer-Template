@@ -37,5 +37,6 @@ public:
     float Size_Y;
     
     UVoxelExample_HeightmapComposition();
+
 };
 

@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_EditGetValue : public UVoxelGraphAssetNode {
     GENERATED_BODY()
 public:
     UVoxelNode_EditGetValue();
+
 };
 

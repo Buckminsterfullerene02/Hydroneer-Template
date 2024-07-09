@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionAddItem : public USteamCoreWebAsy
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionAddItem();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionAddItem* AddItemAsync(UObject* WorldContextObject, const FString& Key, int32 AppID, TArray<int32> ItemdefId, const FString& ItemPropsJson, const FString& SteamID, bool bNotify, const FString& RequestID, bool bTradeRestriction);
     
 };

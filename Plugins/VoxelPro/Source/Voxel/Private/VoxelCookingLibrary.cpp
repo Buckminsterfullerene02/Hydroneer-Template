@@ -1,6 +1,7 @@
 #include "VoxelCookingLibrary.h"
 
-class AVoxelWorld;
+UVoxelCookingLibrary::UVoxelCookingLibrary() {
+}
 
 FVoxelCookingSettings UVoxelCookingLibrary::MakeVoxelCookingSettingsFromVoxelWorld(AVoxelWorld* World) {
     return FVoxelCookingSettings{};
@@ -17,6 +18,4 @@ FVoxelCookedData UVoxelCookingLibrary::CookVoxelData(FVoxelCookingSettings Setti
     return FVoxelCookedData{};
 }
 
-UVoxelCookingLibrary::UVoxelCookingLibrary() {
-}
 

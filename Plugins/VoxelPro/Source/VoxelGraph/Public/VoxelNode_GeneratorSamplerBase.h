@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GeneratorSamplerBase : public UVoxelExposedNode 
     GENERATED_BODY()
 public:
     UVoxelNode_GeneratorSamplerBase();
+
 };
 

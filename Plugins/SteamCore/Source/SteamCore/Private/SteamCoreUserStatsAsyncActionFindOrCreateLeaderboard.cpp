@@ -1,7 +1,7 @@
 #include "SteamCoreUserStatsAsyncActionFindOrCreateLeaderboard.h"
 
-class UObject;
-class USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard;
+USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard::USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard() {
+}
 
 void USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard::HandleCallback(const FFindOrCreateLeaderboardData& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard* USteamCoreUserStatsAsyncA
     return NULL;
 }
 
-USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard::USteamCoreUserStatsAsyncActionFindOrCreateLeaderboard() {
-}
 

@@ -14,5 +14,6 @@ public:
     int32 Max;
     
     UVoxelNode_RandomInt();
+
 };
 

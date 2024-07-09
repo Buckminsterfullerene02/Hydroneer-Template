@@ -7,9 +7,10 @@ UDLSSSettings::UDLSSSettings() {
     this->bEnableDLSSInEditorViewports = true;
     this->bEnableScreenpercentageManipulationInDLSSEditorViewports = false;
     this->bEnableDLSSInPlayInEditorViewports = true;
-    this->bShowDLSSSDebugOnScreenMessages = true;
+    this->bShowDLSSSDebugOnScreenMessages = false;
     this->bGenericDLSSBinaryExists = false;
     this->NVIDIANGXApplicationId = 0;
     this->bCustomDLSSBinaryExists = false;
 }
+
 

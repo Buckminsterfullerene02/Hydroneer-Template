@@ -3,15 +3,16 @@
 #include "SteamCoreWebAsyncAction.h"
 #include "SteamCoreWebAsyncActionGetTradeOffersSummary.generated.h"
 
-class USteamCoreWebAsyncActionGetTradeOffersSummary;
 class UObject;
+class USteamCoreWebAsyncActionGetTradeOffersSummary;
 
 UCLASS(Blueprintable)
 class STEAMCOREWEB_API USteamCoreWebAsyncActionGetTradeOffersSummary : public USteamCoreWebAsyncAction {
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetTradeOffersSummary();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetTradeOffersSummary* GetTradeOffersSummaryAsync(UObject* WorldContextObject, const FString& Key, int32 TimeLastVisit);
     
 };

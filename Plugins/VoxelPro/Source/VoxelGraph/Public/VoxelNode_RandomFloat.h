@@ -14,5 +14,6 @@ public:
     float Max;
     
     UVoxelNode_RandomFloat();
+
 };
 

@@ -1,5 +1,8 @@
 #include "User.h"
 
+UUser::UUser() {
+}
+
 ESteamUserHasLicenseForAppResult UUser::UserHasLicenseForApp(FSteamID SteamID, int32 AppID) {
     return ESteamUserHasLicenseForAppResult::HasLicense;
 }
@@ -93,6 +96,4 @@ ESteamBeginAuthSessionResult UUser::BeginAuthSession(TArray<uint8> Ticket, FStea
 void UUser::AdvertiseGame(FSteamID SteamIDGameServer, const FString& ServerIP, int32 ServerPort) {
 }
 
-UUser::UUser() {
-}
 

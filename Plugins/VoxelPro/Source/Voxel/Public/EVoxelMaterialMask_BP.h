@@ -16,6 +16,5 @@ enum class EVoxelMaterialMask_BP : uint8 {
     V2,
     U3,
     V3,
-    EVoxelMaterialMask_MAX UMETA(Hidden),
 };
 

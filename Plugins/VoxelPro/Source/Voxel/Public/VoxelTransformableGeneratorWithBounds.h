@@ -8,5 +8,6 @@ class VOXEL_API UVoxelTransformableGeneratorWithBounds : public UVoxelTransforma
     GENERATED_BODY()
 public:
     UVoxelTransformableGeneratorWithBounds();
+
 };
 

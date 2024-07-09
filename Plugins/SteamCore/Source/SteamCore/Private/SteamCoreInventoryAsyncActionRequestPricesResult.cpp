@@ -1,7 +1,7 @@
 #include "SteamCoreInventoryAsyncActionRequestPricesResult.h"
 
-class UObject;
-class USteamCoreInventoryAsyncActionRequestPricesResult;
+USteamCoreInventoryAsyncActionRequestPricesResult::USteamCoreInventoryAsyncActionRequestPricesResult() {
+}
 
 USteamCoreInventoryAsyncActionRequestPricesResult* USteamCoreInventoryAsyncActionRequestPricesResult::RequestPricesAsync(UObject* WorldContextObject, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreInventoryAsyncActionRequestPricesResult* USteamCoreInventoryAsyncActio
 void USteamCoreInventoryAsyncActionRequestPricesResult::HandleCallback(const FSteamInventoryRequestPricesResult& Data, bool bWasSuccessful) {
 }
 
-USteamCoreInventoryAsyncActionRequestPricesResult::USteamCoreInventoryAsyncActionRequestPricesResult() {
-}
 

@@ -11,5 +11,6 @@ public:
     float Radius;
     
     UVG_Example_Craters();
+
 };
 

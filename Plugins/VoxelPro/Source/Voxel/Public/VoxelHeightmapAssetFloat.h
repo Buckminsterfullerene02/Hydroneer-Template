@@ -8,5 +8,6 @@ class VOXEL_API UVoxelHeightmapAssetFloat : public UVoxelHeightmapAsset {
     GENERATED_BODY()
 public:
     UVoxelHeightmapAssetFloat();
+
 };
 

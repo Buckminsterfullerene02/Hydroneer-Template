@@ -1,23 +1,23 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnGameWebCallbackDelegate.h"
-#include "SteamCoreSubsystem.h"
-#include "OnClientGameServerDenyDelegate.h"
-#include "OnGetAuthSessionTicketResponseDelegate.h"
+#include "ESteamBeginAuthSessionResult.h"
 #include "ESteamUserHasLicenseForAppResult.h"
+#include "ESteamVoiceResult.h"
+#include "OnClientGameServerDenyDelegate.h"
+#include "OnGameWebCallbackDelegate.h"
+#include "OnGetAuthSessionTicketResponseDelegate.h"
 #include "OnIPCFailureDelegate.h"
 #include "OnLicensesUpdatedDelegate.h"
 #include "OnMicroTxnAuthorizationResponseDelegate.h"
+#include "OnRequestEncryptedAppTicketDelegate.h"
+#include "OnRequestEncryptedAppTicketResponseDelegate.h"
 #include "OnSteamServerConnectFailureDelegate.h"
 #include "OnSteamServersConnectedDelegate.h"
 #include "OnSteamServersDisconnectedDelegate.h"
-#include "OnValidateAuthTicketResponseDelegate.h"
-#include "OnRequestEncryptedAppTicketResponseDelegate.h"
-#include "SteamID.h"
-#include "ESteamBeginAuthSessionResult.h"
 #include "OnStoreAuthURLResponseDelegate.h"
-#include "OnRequestEncryptedAppTicketDelegate.h"
-#include "ESteamVoiceResult.h"
+#include "OnValidateAuthTicketResponseDelegate.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
 #include "SteamTicketHandle.h"
 #include "User.generated.h"
 
@@ -59,6 +59,7 @@ public:
     FOnRequestEncryptedAppTicketResponse EncryptedAppTicketResponse;
     
     UUser();
+
     UFUNCTION(BlueprintCallable)
     static ESteamUserHasLicenseForAppResult UserHasLicenseForApp(FSteamID SteamID, int32 AppID);
     

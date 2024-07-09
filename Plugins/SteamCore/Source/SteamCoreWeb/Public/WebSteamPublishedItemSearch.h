@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebSteamPublishedItemSearch.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebSteamPublishedItemSearch : public USteamCoreWebSubsys
     GENERATED_BODY()
 public:
     UWebSteamPublishedItemSearch();
+
     UFUNCTION(BlueprintCallable)
     void ResultSetSummary(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppID, int32 StartId, bool bHasAppAdminAccess, int32 FileType, TArray<FString> Tag, TArray<FString> UserTag);
     

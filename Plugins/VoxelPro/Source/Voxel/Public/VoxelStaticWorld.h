@@ -9,12 +9,13 @@ UCLASS(Blueprintable)
 class VOXEL_API AVoxelStaticWorld : public AActor {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* BaseMesh;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UStaticMeshComponent*> Meshes;
     
-    AVoxelStaticWorld();
+    AVoxelStaticWorld(const FObjectInitializer& ObjectInitializer);
+
 };
 

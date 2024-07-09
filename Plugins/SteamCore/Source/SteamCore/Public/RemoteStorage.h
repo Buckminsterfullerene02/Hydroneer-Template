@@ -1,21 +1,21 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "OnFileWriteAsyncDelegate.h"
+#include "ESteamRemoteStoragePlatform.h"
 #include "ESteamUGCReadAction.h"
-#include "SteamCoreSubsystem.h"
+#include "OnFileReadAsyncDelegate.h"
+#include "OnFileShareAsyncDelegate.h"
+#include "OnFileWriteAsyncDelegate.h"
+#include "OnRemoteStoragePublishedFileSubscribedDelegate.h"
+#include "OnRemoteStoragePublishedFileUnsubscribedDelegate.h"
 #include "OnRemoteStorageSubscribePublishedFileResultDelegate.h"
 #include "OnRemoteStorageUnsubscribePublishedFileResultDelegate.h"
-#include "SteamUGCHandle.h"
-#include "OnRemoteStoragePublishedFileUnsubscribedDelegate.h"
-#include "OnRemoteStoragePublishedFileSubscribedDelegate.h"
-#include "OnUGCDownloadToLocationAsyncDelegate.h"
 #include "OnUGCDownloadAsyncDelegate.h"
-#include "ESteamRemoteStoragePlatform.h"
-#include "SteamID.h"
-#include "UGCFileWriteStreamHandle.h"
-#include "OnFileShareAsyncDelegate.h"
+#include "OnUGCDownloadToLocationAsyncDelegate.h"
 #include "RemoteStorageFileReadAsyncComplete.h"
-#include "OnFileReadAsyncDelegate.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
+#include "SteamUGCHandle.h"
+#include "UGCFileWriteStreamHandle.h"
 #include "RemoteStorage.generated.h"
 
 UCLASS(Blueprintable)
@@ -35,6 +35,7 @@ public:
     FOnRemoteStoragePublishedFileSubscribed RemoteStoragePublishedFileSubscribed;
     
     URemoteStorage();
+
     UFUNCTION(BlueprintCallable)
     static int32 UGCRead(FSteamUGCHandle Content, TArray<uint8>& OutData, int32 DataToRead, int32 Offset, ESteamUGCReadAction Action);
     

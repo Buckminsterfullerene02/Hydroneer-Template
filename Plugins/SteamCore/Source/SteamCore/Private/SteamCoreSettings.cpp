@@ -14,3 +14,4 @@ USteamCoreSettings::USteamCoreSettings() {
     this->GameVersion = TEXT("1.0.0.0");
 }
 
+

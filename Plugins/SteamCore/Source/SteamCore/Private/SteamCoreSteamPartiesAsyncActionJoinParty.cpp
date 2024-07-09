@@ -1,7 +1,7 @@
 #include "SteamCoreSteamPartiesAsyncActionJoinParty.h"
 
-class UObject;
-class USteamCoreSteamPartiesAsyncActionJoinParty;
+USteamCoreSteamPartiesAsyncActionJoinParty::USteamCoreSteamPartiesAsyncActionJoinParty() {
+}
 
 USteamCoreSteamPartiesAsyncActionJoinParty* USteamCoreSteamPartiesAsyncActionJoinParty::JoinPartyAsync(UObject* WorldContextObject, FPartyBeaconID BeaconID, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreSteamPartiesAsyncActionJoinParty* USteamCoreSteamPartiesAsyncActionJoi
 void USteamCoreSteamPartiesAsyncActionJoinParty::HandleCallback(const FJoinPartyData& Data, bool bWasSuccessful) {
 }
 
-USteamCoreSteamPartiesAsyncActionJoinParty::USteamCoreSteamPartiesAsyncActionJoinParty() {
-}
 

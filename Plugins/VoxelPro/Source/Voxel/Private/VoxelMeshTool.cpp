@@ -1,6 +1,7 @@
 #include "VoxelMeshTool.h"
 
 UVoxelMeshTool::UVoxelMeshTool() {
+    this->ToolName = TEXT("Mesh");
     this->Stride = 0.00f;
     this->bSmoothImport = false;
     this->Smoothness = 0.50f;
@@ -22,4 +23,5 @@ UVoxelMeshTool::UVoxelMeshTool() {
     this->bAlignToNormal = true;
     this->bAlignToMovement = true;
 }
+
 

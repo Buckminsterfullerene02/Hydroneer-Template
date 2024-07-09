@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelExposedNode.h"
 #include "UObject/NoExportTypes.h"
+#include "VoxelExposedNode.h"
 #include "VoxelNode_ColorParameter.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
@@ -12,5 +12,6 @@ public:
     FLinearColor Color;
     
     UVoxelNode_ColorParameter();
+
 };
 

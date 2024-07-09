@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnSteamInventoryRequestPricesResultAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamInventoryRequestPricesResult.h"
 #include "SteamCoreInventoryAsyncActionRequestPricesResult.generated.h"
 
-class USteamCoreInventoryAsyncActionRequestPricesResult;
 class UObject;
+class USteamCoreInventoryAsyncActionRequestPricesResult;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreInventoryAsyncActionRequestPricesResult : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnSteamInventoryRequestPricesResultAsyncDelegate OnCallback;
     
     USteamCoreInventoryAsyncActionRequestPricesResult();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreInventoryAsyncActionRequestPricesResult* RequestPricesAsync(UObject* WorldContextObject, float Timeout);
     
     UFUNCTION(BlueprintCallable)

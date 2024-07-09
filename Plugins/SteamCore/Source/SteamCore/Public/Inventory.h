@@ -1,22 +1,22 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "SteamInventoryResult.h"
+#include "ESteamResult.h"
+#include "OnRequestEligiblePromoItemDefinitionsIDsDelegate.h"
+#include "OnSteamInventoryDefinitionUpdateDelegate.h"
+#include "OnSteamInventoryEligiblePromoItemDefIDsDelegate.h"
+#include "OnSteamInventoryFullUpdateDelegate.h"
+#include "OnSteamInventoryRequestPricesResultDelegate.h"
 #include "OnSteamInventoryRequestPricesResultDelegateDelegate.h"
 #include "OnSteamInventoryResultReadyDelegate.h"
-#include "OnSteamInventoryDefinitionUpdateDelegate.h"
-#include "OnSteamInventoryFullUpdateDelegate.h"
-#include "OnSteamInventoryStartPurchaseResultDelegateDelegate.h"
-#include "OnSteamInventoryEligiblePromoItemDefIDsDelegate.h"
-#include "SteamItemInstanceID.h"
-#include "SteamItemDef.h"
-#include "SteamInventoryUpdateHandle.h"
-#include "SteamID.h"
 #include "OnSteamInventoryStartPurchaseResultDelegate.h"
-#include "OnSteamInventoryRequestPricesResultDelegate.h"
-#include "OnRequestEligiblePromoItemDefinitionsIDsDelegate.h"
-#include "ESteamResult.h"
+#include "OnSteamInventoryStartPurchaseResultDelegateDelegate.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
+#include "SteamInventoryResult.h"
+#include "SteamInventoryUpdateHandle.h"
+#include "SteamItemDef.h"
 #include "SteamItemDetails.h"
+#include "SteamItemInstanceID.h"
 #include "Inventory.generated.h"
 
 UCLASS(Blueprintable)
@@ -42,6 +42,7 @@ public:
     FOnSteamInventoryEligiblePromoItemDefIDs SteamInventoryEligiblePromoItemDefIDs;
     
     UInventory();
+
     UFUNCTION(BlueprintCallable)
     static bool TriggerItemDrop(FSteamInventoryResult& Result, FSteamItemDef ListDefinition);
     

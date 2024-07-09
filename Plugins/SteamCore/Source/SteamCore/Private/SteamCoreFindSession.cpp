@@ -1,7 +1,7 @@
 #include "SteamCoreFindSession.h"
 
-class UObject;
-class USteamCoreFindSession;
+USteamCoreFindSession::USteamCoreFindSession() {
+}
 
 void USteamCoreFindSession::OnCompleted(bool bSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreFindSession* USteamCoreFindSession::FindSteamCoreSessions(UObject* Wor
     return NULL;
 }
 
-USteamCoreFindSession::USteamCoreFindSession() {
-}
 

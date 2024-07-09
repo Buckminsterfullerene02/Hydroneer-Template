@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelNode_GeneratorSamplerBase.h"
-#include "VoxelGeneratorPicker.h"
 #include "EVoxelMaterialConfig.h"
+#include "VoxelGeneratorPicker.h"
+#include "VoxelNode_GeneratorSamplerBase.h"
 #include "VoxelNode_GeneratorMerge.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
@@ -22,5 +22,6 @@ public:
     float Tolerance;
     
     UVoxelNode_GeneratorMerge();
+
 };
 

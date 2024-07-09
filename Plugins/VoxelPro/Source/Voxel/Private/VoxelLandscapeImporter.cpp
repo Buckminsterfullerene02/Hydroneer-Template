@@ -1,7 +1,8 @@
 #include "VoxelLandscapeImporter.h"
 
-AVoxelLandscapeImporter::AVoxelLandscapeImporter() {
+AVoxelLandscapeImporter::AVoxelLandscapeImporter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->Landscape = NULL;
     this->MaterialConfig = EVoxelHeightmapImporterMaterialConfig::RGB;
 }
+
 

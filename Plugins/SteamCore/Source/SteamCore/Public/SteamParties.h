@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "OnJoinPartyDelegateDelegate.h"
-#include "OnCreateBeaconDelegateDelegate.h"
-#include "PartyBeaconID.h"
-#include "OnReservationNotificationDelegateDelegate.h"
-#include "OnChangeNumOpenSlotsDelegateDelegate.h"
+#include "ESteamPartiesBeaconLocationData.h"
 #include "OnActiveBeaconsDelegateDelegate.h"
 #include "OnAvailableBeaconLocationsDelegateDelegate.h"
-#include "SteamID.h"
-#include "OnJoinPartyDelegate.h"
-#include "SteamPartyBeaconLocation.h"
-#include "ESteamPartiesBeaconLocationData.h"
-#include "OnCreateBeaconDelegate.h"
 #include "OnChangeNumOpenSlotsDelegate.h"
+#include "OnChangeNumOpenSlotsDelegateDelegate.h"
+#include "OnCreateBeaconDelegate.h"
+#include "OnCreateBeaconDelegateDelegate.h"
+#include "OnJoinPartyDelegate.h"
+#include "OnJoinPartyDelegateDelegate.h"
+#include "OnReservationNotificationDelegateDelegate.h"
+#include "PartyBeaconID.h"
+#include "SteamCoreSubsystem.h"
+#include "SteamID.h"
+#include "SteamPartyBeaconLocation.h"
 #include "SteamParties.generated.h"
 
 UCLASS(Blueprintable)
@@ -39,6 +39,7 @@ public:
     FOnActiveBeaconsDelegate ActiveBeaconsDelegate;
     
     USteamParties();
+
     UFUNCTION(BlueprintCallable)
     static void OnReservationCompleted(FPartyBeaconID BeaconID, FSteamID SteamIDUser);
     

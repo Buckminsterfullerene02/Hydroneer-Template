@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Subsystems/EngineSubsystem.h"
+#include "AutoSettingData.h"
 #include "BoolCVarChangedSignatureDelegate.h"
 #include "FloatCVarChangedSignatureDelegate.h"
-#include "AutoSettingData.h"
-#include "Subsystems/EngineSubsystem.h"
+#include "IntCVarChangedSignatureDelegate.h"
 #include "OnSettingSavedDelegate.h"
 #include "StringCVarChangedSignatureDelegate.h"
-#include "IntCVarChangedSignatureDelegate.h"
 #include "SettingsManager.generated.h"
 
 UCLASS(Blueprintable)
@@ -22,6 +22,7 @@ private:
     
 public:
     USettingsManager();
+
     UFUNCTION(BlueprintCallable)
     static void SaveSettingStatic(FAutoSettingData SettingData);
     

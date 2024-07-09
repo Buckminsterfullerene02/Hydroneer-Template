@@ -1,7 +1,7 @@
 #include "SteamCoreFriendsAsyncActionRequestUserInformation.h"
 
-class UObject;
-class USteamCoreFriendsAsyncActionRequestUserInformation;
+USteamCoreFriendsAsyncActionRequestUserInformation::USteamCoreFriendsAsyncActionRequestUserInformation() {
+}
 
 USteamCoreFriendsAsyncActionRequestUserInformation* USteamCoreFriendsAsyncActionRequestUserInformation::RequestUserInformationAsync(UObject* WorldContextObject, FSteamID SteamIDUser, bool bRequireNameOnly, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreFriendsAsyncActionRequestUserInformation* USteamCoreFriendsAsyncAction
 void USteamCoreFriendsAsyncActionRequestUserInformation::HandleCallback() {
 }
 
-USteamCoreFriendsAsyncActionRequestUserInformation::USteamCoreFriendsAsyncActionRequestUserInformation() {
-}
 

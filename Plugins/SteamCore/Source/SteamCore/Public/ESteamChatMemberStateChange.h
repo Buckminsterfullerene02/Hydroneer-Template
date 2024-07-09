@@ -7,8 +7,8 @@ enum class ESteamChatMemberStateChange : uint8 {
     None,
     Entered,
     Left,
-    Disconnected = 0x4,
-    Kicked = 0x8,
-    Banned = 0x10,
+    Disconnected = 4,
+    Kicked = 8,
+    Banned = 16,
 };
 

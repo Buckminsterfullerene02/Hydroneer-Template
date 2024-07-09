@@ -1,5 +1,8 @@
 #include "WebPlayerService.h"
 
+UWebPlayerService::UWebPlayerService() {
+}
+
 void UWebPlayerService::IsPlayingSharedGame(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, int32 AppIdPlaying) {
 }
 
@@ -18,6 +21,4 @@ void UWebPlayerService::GetCommunityBadgeProgress(const FOnSteamCoreWebCallback&
 void UWebPlayerService::GetBadges(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID) {
 }
 
-UWebPlayerService::UWebPlayerService() {
-}
 

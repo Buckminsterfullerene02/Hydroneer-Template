@@ -4,12 +4,12 @@
 #include "Engine/EngineTypes.h"
 #include "EMSObject.generated.h"
 
-class UEMSProfileSaveGame;
 class AActor;
-class UWorld;
-class UEMSPersistentSaveGame;
-class UEMSInfoSaveGame;
 class UEMSCustomSaveGame;
+class UEMSInfoSaveGame;
+class UEMSPersistentSaveGame;
+class UEMSProfileSaveGame;
+class UWorld;
 
 UCLASS(Blueprintable, ConfigDoNotCheckDefaults, Config=Game)
 class EASYMULTISAVE_API UEMSObject : public UObject {
@@ -40,8 +40,9 @@ public:
     TArray<AActor*> ActorList;
     
     UEMSObject();
+
 protected:
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OuterActorEndPlay(AActor* Actor, TEnumAsByte<EEndPlayReason::Type> EndPlayReason);
     
 };

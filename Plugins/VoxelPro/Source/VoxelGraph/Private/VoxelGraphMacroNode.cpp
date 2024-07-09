@@ -4,3 +4,4 @@ UVoxelGraphMacroNode::UVoxelGraphMacroNode() {
     this->Macro = NULL;
 }
 
+

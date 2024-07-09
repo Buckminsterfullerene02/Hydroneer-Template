@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SetColor : public UVoxelNode_MaterialSetter {
     GENERATED_BODY()
 public:
     UVoxelNode_SetColor();
+
 };
 

@@ -3,8 +3,8 @@
 #include "VoxelToolBase.h"
 #include "VoxelLevelTool.generated.h"
 
-class UStaticMesh;
 class UMaterialInterface;
+class UStaticMesh;
 
 UCLASS(Blueprintable)
 class VOXEL_API UVoxelLevelTool : public UVoxelToolBase {
@@ -29,5 +29,6 @@ public:
     float Stride;
     
     UVoxelLevelTool();
+
 };
 

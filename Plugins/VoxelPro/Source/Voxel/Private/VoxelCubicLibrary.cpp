@@ -1,6 +1,7 @@
 #include "VoxelCubicLibrary.h"
 
-class AVoxelWorld;
+UVoxelCubicLibrary::UVoxelCubicLibrary() {
+}
 
 void UVoxelCubicLibrary::SetCubicVoxelValue(AVoxelWorld* World, FIntVector Position, bool bValue) {
 }
@@ -13,6 +14,4 @@ FIntVector UVoxelCubicLibrary::GetCubicVoxelPositionFromHit(AVoxelWorld* World, 
     return FIntVector{};
 }
 
-UVoxelCubicLibrary::UVoxelCubicLibrary() {
-}
 

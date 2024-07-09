@@ -11,5 +11,6 @@ public:
     int32 NumSplits;
     
     UVoxelNode_HeightSplitter();
+
 };
 

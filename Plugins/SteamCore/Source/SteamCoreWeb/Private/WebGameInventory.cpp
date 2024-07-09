@@ -1,5 +1,8 @@
 #include "WebGameInventory.h"
 
+UWebGameInventory::UWebGameInventory() {
+}
+
 void UWebGameInventory::UpdateItemDefs() {
 }
 
@@ -15,6 +18,4 @@ void UWebGameInventory::GetUserHistory(const FOnSteamCoreWebCallback& Callback, 
 void UWebGameInventory::GetHistoryCommandDetails(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID, const FString& SteamID, const FString& Command, const FString& ContextId, const FString& Arguments) {
 }
 
-UWebGameInventory::UWebGameInventory() {
-}
 

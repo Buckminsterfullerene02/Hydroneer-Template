@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_IMin : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_IMin();
+
 };
 

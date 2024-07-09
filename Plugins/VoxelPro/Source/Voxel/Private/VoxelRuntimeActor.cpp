@@ -1,6 +1,6 @@
 #include "VoxelRuntimeActor.h"
 
-AVoxelRuntimeActor::AVoxelRuntimeActor() {
+AVoxelRuntimeActor::AVoxelRuntimeActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->VoxelSize = 100.00f;
     this->PlaceableItemManager = NULL;
     this->bCreateWorldAutomatically = false;
@@ -72,7 +72,7 @@ AVoxelRuntimeActor::AVoxelRuntimeActor() {
     this->bGenerateOverlapEvents = false;
     this->bComputeVisibleChunksCollisions = true;
     this->VisibleChunksCollisionsMaxLOD = 5;
-    //this->PhysMaterialOverride = NULL;
+    this->PhysMaterialOverride = NULL;
     this->bUseCCD = false;
     this->bSimpleCubicCollision = true;
     this->SimpleCubicCollisionLODBias = 0;
@@ -90,4 +90,5 @@ AVoxelRuntimeActor::AVoxelRuntimeActor() {
     this->RendererSubsystem = NULL;
     this->LODSubsystem = NULL;
 }
+
 

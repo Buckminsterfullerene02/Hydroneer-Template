@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnRequestUserInformationAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamID.h"
 #include "SteamCoreFriendsAsyncActionRequestUserInformation.generated.h"
 
-class USteamCoreFriendsAsyncActionRequestUserInformation;
 class UObject;
+class USteamCoreFriendsAsyncActionRequestUserInformation;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFriendsAsyncActionRequestUserInformation : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnRequestUserInformationAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionRequestUserInformation();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionRequestUserInformation* RequestUserInformationAsync(UObject* WorldContextObject, FSteamID SteamIDUser, bool bRequireNameOnly, float Timeout);
     
     UFUNCTION(BlueprintCallable)

@@ -8,5 +8,6 @@ class VOXEL_API UMaterialExpressionVoxelLandscapeLayerSample : public UMaterialE
     GENERATED_BODY()
 public:
     UMaterialExpressionVoxelLandscapeLayerSample();
+
 };
 

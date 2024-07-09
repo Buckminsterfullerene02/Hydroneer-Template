@@ -15,7 +15,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bOnlyImportIntoPreviewWorld;
     
-    AVoxelPlaceableItemActor();
+    AVoxelPlaceableItemActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     int32 K2_GetPriority() const;
     

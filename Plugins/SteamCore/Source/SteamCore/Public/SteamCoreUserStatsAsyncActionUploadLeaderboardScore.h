@@ -1,14 +1,14 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnUploadLeaderboardScoreAsyncDelegateDelegate.h"
 #include "ESteamLeaderboardUploadScoreMethod.h"
-#include "SteamLeaderboard.h"
 #include "LeaderboardScoreUploaded.h"
+#include "OnUploadLeaderboardScoreAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
+#include "SteamLeaderboard.h"
 #include "SteamCoreUserStatsAsyncActionUploadLeaderboardScore.generated.h"
 
-class USteamCoreUserStatsAsyncActionUploadLeaderboardScore;
 class UObject;
+class USteamCoreUserStatsAsyncActionUploadLeaderboardScore;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreUserStatsAsyncActionUploadLeaderboardScore : public USteamCoreAsyncAction {
@@ -18,7 +18,8 @@ public:
     FOnUploadLeaderboardScoreAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionUploadLeaderboardScore();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionUploadLeaderboardScore* UploadLeaderboardScoreAsync(UObject* WorldContextObject, FSteamLeaderboard SteamLeaderboard, ESteamLeaderboardUploadScoreMethod UploadScoreMethod, int32 Score, TArray<int32> ScoreDetails, float Timeout);
     
     UFUNCTION(BlueprintCallable)

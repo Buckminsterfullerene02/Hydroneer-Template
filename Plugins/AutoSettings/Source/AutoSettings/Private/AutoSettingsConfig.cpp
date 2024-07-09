@@ -5,3 +5,4 @@ UAutoSettingsConfig::UAutoSettingsConfig() {
     this->SettingsSectionName = TEXT("Settings");
 }
 
+

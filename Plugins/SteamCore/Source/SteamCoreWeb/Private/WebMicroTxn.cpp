@@ -1,5 +1,8 @@
 #include "WebMicroTxn.h"
 
+UWebMicroTxn::UWebMicroTxn() {
+}
+
 void UWebMicroTxn::RefundTxn(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& OrderId, int32 AppID) {
 }
 
@@ -34,6 +37,4 @@ void UWebMicroTxn::CancelAgreement(const FOnSteamCoreWebCallback& Callback, cons
 void UWebMicroTxn::AdjustAgreement(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, const FString& AgreementId, int32 AppID, const FString& NextProcessDate) {
 }
 
-UWebMicroTxn::UWebMicroTxn() {
-}
 

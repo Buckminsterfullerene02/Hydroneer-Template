@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionDownloadItem.h"
 
-class UObject;
-class USteamCoreUGCAsyncActionDownloadItem;
+USteamCoreUGCAsyncActionDownloadItem::USteamCoreUGCAsyncActionDownloadItem() {
+}
 
 void USteamCoreUGCAsyncActionDownloadItem::HandleCallback(const FDownloadItemResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionDownloadItem* USteamCoreUGCAsyncActionDownloadItem::Down
     return NULL;
 }
 
-USteamCoreUGCAsyncActionDownloadItem::USteamCoreUGCAsyncActionDownloadItem() {
-}
 

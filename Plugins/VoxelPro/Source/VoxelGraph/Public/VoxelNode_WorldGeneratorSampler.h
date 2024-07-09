@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "VoxelExposedNode.h"
 #include "VoxelGeneratorPicker.h"
+#include "VoxelExposedNode.h"
 #include "VoxelNode_WorldGeneratorSampler.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew, NotPlaceable)
@@ -15,5 +15,6 @@ public:
     TArray<FName> Seeds;
     
     UVoxelNode_WorldGeneratorSampler();
+
 };
 

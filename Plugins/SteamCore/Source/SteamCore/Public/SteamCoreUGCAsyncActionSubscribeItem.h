@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "PublishedFileID.h"
 #include "OnSubscribeItemAsyncDelegateDelegate.h"
+#include "PublishedFileID.h"
 #include "RemoteStorageSubscribePublishedFileResult.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreUGCAsyncActionSubscribeItem.generated.h"
 
 class UObject;
@@ -17,7 +17,8 @@ public:
     FOnSubscribeItemAsyncDelegate OnCallback;
     
     USteamCoreUGCAsyncActionSubscribeItem();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUGCAsyncActionSubscribeItem* SubscribeItemAsync(UObject* WorldContextObject, FPublishedFileID PublishedFileIDs, float Timeout);
     
     UFUNCTION(BlueprintCallable)

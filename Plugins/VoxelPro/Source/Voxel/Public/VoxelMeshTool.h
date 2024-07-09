@@ -1,17 +1,17 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
-#include "VoxelToolWithAlignment.h"
-#include "VoxelMeshImporterSettings.h"
-#include "VoxelMeshImporterSettingsBase.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "VoxelMeshImporterRenderTargetCache.h"
+#include "VoxelMeshImporterSettings.h"
+#include "VoxelMeshImporterSettingsBase.h"
+#include "VoxelToolWithAlignment.h"
 #include "VoxelMeshTool.generated.h"
 
-class UStaticMesh;
 class UMaterialInterface;
+class UStaticMesh;
 class UTextureRenderTarget2D;
 
 UCLASS(Blueprintable)
@@ -81,7 +81,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bPaintIndex;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     uint8 IndexToPaint;
     
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
@@ -120,5 +120,6 @@ private:
     
 public:
     UVoxelMeshTool();
+
 };
 

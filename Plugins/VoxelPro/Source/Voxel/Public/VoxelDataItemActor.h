@@ -15,7 +15,8 @@ public:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float RefreshDelay;
     
-    AVoxelDataItemActor();
+    AVoxelDataItemActor(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void ScheduleRefresh();
     

@@ -4,3 +4,4 @@ UVoxelLocalVariableUsage::UVoxelLocalVariableUsage() {
     this->Declaration = NULL;
 }
 
+

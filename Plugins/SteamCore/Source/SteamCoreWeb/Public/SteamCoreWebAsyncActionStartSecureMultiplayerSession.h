@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionStartSecureMultiplayerSession : p
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionStartSecureMultiplayerSession();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionStartSecureMultiplayerSession* StartSecureMultiplayerSessionAsync(UObject* WorldContextObject, const FString& Key, const FString& SteamID, int32 AppID);
     
 };

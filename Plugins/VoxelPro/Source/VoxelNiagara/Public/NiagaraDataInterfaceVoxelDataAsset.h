@@ -13,5 +13,6 @@ public:
     UVoxelDataAsset* Asset;
     
     UNiagaraDataInterfaceVoxelDataAsset();
+
 };
 

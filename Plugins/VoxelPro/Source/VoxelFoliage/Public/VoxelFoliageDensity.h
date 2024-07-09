@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "EVoxelRGBA.h"
+#include "EVoxelUVAxis.h"
+#include "VoxelGeneratorOutputPicker.h"
 #include "VoxelGeneratorPicker.h"
 #include "EVoxelFoliageDensityType.h"
-#include "EVoxelRGBA.h"
-#include "VoxelGeneratorOutputPicker.h"
-#include "EVoxelUVAxis.h"
 #include "VoxelFoliageDensity.generated.h"
 
 USTRUCT(BlueprintType)

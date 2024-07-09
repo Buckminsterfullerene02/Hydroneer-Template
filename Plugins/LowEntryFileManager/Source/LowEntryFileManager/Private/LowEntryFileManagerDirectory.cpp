@@ -1,7 +1,8 @@
 #include "LowEntryFileManagerDirectory.h"
 
-class ULowEntryFileManagerDirectory;
-class ULowEntryFileManagerFile;
+ULowEntryFileManagerDirectory::ULowEntryFileManagerDirectory() {
+    this->bIsRoot = false;
+}
 
 void ULowEntryFileManagerDirectory::MoveTo(ULowEntryFileManagerDirectory* NewDirectory, const bool OverrideExistingFiles) {
 }
@@ -71,7 +72,4 @@ void ULowEntryFileManagerDirectory::CopyTo(ULowEntryFileManagerDirectory* NewDir
 void ULowEntryFileManagerDirectory::Clear() {
 }
 
-ULowEntryFileManagerDirectory::ULowEntryFileManagerDirectory() {
-    this->bIsRoot = false;
-}
 

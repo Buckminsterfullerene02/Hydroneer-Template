@@ -4,3 +4,4 @@ UNiagaraDataInterfaceVoxelDataAsset::UNiagaraDataInterfaceVoxelDataAsset() {
     this->Asset = NULL;
 }
 
+

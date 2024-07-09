@@ -8,5 +8,6 @@ class AUTOSETTINGS_API UWindowModeValueMask : public USettingValueMask {
     GENERATED_BODY()
 public:
     UWindowModeValueMask();
+
 };
 

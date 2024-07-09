@@ -4,3 +4,4 @@ UVoxelNode_GetGeneratorCustomOutput::UVoxelNode_GetGeneratorCustomOutput() {
     this->OutputName = TEXT("Value");
 }
 
+

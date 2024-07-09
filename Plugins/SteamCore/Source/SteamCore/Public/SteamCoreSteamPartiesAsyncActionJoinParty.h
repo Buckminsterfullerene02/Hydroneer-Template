@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "JoinPartyData.h"
-#include "SteamCoreAsyncAction.h"
 #include "OnJoinPartyCallbackDelegate.h"
 #include "PartyBeaconID.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamCoreSteamPartiesAsyncActionJoinParty.generated.h"
 
-class USteamCoreSteamPartiesAsyncActionJoinParty;
 class UObject;
+class USteamCoreSteamPartiesAsyncActionJoinParty;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreSteamPartiesAsyncActionJoinParty : public USteamCoreAsyncAction {
@@ -17,7 +17,8 @@ public:
     FOnJoinPartyCallback OnCallback;
     
     USteamCoreSteamPartiesAsyncActionJoinParty();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreSteamPartiesAsyncActionJoinParty* JoinPartyAsync(UObject* WorldContextObject, FPartyBeaconID BeaconID, float Timeout);
     
     UFUNCTION(BlueprintCallable)

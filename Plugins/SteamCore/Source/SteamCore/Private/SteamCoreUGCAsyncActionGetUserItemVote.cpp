@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionGetUserItemVote.h"
 
-class USteamCoreUGCAsyncActionGetUserItemVote;
-class UObject;
+USteamCoreUGCAsyncActionGetUserItemVote::USteamCoreUGCAsyncActionGetUserItemVote() {
+}
 
 void USteamCoreUGCAsyncActionGetUserItemVote::HandleCallback(const FGetUserItemVoteResult& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionGetUserItemVote* USteamCoreUGCAsyncActionGetUserItemVote
     return NULL;
 }
 
-USteamCoreUGCAsyncActionGetUserItemVote::USteamCoreUGCAsyncActionGetUserItemVote() {
-}
 

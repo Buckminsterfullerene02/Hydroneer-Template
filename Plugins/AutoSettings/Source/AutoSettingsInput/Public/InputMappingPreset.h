@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
-#include "InputMappingLayout.h"
 #include "InputMappingGroup.h"
+#include "InputMappingLayout.h"
 #include "InputMappingPreset.generated.h"
 
 USTRUCT(BlueprintType)

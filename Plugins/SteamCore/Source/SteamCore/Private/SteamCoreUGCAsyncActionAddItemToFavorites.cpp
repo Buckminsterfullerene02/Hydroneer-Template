@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionAddItemToFavorites.h"
 
-class USteamCoreUGCAsyncActionAddItemToFavorites;
-class UObject;
+USteamCoreUGCAsyncActionAddItemToFavorites::USteamCoreUGCAsyncActionAddItemToFavorites() {
+}
 
 void USteamCoreUGCAsyncActionAddItemToFavorites::HandleCallback(const FUserFavoriteItemsListChanged& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionAddItemToFavorites* USteamCoreUGCAsyncActionAddItemToFav
     return NULL;
 }
 
-USteamCoreUGCAsyncActionAddItemToFavorites::USteamCoreUGCAsyncActionAddItemToFavorites() {
-}
 

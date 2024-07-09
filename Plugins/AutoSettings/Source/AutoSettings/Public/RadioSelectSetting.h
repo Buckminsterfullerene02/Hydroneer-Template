@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
 #include "SelectSetting.h"
+#include "Templates/SubclassOf.h"
 #include "RadioSelectSetting.generated.h"
 
 class URadioButton;
@@ -15,11 +15,12 @@ public:
     TSubclassOf<URadioButton> RadioButtonClass;
     
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     URadioSelect* RadioSelect;
     
 public:
     URadioSelectSetting();
+
 private:
     UFUNCTION(BlueprintCallable)
     void RadioSelectionChanged(const FString& Value);

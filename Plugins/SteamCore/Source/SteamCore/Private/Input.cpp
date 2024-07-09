@@ -1,5 +1,8 @@
 #include "Input.h"
 
+UInput::UInput() {
+}
+
 void UInput::TriggerVibration(FInputHandle Handle, uint8 LeftSpeed, uint8 RightSpeed) {
 }
 
@@ -127,6 +130,4 @@ void UInput::ActivateActionSetLayer(FInputHandle Handle, FInputActionSetHandle A
 void UInput::ActivateActionSet(FInputHandle Handle, FInputActionSetHandle ActionSetHandle) {
 }
 
-UInput::UInput() {
-}
 

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/SceneComponent.h"
 #include "UObject/NoExportTypes.h"
+#include "Components/SceneComponent.h"
 #include "VoxelInvokerSettings.h"
 #include "VoxelInvokerComponentBase.generated.h"
 
@@ -23,7 +23,8 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUseForPriorities;
     
-    UVoxelInvokerComponentBase();
+    UVoxelInvokerComponentBase(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool ShouldUseInvoker(AVoxelWorld* VoxelWorld) const;
     

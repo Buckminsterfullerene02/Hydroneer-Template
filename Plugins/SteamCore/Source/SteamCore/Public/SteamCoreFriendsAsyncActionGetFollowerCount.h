@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "FriendsGetFollowerCount.h"
 #include "OnGetFollowerCountAsyncDelegateDelegate.h"
 #include "SteamCoreAsyncAction.h"
-#include "FriendsGetFollowerCount.h"
 #include "SteamID.h"
 #include "SteamCoreFriendsAsyncActionGetFollowerCount.generated.h"
 
-class USteamCoreFriendsAsyncActionGetFollowerCount;
 class UObject;
+class USteamCoreFriendsAsyncActionGetFollowerCount;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreFriendsAsyncActionGetFollowerCount : public USteamCoreAsyncAction {
@@ -17,10 +17,11 @@ public:
     FOnGetFollowerCountAsyncDelegate OnCallback;
     
     USteamCoreFriendsAsyncActionGetFollowerCount();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FFriendsGetFollowerCount& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreFriendsAsyncActionGetFollowerCount* GetFollowerCountAsync(UObject* WorldContextObject, FSteamID SteamID, float Timeout);
     
 };

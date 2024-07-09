@@ -18,13 +18,14 @@ public:
     bool bEnableCubicFaces;
     
     UVoxelBlueprintMaterialCollectionInterface();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void InitializeCollection();
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     TArray<FVoxelMaterialCollectionMaterialInfo> GetMaterials();
     
-    UFUNCTION(BlueprintImplementableEvent)
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     UMaterialInterface* GetMaterialForIndices(const TArray<uint8>& Indices);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

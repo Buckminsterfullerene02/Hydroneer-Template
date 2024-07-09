@@ -11,5 +11,6 @@ public:
     FName OutputName;
     
     UVoxelNode_EditGetCustomOutput();
+
 };
 

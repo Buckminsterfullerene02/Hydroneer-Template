@@ -1,5 +1,8 @@
 #include "ConsoleUtils.h"
 
+UConsoleUtils::UConsoleUtils() {
+}
+
 void UConsoleUtils::SetStringCVar(FName Name, const FString& Value) {
 }
 
@@ -32,6 +35,4 @@ bool UConsoleUtils::GetBoolCVar(FName Name) {
     return false;
 }
 
-UConsoleUtils::UConsoleUtils() {
-}
 

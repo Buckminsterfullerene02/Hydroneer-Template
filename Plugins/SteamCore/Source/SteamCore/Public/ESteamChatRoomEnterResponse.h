@@ -16,6 +16,6 @@ enum class ESteamChatRoomEnterResponse : uint8 {
     CommunityBan,
     MemberBlockedYou,
     YouBlockedMember,
-    RatelimitExceeded = 0xF,
+    RatelimitExceeded = 15,
 };
 

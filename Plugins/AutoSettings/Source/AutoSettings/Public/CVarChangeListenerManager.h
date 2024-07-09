@@ -3,8 +3,8 @@
 #include "UObject/Object.h"
 #include "BoolCVarChangedSignatureDelegate.h"
 #include "FloatCVarChangedSignatureDelegate.h"
-#include "StringCVarChangedSignatureDelegate.h"
 #include "IntCVarChangedSignatureDelegate.h"
+#include "StringCVarChangedSignatureDelegate.h"
 #include "CVarChangeListenerManager.generated.h"
 
 class UCVarChangeListener;
@@ -19,6 +19,7 @@ private:
     
 public:
     UCVarChangeListenerManager();
+
     UFUNCTION(BlueprintCallable)
     static void AddStringCVarCallbackStatic(FName Name, FStringCVarChangedSignature ChangedCallback, bool CallbackImmediately);
     

@@ -5,3 +5,4 @@ UVoxelNode_DataItemSample::UVoxelNode_DataItemSample() {
     this->CombineMode = EVoxelDataItemCombineMode::Min;
 }
 
+

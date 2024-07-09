@@ -1,7 +1,7 @@
 #include "VoxelSphereTools.h"
 
-class UObject;
-class AVoxelWorld;
+UVoxelSphereTools::UVoxelSphereTools() {
+}
 
 void UVoxelSphereTools::TrimSphereAsync(UObject* WorldContextObject, FLatentActionInfo LatentInfo, TArray<FModifiedVoxelValue>& ModifiedValues, FVoxelIntBox& EditedBounds, AVoxelWorld* VoxelWorld, const FVector& Position, const FVector& Normal, float Radius, float Falloff, bool bAdditive, bool bMultiThreaded, bool bRecordModifiedValues, bool bConvertToVoxelSpace, bool bUpdateRender, bool bHideLatentWarnings) {
 }
@@ -75,6 +75,4 @@ void UVoxelSphereTools::AddSphereAsync(UObject* WorldContextObject, FLatentActio
 void UVoxelSphereTools::AddSphere(TArray<FModifiedVoxelValue>& ModifiedValues, FVoxelIntBox& EditedBounds, AVoxelWorld* VoxelWorld, const FVector& Position, float Radius, bool bMultiThreaded, bool bRecordModifiedValues, bool bConvertToVoxelSpace, bool bUpdateRender) {
 }
 
-UVoxelSphereTools::UVoxelSphereTools() {
-}
 

@@ -8,6 +8,7 @@ class VOXEL_API UVoxelMultiplayerTcpInterface : public UVoxelMultiplayerInterfac
     GENERATED_BODY()
 public:
     UVoxelMultiplayerTcpInterface();
+
     UFUNCTION(BlueprintCallable)
     bool StartServer(FString& OutError, const FString& IP, int32 Port);
     

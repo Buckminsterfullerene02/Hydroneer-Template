@@ -1,7 +1,8 @@
 #include "VoxelAssetActor.h"
 #include "Components/SceneComponent.h"
 
-AVoxelAssetActor::AVoxelAssetActor() {
+AVoxelAssetActor::AVoxelAssetActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
     this->Priority = 0;
     this->bOverrideAssetBounds = false;
     this->bImportAsReference = true;
@@ -14,6 +15,7 @@ AVoxelAssetActor::AVoxelAssetActor() {
     this->bRoundAssetPosition = false;
     this->bRoundAssetRotation = false;
     this->MaxPreviewChunks = 1024;
-    this->Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+    this->Root = (USceneComponent*)RootComponent;
 }
+
 

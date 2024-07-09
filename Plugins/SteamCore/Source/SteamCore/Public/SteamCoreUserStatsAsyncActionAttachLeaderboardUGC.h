@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreAsyncAction.h"
-#include "OnAttachLeaderboardUGCAsyncDelegateDelegate.h"
 #include "AttachLeaderboardUGCData.h"
+#include "OnAttachLeaderboardUGCAsyncDelegateDelegate.h"
+#include "SteamCoreAsyncAction.h"
 #include "SteamLeaderboard.h"
 #include "SteamUGCHandle.h"
 #include "SteamCoreUserStatsAsyncActionAttachLeaderboardUGC.generated.h"
@@ -18,10 +18,11 @@ public:
     FOnAttachLeaderboardUGCAsyncDelegate OnCallback;
     
     USteamCoreUserStatsAsyncActionAttachLeaderboardUGC();
+
     UFUNCTION(BlueprintCallable)
     void HandleCallback(const FAttachLeaderboardUGCData& Data, bool bWasSuccessful);
     
-    UFUNCTION(BlueprintCallable)
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreUserStatsAsyncActionAttachLeaderboardUGC* AttachLeaderboardUGCAsync(UObject* WorldContextObject, FSteamLeaderboard SteamLeaderboard, FSteamUGCHandle Handle, float Timeout);
     
 };

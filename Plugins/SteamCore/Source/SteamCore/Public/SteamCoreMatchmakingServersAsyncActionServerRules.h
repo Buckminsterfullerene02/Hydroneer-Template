@@ -1,12 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "GameServerRule.h"
 #include "OnServerRuleAsyncDelegateDelegate.h"
 #include "SteamCoreAsyncAction.h"
-#include "GameServerRule.h"
 #include "SteamCoreMatchmakingServersAsyncActionServerRules.generated.h"
 
-class USteamCoreMatchmakingServersAsyncActionServerRules;
 class UObject;
+class USteamCoreMatchmakingServersAsyncActionServerRules;
 
 UCLASS(Blueprintable)
 class STEAMCORE_API USteamCoreMatchmakingServersAsyncActionServerRules : public USteamCoreAsyncAction {
@@ -16,7 +16,8 @@ public:
     FOnServerRuleAsyncDelegate OnCallback;
     
     USteamCoreMatchmakingServersAsyncActionServerRules();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreMatchmakingServersAsyncActionServerRules* ServerRulesAsync(UObject* WorldContextObject, const FString& IP, int32 QueryPort, float Timeout);
     
     UFUNCTION(BlueprintCallable)

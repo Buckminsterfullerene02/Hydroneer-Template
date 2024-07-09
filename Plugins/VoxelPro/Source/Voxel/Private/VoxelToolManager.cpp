@@ -2,7 +2,10 @@
 #include "Templates/SubclassOf.h"
 #include "VoxelToolSharedConfig.h"
 
-class UVoxelTool;
+UVoxelToolManager::UVoxelToolManager() {
+    this->SharedConfig = CreateDefaultSubobject<UVoxelToolSharedConfig>(TEXT("SharedConfig"));
+    this->ActiveTool = NULL;
+}
 
 void UVoxelToolManager::SetActiveToolByName(FName NewActiveTool) {
 }
@@ -28,8 +31,4 @@ UVoxelTool* UVoxelToolManager::GetActiveTool() const {
 void UVoxelToolManager::CreateDefaultTools(bool bLoadBlueprints) {
 }
 
-UVoxelToolManager::UVoxelToolManager() {
-    this->SharedConfig = CreateDefaultSubobject<UVoxelToolSharedConfig>(TEXT("SharedConfig"));
-    this->ActiveTool = NULL;
-}
 

@@ -1,5 +1,8 @@
 #include "WebApps.h"
 
+UWebApps::UWebApps() {
+}
+
 void UWebApps::UpToDateCheck(const FOnSteamCoreWebCallback& Callback, int32 AppID, int32 Version) {
 }
 
@@ -30,6 +33,4 @@ void UWebApps::GetAppBuilds(const FOnSteamCoreWebCallback& Callback, const FStri
 void UWebApps::GetAppBetas(const FOnSteamCoreWebCallback& Callback, const FString& Key, int32 AppID) {
 }
 
-UWebApps::UWebApps() {
-}
 

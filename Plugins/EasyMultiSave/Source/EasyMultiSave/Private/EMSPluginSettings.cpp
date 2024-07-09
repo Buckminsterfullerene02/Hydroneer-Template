@@ -4,7 +4,7 @@ UEMSPluginSettings::UEMSPluginSettings() {
     this->DefaultSaveGameName = TEXT("MySaveGame");
     this->bPersistentPlayer = false;
     this->bPersistentGameMode = false;
-    this->bAdvancedSpawnCheck = false;
+    this->bAdvancedSpawnCheck = true;
     this->bSaveActorAffiliation = false;
     this->bAutoSaveStructs = true;
     this->bMultiThreadSaving = false;
@@ -12,4 +12,5 @@ UEMSPluginSettings::UEMSPluginSettings() {
     this->FileNamingType = EFileSaveMethod::FM_Optimized;
     this->bCopyPersistentSave = false;
 }
+
 

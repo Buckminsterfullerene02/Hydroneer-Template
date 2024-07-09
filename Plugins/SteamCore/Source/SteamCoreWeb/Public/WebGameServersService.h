@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreWebSubsystem.h"
 #include "OnSteamCoreWebCallbackDelegate.h"
+#include "SteamCoreWebSubsystem.h"
 #include "WebGameServersService.generated.h"
 
 UCLASS(Blueprintable)
@@ -9,6 +9,7 @@ class STEAMCOREWEB_API UWebGameServersService : public USteamCoreWebSubsystem {
     GENERATED_BODY()
 public:
     UWebGameServersService();
+
     UFUNCTION(BlueprintCallable)
     void SetMemo(const FOnSteamCoreWebCallback& Callback, const FString& Key, const FString& SteamID, const FString& Memo);
     

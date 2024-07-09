@@ -1,13 +1,5 @@
 #include "VoxelDataAsset.h"
 
-FIntVector UVoxelDataAsset::GetSize() const {
-    return FIntVector{};
-}
-
-FVoxelIntBox UVoxelDataAsset::GetBounds() const {
-    return FVoxelIntBox{};
-}
-
 UVoxelDataAsset::UVoxelDataAsset() {
     this->bSubtractiveAsset = false;
     this->Tolerance = 0.00f;
@@ -18,4 +10,13 @@ UVoxelDataAsset::UVoxelDataAsset() {
     this->ValueConfigFlag = 0;
     this->MaterialConfigFlag = 0;
 }
+
+FIntVector UVoxelDataAsset::GetSize() const {
+    return FIntVector{};
+}
+
+FVoxelIntBox UVoxelDataAsset::GetBounds() const {
+    return FVoxelIntBox{};
+}
+
 

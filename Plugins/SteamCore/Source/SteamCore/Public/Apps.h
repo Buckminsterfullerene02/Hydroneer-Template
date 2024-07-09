@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "OnFileDetailsResultDelegateDelegate.h"
 #include "OnDLCInstalledDelegate.h"
 #include "OnFileDetailsResultDelegate.h"
+#include "OnFileDetailsResultDelegateDelegate.h"
+#include "SteamCoreSubsystem.h"
 #include "SteamID.h"
 #include "Apps.generated.h"
 
@@ -18,6 +18,7 @@ public:
     FOnFileDetailsResultDelegate FileDetailsResultDelegate;
     
     UApps();
+
     UFUNCTION(BlueprintCallable)
     static void UninstallDLC(int32 AppID);
     

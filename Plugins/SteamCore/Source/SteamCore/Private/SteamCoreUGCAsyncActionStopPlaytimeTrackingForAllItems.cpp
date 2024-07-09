@@ -1,7 +1,7 @@
 #include "SteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems.h"
 
-class UObject;
-class USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems;
+USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems::USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems() {
+}
 
 USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems* USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems::StopPlaytimeTrackingForAllItemsAsync(UObject* WorldContextObject, float Timeout) {
     return NULL;
@@ -10,6 +10,4 @@ USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems* USteamCoreUGCAsyncActio
 void USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems::HandleCallback(const FStopPlaytimeTrackingResult& Data, bool bWasSuccessful) {
 }
 
-USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems::USteamCoreUGCAsyncActionStopPlaytimeTrackingForAllItems() {
-}
 

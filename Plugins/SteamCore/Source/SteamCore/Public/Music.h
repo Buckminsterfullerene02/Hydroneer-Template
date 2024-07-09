@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "SteamCoreSubsystem.h"
-#include "OnVolumeHasChangedDelegate.h"
-#include "OnPlaybackStatusHasChangedDelegate.h"
 #include "ESteamAudioPlaybackStatus.h"
+#include "OnPlaybackStatusHasChangedDelegate.h"
+#include "OnVolumeHasChangedDelegate.h"
+#include "SteamCoreSubsystem.h"
 #include "Music.generated.h"
 
 UCLASS(Blueprintable)
@@ -17,6 +17,7 @@ public:
     FOnVolumeHasChanged VolumeHasChanged;
     
     UMusic();
+
     UFUNCTION(BlueprintCallable)
     void SetVolume(float flVolume);
     

@@ -1,7 +1,7 @@
 #include "SteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers.h"
 
-class USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers;
-class UObject;
+USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers::USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers() {
+}
 
 void USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers::HandleCallback(const FLeaderboardScoresDownloadedForUsers& Data, bool bWasSuccessful) {
 }
@@ -10,6 +10,4 @@ USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers* USteamCoreUser
     return NULL;
 }
 
-USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers::USteamCoreUserStatsAsyncActionDownloadLeaderboardEntriesForUsers() {
-}
 

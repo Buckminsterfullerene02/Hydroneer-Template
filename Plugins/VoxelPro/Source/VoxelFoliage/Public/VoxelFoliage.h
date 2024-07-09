@@ -1,19 +1,19 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "VoxelFoliageMesh.h"
+#include "UObject/NoExportTypes.h"
 #include "UObject/Object.h"
-#include "VoxelGeneratorPicker.h"
-#include "VoxelInstancedMeshSettings.h"
-#include "VoxelFoliageDensity.h"
-#include "VoxelFoliageSpawnSettings.h"
-#include "VoxelFoliageCustomData.h"
-#include "VoxelFoliageScale.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
 #include "VoxelFloatInterval.h"
+#include "VoxelGeneratorPicker.h"
 #include "EVoxelFoliageRotation.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
-#include "UObject/NoExportTypes.h"
+#include "Templates/SubclassOf.h"
+#include "VoxelFoliageCustomData.h"
+#include "VoxelFoliageDensity.h"
+#include "VoxelFoliageMesh.h"
+#include "VoxelFoliageScale.h"
+#include "VoxelFoliageSpawnSettings.h"
+#include "VoxelInstancedMeshSettings.h"
 #include "VoxelFoliage.generated.h"
 
 class AVoxelFoliageActor;
@@ -92,5 +92,6 @@ public:
     FGuid Guid;
     
     UVoxelFoliage();
+
 };
 

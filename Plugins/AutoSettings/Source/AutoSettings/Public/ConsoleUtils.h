@@ -8,6 +8,7 @@ class AUTOSETTINGS_API UConsoleUtils : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UConsoleUtils();
+
     UFUNCTION(BlueprintCallable)
     static void SetStringCVar(FName Name, const FString& Value);
     

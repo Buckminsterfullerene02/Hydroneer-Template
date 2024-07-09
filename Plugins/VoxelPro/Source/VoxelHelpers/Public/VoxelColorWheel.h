@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Components/Widget.h"
 #include "UObject/NoExportTypes.h"
+#include "Components/Widget.h"
 #include "OnVoxelColorWheelColorChangedEventDelegate.h"
 #include "VoxelColorWheel.generated.h"
 
@@ -16,5 +16,6 @@ public:
     FOnVoxelColorWheelColorChangedEvent OnColorChanged;
     
     UVoxelColorWheel();
+
 };
 

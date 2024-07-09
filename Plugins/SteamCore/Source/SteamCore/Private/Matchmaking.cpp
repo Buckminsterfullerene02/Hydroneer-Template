@@ -1,5 +1,8 @@
 #include "Matchmaking.h"
 
+UMatchmaking::UMatchmaking() {
+}
+
 bool UMatchmaking::SetLobbyType(FSteamID SteamIDLobby, ESteamLobbyType LobbyType) {
     return false;
 }
@@ -139,6 +142,4 @@ int32 UMatchmaking::AddFavoriteGame(int32 AppID, const FString& IP, int32 Connec
     return 0;
 }
 
-UMatchmaking::UMatchmaking() {
-}
 

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "GlobalKeyIconTagsModifiedEventDelegate.h"
 #include "GameplayTagContainer.h"
 #include "InputCoreTypes.h"
+#include "GlobalKeyIconTagsModifiedEventDelegate.h"
 #include "GlobalKeyIconTagManager.generated.h"
 
 class UTexture;
@@ -21,6 +21,7 @@ private:
     
 public:
     UGlobalKeyIconTagManager();
+
     UFUNCTION(BlueprintCallable)
     static void SetGlobalKeyIconTags(FGameplayTagContainer InGlobalIconTags);
     

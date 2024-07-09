@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreWebAsyncActionGetExportedAssetsForUser : public
     GENERATED_BODY()
 public:
     USteamCoreWebAsyncActionGetExportedAssetsForUser();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreWebAsyncActionGetExportedAssetsForUser* GetExportedAssetsForUserAsync(UObject* WorldContextObject, const FString& Key, const FString& SteamID, int32 AppID, const FString& ContextId);
     
 };

@@ -1,6 +1,7 @@
 #include "VoxelTestLibrary.h"
 
-class AVoxelWorld;
+UVoxelTestLibrary::UVoxelTestLibrary() {
+}
 
 void UVoxelTestLibrary::TestValues(FVoxelTestValues ValuesA, FVoxelTestValues ValuesB) {
 }
@@ -9,6 +10,4 @@ FVoxelTestValues UVoxelTestLibrary::ReadValues(AVoxelWorld* World, FVoxelIntBox 
     return FVoxelTestValues{};
 }
 
-UVoxelTestLibrary::UVoxelTestLibrary() {
-}
 

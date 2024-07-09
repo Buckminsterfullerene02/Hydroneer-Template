@@ -12,5 +12,6 @@ public:
     TArray<FMaterialPackInput> Inputs;
     
     UMaterialExpressionPack();
+
 };
 

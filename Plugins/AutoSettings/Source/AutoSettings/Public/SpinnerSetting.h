@@ -10,11 +10,12 @@ class AUTOSETTINGS_API USpinnerSetting : public USelectSetting {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USpinner* Spinner;
     
 public:
     USpinnerSetting();
+
 private:
     UFUNCTION(BlueprintCallable)
     void SpinnerSelectionChanged(const FString& Value);

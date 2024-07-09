@@ -8,5 +8,6 @@ class AUTOSETTINGS_API UResolutionOptionFactory : public USettingOptionFactory {
     GENERATED_BODY()
 public:
     UResolutionOptionFactory();
+
 };
 

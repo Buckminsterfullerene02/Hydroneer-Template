@@ -1,6 +1,7 @@
 #include "VoxelSmoothTool.h"
 
 UVoxelSmoothTool::UVoxelSmoothTool() {
+    this->ToolName = TEXT("Smooth");
     this->bSculpt = true;
     this->bPaint = false;
     this->PaintMask = 4095;
@@ -9,4 +10,5 @@ UVoxelSmoothTool::UVoxelSmoothTool() {
     this->FalloffType = EVoxelFalloff::Smooth;
     this->Falloff = 0.50f;
 }
+
 

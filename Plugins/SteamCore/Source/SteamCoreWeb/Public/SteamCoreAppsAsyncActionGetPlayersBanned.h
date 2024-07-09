@@ -11,7 +11,8 @@ class STEAMCOREWEB_API USteamCoreAppsAsyncActionGetPlayersBanned : public USteam
     GENERATED_BODY()
 public:
     USteamCoreAppsAsyncActionGetPlayersBanned();
-    UFUNCTION(BlueprintCallable)
+
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
     static USteamCoreAppsAsyncActionGetPlayersBanned* GetPlayersBannedAsync(UObject* WorldContextObject, const FString& Key, int32 AppID);
     
 };

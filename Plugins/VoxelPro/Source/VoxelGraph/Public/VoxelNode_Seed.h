@@ -14,5 +14,6 @@ public:
     FName Name;
     
     UVoxelNode_Seed();
+
 };
 

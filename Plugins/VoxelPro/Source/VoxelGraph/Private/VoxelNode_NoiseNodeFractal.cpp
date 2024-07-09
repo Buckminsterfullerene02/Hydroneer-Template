@@ -7,3 +7,4 @@ UVoxelNode_NoiseNodeFractal::UVoxelNode_NoiseNodeFractal() {
     this->FractalType = EVoxelNoiseFractalType::FBM;
 }
 
+

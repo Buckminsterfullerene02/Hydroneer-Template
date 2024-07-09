@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "Templates/SubclassOf.h"
-#include "Blueprint/UserWidget.h"
 #include "GameplayTagContainer.h"
+#include "Blueprint/UserWidget.h"
+#include "Templates/SubclassOf.h"
 #include "AutoSettingWidget.generated.h"
 
 class USettingValueMask;
@@ -41,6 +41,7 @@ private:
     
 public:
     UAutoSettingWidget();
+
 protected:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void UpdateSelection(const FString& Value);

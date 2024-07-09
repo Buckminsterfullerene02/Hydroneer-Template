@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_GetRangeAnalysis : public UVoxelNodeHelper {
     GENERATED_BODY()
 public:
     UVoxelNode_GetRangeAnalysis();
+
 };
 

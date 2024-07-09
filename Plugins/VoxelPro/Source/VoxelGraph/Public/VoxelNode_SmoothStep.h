@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SmoothStep : public UVoxelPureNode {
     GENERATED_BODY()
 public:
     UVoxelNode_SmoothStep();
+
 };
 

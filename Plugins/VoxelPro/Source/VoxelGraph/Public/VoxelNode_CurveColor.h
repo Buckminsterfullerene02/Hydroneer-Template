@@ -13,5 +13,6 @@ public:
     UCurveLinearColor* Curve;
     
     UVoxelNode_CurveColor();
+
 };
 

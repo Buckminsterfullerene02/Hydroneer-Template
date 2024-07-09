@@ -8,5 +8,6 @@ class VOXELGRAPH_API UVoxelNode_SetSingleIndex : public UVoxelNode_MaterialSette
     GENERATED_BODY()
 public:
     UVoxelNode_SetSingleIndex();
+
 };
 
